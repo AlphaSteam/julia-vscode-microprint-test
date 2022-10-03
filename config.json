@@ -15,6 +15,18 @@
       "text_color": "black",
       "background_color": "yellow"
     },
+    "warn": {
+      "text_color": "black",
+      "background_color": "yellow"
+    },
+    "WARNING": {
+      "text_color": "black",
+      "background_color": "yellow"
+    },
+    "WARN": {
+          "text_color": "black",
+          "background_color": "yellow"
+        },
     "deprecated": {
       "text_color": "black",
       "background_color": "yellow"
