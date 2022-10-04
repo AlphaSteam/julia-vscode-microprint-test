@@ -324,7 +324,7 @@ jobs:
             - name: Get microprint of check-examples job logs
               uses: AlphaSteam/microprint-generator@v3
               with:
-                  job_name: testExtension
+                  job_name: Test Extension
                   microprint_filename: microprint
                   microprint_path: ./
                   microprint_config_path: ./
