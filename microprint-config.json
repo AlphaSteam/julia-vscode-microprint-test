@@ -1,0 +1,28 @@
+{
+    "scale": 2,
+    "vertical_spacing": 1.4,
+    "microprint_width": 140,
+    "default_colors": {
+        "background_color": "rgb(30, 30, 30)",
+        "text_color": "white"
+    },
+    "line_rules": {
+        "(?:^|\\W)error(?:$|\\W)": {
+            "text_color": "white",
+            "background_color": "red"
+        },
+        "(?:^|\\W)warning(?:$|\\W)": {
+            "text_color": "black",
+            "background_color": "yellow"
+        },
+        "(?:^|\\W)Test Summary(?:$|\\W)": {
+            "text_color": "black",
+            "background_color": "white"
+        },
+        "\\[[0-9]+\\]": {
+            "text_color": "white",
+            "background_color": "red"
+        }
+    },
+    "font-family": "monospace, monospace"
+}

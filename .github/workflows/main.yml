@@ -88,8 +88,8 @@ jobs:
       - name: Run tests
         if: matrix.os == 'macos-latest' || matrix.os == 'windows-latest'
         run: npm run test
-        
-  
+
+
 
   testJuliaPackages:
     name: Test Julia Packages
@@ -99,6 +99,8 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
         julia_version: [1.8]
+
+    if: github.repository == 'AlphaSteam/julia-vscode-microprint-test'
     steps:
       - uses: actions/checkout@v2
         with:
@@ -141,11 +143,12 @@ jobs:
               with:
                   job_name: Test Julia Packages
                   microprint_filename: microprint
-                  microprint_path: ./
+                  microprint_path: ./microprints/
                   microprint_config_path: ./
-                  microprint_config_filename: config
+                  microprint_config_filename: microprint-config
                   microprint_visualizer_link_filename: microprint-visualizer
-                  microprint_visualizer_link_path: ./
+                  microprint_visualizer_link_path: ./microprints/visualizers/
+                  log_path: ./microprints/logs/
 
             - name: Commit microprint
               uses: EndBug/add-and-commit@v9
@@ -190,7 +193,6 @@ jobs:
   buildInsiderVSIX:
     name: Build Insider VSIX
     runs-on: windows-latest
-    # if: github.repository == 'julia-vscode/julia-vscode'
     steps:
       - uses: actions/checkout@v2
         with:
@@ -357,4 +359,3 @@ jobs:
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  
