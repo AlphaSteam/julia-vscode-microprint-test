@@ -154,7 +154,7 @@ jobs:
               uses: EndBug/add-and-commit@v9
               with:
                 message: Updated microprint
-                pull: '--rebase --autostash'
+                pull: '--rebase --autostash -s ort -X theirs'
 
             - name: Get Actions user id
               id: get_uid
