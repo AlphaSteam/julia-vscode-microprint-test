@@ -1,0 +1,1451 @@
+2022-10-17T21:08:47.4520362Z Requested labels: ubuntu-latest
+2022-10-17T21:08:47.4520406Z Job defined at: AlphaSteam/julia-vscode-microprint-test/.github/workflows/main.yml@refs/heads/master
+2022-10-17T21:08:47.4520426Z Waiting for a runner to pick up this job...
+2022-10-17T21:08:47.7977449Z Job is waiting for a hosted runner to come online.
+2022-10-17T21:08:52.6154199Z Job is about to start running on the hosted runner: GitHub Actions 7 (hosted)
+2022-10-17T21:08:55.2150832Z Current runner version: '2.298.2'
+2022-10-17T21:08:55.2187940Z ##[group]Operating System
+2022-10-17T21:08:55.2188628Z Ubuntu
+2022-10-17T21:08:55.2189085Z 20.04.5
+2022-10-17T21:08:55.2189505Z LTS
+2022-10-17T21:08:55.2189789Z ##[endgroup]
+2022-10-17T21:08:55.2190266Z ##[group]Runner Image
+2022-10-17T21:08:55.2191037Z Image: ubuntu-20.04
+2022-10-17T21:08:55.2191354Z Version: 20221002.2
+2022-10-17T21:08:55.2192014Z Included Software: https://github.com/actions/runner-images/blob/ubuntu20/20221002.2/images/linux/Ubuntu2004-Readme.md
+2022-10-17T21:08:55.2192727Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20221002.2
+2022-10-17T21:08:55.2193237Z ##[endgroup]
+2022-10-17T21:08:55.2193566Z ##[group]Runner Image Provisioner
+2022-10-17T21:08:55.2194001Z 2.0.78.1
+2022-10-17T21:08:55.2194336Z ##[endgroup]
+2022-10-17T21:08:55.2195387Z ##[group]GITHUB_TOKEN Permissions
+2022-10-17T21:08:55.2196111Z Actions: write
+2022-10-17T21:08:55.2196543Z Checks: write
+2022-10-17T21:08:55.2197087Z Contents: write
+2022-10-17T21:08:55.2197535Z Deployments: write
+2022-10-17T21:08:55.2197907Z Discussions: write
+2022-10-17T21:08:55.2198482Z Issues: write
+2022-10-17T21:08:55.2198786Z Metadata: read
+2022-10-17T21:08:55.2199112Z Packages: write
+2022-10-17T21:08:55.2199373Z Pages: write
+2022-10-17T21:08:55.2199683Z PullRequests: write
+2022-10-17T21:08:55.2200074Z RepositoryProjects: write
+2022-10-17T21:08:55.2200383Z SecurityEvents: write
+2022-10-17T21:08:55.2200722Z Statuses: write
+2022-10-17T21:08:55.2201039Z ##[endgroup]
+2022-10-17T21:08:55.2205731Z Secret source: Actions
+2022-10-17T21:08:55.2206556Z Prepare workflow directory
+2022-10-17T21:08:55.3435013Z Prepare all required actions
+2022-10-17T21:08:55.3661272Z Getting action download info
+2022-10-17T21:08:55.6520294Z Download action repository 'actions/checkout@v2' (SHA:e2f20e631ae6d7dd3b768f56a5d2af784dd54791)
+2022-10-17T21:08:57.0947457Z Download action repository 'julia-actions/setup-julia@v1' (SHA:e802804276a3d8bda6eeb8ec5c3a250216f9687b)
+2022-10-17T21:08:58.4177528Z ##[group]Run actions/checkout@v2
+2022-10-17T21:08:58.4177845Z with:
+2022-10-17T21:08:58.4178059Z   submodules: true
+2022-10-17T21:08:58.4178364Z   repository: AlphaSteam/julia-vscode-microprint-test
+2022-10-17T21:08:58.4178853Z   token: ***
+2022-10-17T21:08:58.4179077Z   ssh-strict: true
+2022-10-17T21:08:58.4179320Z   persist-credentials: true
+2022-10-17T21:08:58.4179546Z   clean: true
+2022-10-17T21:08:58.4179753Z   fetch-depth: 1
+2022-10-17T21:08:58.4180139Z   lfs: false
+2022-10-17T21:08:58.4180471Z   set-safe-directory: true
+2022-10-17T21:08:58.4180823Z env:
+2022-10-17T21:08:58.4181034Z   NODE_VERSION: 16
+2022-10-17T21:08:58.4181234Z ##[endgroup]
+2022-10-17T21:08:58.7766791Z Syncing repository: AlphaSteam/julia-vscode-microprint-test
+2022-10-17T21:08:58.7768842Z ##[group]Getting Git version info
+2022-10-17T21:08:58.7769519Z Working directory is '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test'
+2022-10-17T21:08:58.7775746Z [command]/usr/bin/git version
+2022-10-17T21:08:58.7918269Z git version 2.37.3
+2022-10-17T21:08:58.7946161Z ##[endgroup]
+2022-10-17T21:08:58.7968990Z Temporarily overriding HOME='/home/runner/work/_temp/a1ee4e32-3ae8-4cbf-be55-eccd23bba0e6' before making global git config changes
+2022-10-17T21:08:58.7969517Z Adding repository directory to the temporary git global config as a safe directory
+2022-10-17T21:08:58.7971711Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test
+2022-10-17T21:08:58.8027165Z Deleting the contents of '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test'
+2022-10-17T21:08:58.8033141Z ##[group]Initializing the repository
+2022-10-17T21:08:58.8037689Z [command]/usr/bin/git init /home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test
+2022-10-17T21:08:58.8125444Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-10-17T21:08:58.8126475Z hint: is subject to change. To configure the initial branch name to use in all
+2022-10-17T21:08:58.8128420Z hint: of your new repositories, which will suppress this warning, call:
+2022-10-17T21:08:58.8129279Z hint: 
+2022-10-17T21:08:58.8131249Z hint: 	git config --global init.defaultBranch <name>
+2022-10-17T21:08:58.8131735Z hint: 
+2022-10-17T21:08:58.8132242Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-10-17T21:08:58.8132762Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-10-17T21:08:58.8133154Z hint: 
+2022-10-17T21:08:58.8133426Z hint: 	git branch -m <name>
+2022-10-17T21:08:58.8140844Z Initialized empty Git repository in /home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/
+2022-10-17T21:08:58.8153117Z [command]/usr/bin/git remote add origin https://github.com/AlphaSteam/julia-vscode-microprint-test
+2022-10-17T21:08:58.8225289Z ##[endgroup]
+2022-10-17T21:08:58.8226250Z ##[group]Disabling automatic garbage collection
+2022-10-17T21:08:58.8231609Z [command]/usr/bin/git config --local gc.auto 0
+2022-10-17T21:08:58.8267776Z ##[endgroup]
+2022-10-17T21:08:58.8268705Z ##[group]Setting up auth
+2022-10-17T21:08:58.8278829Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-10-17T21:08:58.8318221Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-10-17T21:08:58.8748502Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-10-17T21:08:58.8786315Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-10-17T21:08:58.9064188Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2022-10-17T21:08:58.9105234Z ##[endgroup]
+2022-10-17T21:08:58.9106596Z ##[group]Fetching the repository
+2022-10-17T21:08:58.9114937Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +f16773ca1d1bb0602343851d42f7e4f04944619a:refs/remotes/origin/master
+2022-10-17T21:08:59.5409556Z remote: Enumerating objects: 354, done.        
+2022-10-17T21:08:59.5485588Z remote: Counting objects:   0% (1/354)        
+2022-10-17T21:08:59.5486524Z remote: Counting objects:   1% (4/354)        
+2022-10-17T21:08:59.5487156Z remote: Counting objects:   2% (8/354)        
+2022-10-17T21:08:59.5487859Z remote: Counting objects:   3% (11/354)        
+2022-10-17T21:08:59.5488679Z remote: Counting objects:   4% (15/354)        
+2022-10-17T21:08:59.5489176Z remote: Counting objects:   5% (18/354)        
+2022-10-17T21:08:59.5489856Z remote: Counting objects:   6% (22/354)        
+2022-10-17T21:08:59.5490428Z remote: Counting objects:   7% (25/354)        
+2022-10-17T21:08:59.5491037Z remote: Counting objects:   8% (29/354)        
+2022-10-17T21:08:59.5491878Z remote: Counting objects:   9% (32/354)        
+2022-10-17T21:08:59.5492414Z remote: Counting objects:  10% (36/354)        
+2022-10-17T21:08:59.5492936Z remote: Counting objects:  11% (39/354)        
+2022-10-17T21:08:59.5493493Z remote: Counting objects:  12% (43/354)        
+2022-10-17T21:08:59.5494053Z remote: Counting objects:  13% (47/354)        
+2022-10-17T21:08:59.5494872Z remote: Counting objects:  14% (50/354)        
+2022-10-17T21:08:59.5495411Z remote: Counting objects:  15% (54/354)        
+2022-10-17T21:08:59.5495975Z remote: Counting objects:  16% (57/354)        
+2022-10-17T21:08:59.5497789Z remote: Counting objects:  17% (61/354)        
+2022-10-17T21:08:59.5502538Z remote: Counting objects:  18% (64/354)        
+2022-10-17T21:08:59.5502972Z remote: Counting objects:  19% (68/354)        
+2022-10-17T21:08:59.5503364Z remote: Counting objects:  20% (71/354)        
+2022-10-17T21:08:59.5503661Z remote: Counting objects:  21% (75/354)        
+2022-10-17T21:08:59.5503952Z remote: Counting objects:  22% (78/354)        
+2022-10-17T21:08:59.5504521Z remote: Counting objects:  23% (82/354)        
+2022-10-17T21:08:59.5504916Z remote: Counting objects:  24% (85/354)        
+2022-10-17T21:08:59.5505182Z remote: Counting objects:  25% (89/354)        
+2022-10-17T21:08:59.5505460Z remote: Counting objects:  26% (93/354)        
+2022-10-17T21:08:59.5505856Z remote: Counting objects:  27% (96/354)        
+2022-10-17T21:08:59.5506861Z remote: Counting objects:  28% (100/354)        
+2022-10-17T21:08:59.5507275Z remote: Counting objects:  29% (103/354)        
+2022-10-17T21:08:59.5507565Z remote: Counting objects:  30% (107/354)        
+2022-10-17T21:08:59.5508360Z remote: Counting objects:  31% (110/354)        
+2022-10-17T21:08:59.5509043Z remote: Counting objects:  32% (114/354)        
+2022-10-17T21:08:59.5509588Z remote: Counting objects:  33% (117/354)        
+2022-10-17T21:08:59.5511212Z remote: Counting objects:  34% (121/354)        
+2022-10-17T21:08:59.5511816Z remote: Counting objects:  35% (124/354)        
+2022-10-17T21:08:59.5512648Z remote: Counting objects:  36% (128/354)        
+2022-10-17T21:08:59.5513105Z remote: Counting objects:  37% (131/354)        
+2022-10-17T21:08:59.5514131Z remote: Counting objects:  38% (135/354)        
+2022-10-17T21:08:59.5515011Z remote: Counting objects:  39% (139/354)        
+2022-10-17T21:08:59.5515575Z remote: Counting objects:  40% (142/354)        
+2022-10-17T21:08:59.5516330Z remote: Counting objects:  41% (146/354)        
+2022-10-17T21:08:59.5516864Z remote: Counting objects:  42% (149/354)        
+2022-10-17T21:08:59.5517674Z remote: Counting objects:  43% (153/354)        
+2022-10-17T21:08:59.5518417Z remote: Counting objects:  44% (156/354)        
+2022-10-17T21:08:59.5518945Z remote: Counting objects:  45% (160/354)        
+2022-10-17T21:08:59.5519600Z remote: Counting objects:  46% (163/354)        
+2022-10-17T21:08:59.5520551Z remote: Counting objects:  47% (167/354)        
+2022-10-17T21:08:59.5552172Z remote: Counting objects:  48% (170/354)        
+2022-10-17T21:08:59.5552571Z remote: Counting objects:  49% (174/354)        
+2022-10-17T21:08:59.5552975Z remote: Counting objects:  50% (177/354)        
+2022-10-17T21:08:59.5553246Z remote: Counting objects:  51% (181/354)        
+2022-10-17T21:08:59.5553523Z remote: Counting objects:  52% (185/354)        
+2022-10-17T21:08:59.5553804Z remote: Counting objects:  53% (188/354)        
+2022-10-17T21:08:59.5554069Z remote: Counting objects:  54% (192/354)        
+2022-10-17T21:08:59.5554344Z remote: Counting objects:  55% (195/354)        
+2022-10-17T21:08:59.5554621Z remote: Counting objects:  56% (199/354)        
+2022-10-17T21:08:59.5554882Z remote: Counting objects:  57% (202/354)        
+2022-10-17T21:08:59.5555159Z remote: Counting objects:  58% (206/354)        
+2022-10-17T21:08:59.5555606Z remote: Counting objects:  59% (209/354)        
+2022-10-17T21:08:59.5556628Z remote: Counting objects:  60% (213/354)        
+2022-10-17T21:08:59.5557304Z remote: Counting objects:  61% (216/354)        
+2022-10-17T21:08:59.5557847Z remote: Counting objects:  62% (220/354)        
+2022-10-17T21:08:59.5558763Z remote: Counting objects:  63% (224/354)        
+2022-10-17T21:08:59.5559852Z remote: Counting objects:  64% (227/354)        
+2022-10-17T21:08:59.5560296Z remote: Counting objects:  65% (231/354)        
+2022-10-17T21:08:59.5561303Z remote: Counting objects:  66% (234/354)        
+2022-10-17T21:08:59.5562266Z remote: Counting objects:  67% (238/354)        
+2022-10-17T21:08:59.5562947Z remote: Counting objects:  68% (241/354)        
+2022-10-17T21:08:59.5563761Z remote: Counting objects:  69% (245/354)        
+2022-10-17T21:08:59.5564793Z remote: Counting objects:  70% (248/354)        
+2022-10-17T21:08:59.5565738Z remote: Counting objects:  71% (252/354)        
+2022-10-17T21:08:59.5566490Z remote: Counting objects:  72% (255/354)        
+2022-10-17T21:08:59.5567265Z remote: Counting objects:  73% (259/354)        
+2022-10-17T21:08:59.5568207Z remote: Counting objects:  74% (262/354)        
+2022-10-17T21:08:59.5568799Z remote: Counting objects:  75% (266/354)        
+2022-10-17T21:08:59.5569590Z remote: Counting objects:  76% (270/354)        
+2022-10-17T21:08:59.5570366Z remote: Counting objects:  77% (273/354)        
+2022-10-17T21:08:59.5571337Z remote: Counting objects:  78% (277/354)        
+2022-10-17T21:08:59.5572319Z remote: Counting objects:  79% (280/354)        
+2022-10-17T21:08:59.5582877Z remote: Counting objects:  80% (284/354)        
+2022-10-17T21:08:59.5583738Z remote: Counting objects:  81% (287/354)        
+2022-10-17T21:08:59.5584886Z remote: Counting objects:  82% (291/354)        
+2022-10-17T21:08:59.5585258Z remote: Counting objects:  83% (294/354)        
+2022-10-17T21:08:59.5585857Z remote: Counting objects:  84% (298/354)        
+2022-10-17T21:08:59.5586865Z remote: Counting objects:  85% (301/354)        
+2022-10-17T21:08:59.5587925Z remote: Counting objects:  86% (305/354)        
+2022-10-17T21:08:59.5588867Z remote: Counting objects:  87% (308/354)        
+2022-10-17T21:08:59.5589798Z remote: Counting objects:  88% (312/354)        
+2022-10-17T21:08:59.5590428Z remote: Counting objects:  89% (316/354)        
+2022-10-17T21:08:59.5592245Z remote: Counting objects:  90% (319/354)        
+2022-10-17T21:08:59.5592895Z remote: Counting objects:  91% (323/354)        
+2022-10-17T21:08:59.5593494Z remote: Counting objects:  92% (326/354)        
+2022-10-17T21:08:59.5594114Z remote: Counting objects:  93% (330/354)        
+2022-10-17T21:08:59.5594725Z remote: Counting objects:  94% (333/354)        
+2022-10-17T21:08:59.5595327Z remote: Counting objects:  95% (337/354)        
+2022-10-17T21:08:59.5595920Z remote: Counting objects:  96% (340/354)        
+2022-10-17T21:08:59.5596532Z remote: Counting objects:  97% (344/354)        
+2022-10-17T21:08:59.5597743Z remote: Counting objects:  98% (347/354)        
+2022-10-17T21:08:59.5598373Z remote: Counting objects:  99% (351/354)        
+2022-10-17T21:08:59.5599358Z remote: Counting objects: 100% (354/354)        
+2022-10-17T21:08:59.5599843Z remote: Counting objects: 100% (354/354), done.        
+2022-10-17T21:08:59.5601218Z remote: Compressing objects:   0% (1/297)        
+2022-10-17T21:08:59.5956899Z remote: Compressing objects:   1% (3/297)        
+2022-10-17T21:08:59.5957764Z remote: Compressing objects:   2% (6/297)        
+2022-10-17T21:08:59.5958186Z remote: Compressing objects:   3% (9/297)        
+2022-10-17T21:08:59.5959950Z remote: Compressing objects:   4% (12/297)        
+2022-10-17T21:08:59.5960475Z remote: Compressing objects:   5% (15/297)        
+2022-10-17T21:08:59.5963636Z remote: Compressing objects:   6% (18/297)        
+2022-10-17T21:08:59.5964058Z remote: Compressing objects:   7% (21/297)        
+2022-10-17T21:08:59.5964660Z remote: Compressing objects:   8% (24/297)        
+2022-10-17T21:08:59.5965957Z remote: Compressing objects:   9% (27/297)        
+2022-10-17T21:08:59.5966447Z remote: Compressing objects:  10% (30/297)        
+2022-10-17T21:08:59.5967401Z remote: Compressing objects:  11% (33/297)        
+2022-10-17T21:08:59.5968440Z remote: Compressing objects:  12% (36/297)        
+2022-10-17T21:08:59.5969605Z remote: Compressing objects:  13% (39/297)        
+2022-10-17T21:08:59.5970573Z remote: Compressing objects:  14% (42/297)        
+2022-10-17T21:08:59.5971618Z remote: Compressing objects:  15% (45/297)        
+2022-10-17T21:08:59.5972532Z remote: Compressing objects:  16% (48/297)        
+2022-10-17T21:08:59.5973505Z remote: Compressing objects:  17% (51/297)        
+2022-10-17T21:08:59.5974347Z remote: Compressing objects:  18% (54/297)        
+2022-10-17T21:08:59.5975435Z remote: Compressing objects:  19% (57/297)        
+2022-10-17T21:08:59.5976385Z remote: Compressing objects:  20% (60/297)        
+2022-10-17T21:08:59.5977465Z remote: Compressing objects:  21% (63/297)        
+2022-10-17T21:08:59.5978419Z remote: Compressing objects:  22% (66/297)        
+2022-10-17T21:08:59.6916472Z remote: Compressing objects:  23% (69/297)        
+2022-10-17T21:08:59.7399808Z remote: Compressing objects:  24% (72/297)        
+2022-10-17T21:08:59.7436350Z remote: Compressing objects:  25% (75/297)        
+2022-10-17T21:08:59.7439893Z remote: Compressing objects:  26% (78/297)        
+2022-10-17T21:08:59.7440235Z remote: Compressing objects:  27% (81/297)        
+2022-10-17T21:08:59.7440530Z remote: Compressing objects:  28% (84/297)        
+2022-10-17T21:08:59.7440938Z remote: Compressing objects:  29% (87/297)        
+2022-10-17T21:08:59.7441832Z remote: Compressing objects:  30% (90/297)        
+2022-10-17T21:08:59.7442326Z remote: Compressing objects:  31% (93/297)        
+2022-10-17T21:08:59.7443252Z remote: Compressing objects:  32% (96/297)        
+2022-10-17T21:08:59.7443558Z remote: Compressing objects:  33% (99/297)        
+2022-10-17T21:08:59.7444121Z remote: Compressing objects:  34% (101/297)        
+2022-10-17T21:08:59.7449782Z remote: Compressing objects:  35% (104/297)        
+2022-10-17T21:08:59.7451075Z remote: Compressing objects:  36% (107/297)        
+2022-10-17T21:08:59.7451532Z remote: Compressing objects:  37% (110/297)        
+2022-10-17T21:08:59.7452162Z remote: Compressing objects:  38% (113/297)        
+2022-10-17T21:08:59.7456606Z remote: Compressing objects:  39% (116/297)        
+2022-10-17T21:08:59.7461817Z remote: Compressing objects:  40% (119/297)        
+2022-10-17T21:08:59.7489360Z remote: Compressing objects:  41% (122/297)        
+2022-10-17T21:08:59.7489885Z remote: Compressing objects:  42% (125/297)        
+2022-10-17T21:08:59.7491039Z remote: Compressing objects:  43% (128/297)        
+2022-10-17T21:08:59.7491533Z remote: Compressing objects:  44% (131/297)        
+2022-10-17T21:08:59.7492464Z remote: Compressing objects:  45% (134/297)        
+2022-10-17T21:08:59.7498236Z remote: Compressing objects:  46% (137/297)        
+2022-10-17T21:08:59.7499714Z remote: Compressing objects:  47% (140/297)        
+2022-10-17T21:08:59.7515012Z remote: Compressing objects:  48% (143/297)        
+2022-10-17T21:08:59.7515911Z remote: Compressing objects:  49% (146/297)        
+2022-10-17T21:08:59.7516413Z remote: Compressing objects:  50% (149/297)        
+2022-10-17T21:08:59.7547695Z remote: Compressing objects:  51% (152/297)        
+2022-10-17T21:08:59.7548545Z remote: Compressing objects:  52% (155/297)        
+2022-10-17T21:08:59.7549457Z remote: Compressing objects:  53% (158/297)        
+2022-10-17T21:08:59.7550672Z remote: Compressing objects:  54% (161/297)        
+2022-10-17T21:08:59.7551763Z remote: Compressing objects:  55% (164/297)        
+2022-10-17T21:08:59.7552240Z remote: Compressing objects:  56% (167/297)        
+2022-10-17T21:08:59.7553168Z remote: Compressing objects:  57% (170/297)        
+2022-10-17T21:08:59.7553902Z remote: Compressing objects:  58% (173/297)        
+2022-10-17T21:08:59.7554567Z remote: Compressing objects:  59% (176/297)        
+2022-10-17T21:08:59.7555393Z remote: Compressing objects:  60% (179/297)        
+2022-10-17T21:08:59.7556058Z remote: Compressing objects:  61% (182/297)        
+2022-10-17T21:08:59.7556913Z remote: Compressing objects:  62% (185/297)        
+2022-10-17T21:08:59.7570023Z remote: Compressing objects:  63% (188/297)        
+2022-10-17T21:08:59.7570523Z remote: Compressing objects:  64% (191/297)        
+2022-10-17T21:08:59.7571614Z remote: Compressing objects:  65% (194/297)        
+2022-10-17T21:08:59.7572183Z remote: Compressing objects:  66% (197/297)        
+2022-10-17T21:08:59.7573303Z remote: Compressing objects:  67% (199/297)        
+2022-10-17T21:08:59.7573768Z remote: Compressing objects:  68% (202/297)        
+2022-10-17T21:08:59.7574995Z remote: Compressing objects:  69% (205/297)        
+2022-10-17T21:08:59.7576014Z remote: Compressing objects:  70% (208/297)        
+2022-10-17T21:08:59.7576755Z remote: Compressing objects:  71% (211/297)        
+2022-10-17T21:08:59.7577781Z remote: Compressing objects:  72% (214/297)        
+2022-10-17T21:08:59.7578583Z remote: Compressing objects:  73% (217/297)        
+2022-10-17T21:08:59.7579218Z remote: Compressing objects:  74% (220/297)        
+2022-10-17T21:08:59.7579980Z remote: Compressing objects:  75% (223/297)        
+2022-10-17T21:08:59.7580890Z remote: Compressing objects:  76% (226/297)        
+2022-10-17T21:08:59.7581483Z remote: Compressing objects:  77% (229/297)        
+2022-10-17T21:08:59.7582249Z remote: Compressing objects:  78% (232/297)        
+2022-10-17T21:08:59.7616664Z remote: Compressing objects:  79% (235/297)        
+2022-10-17T21:08:59.7617147Z remote: Compressing objects:  80% (238/297)        
+2022-10-17T21:08:59.7617815Z remote: Compressing objects:  81% (241/297)        
+2022-10-17T21:08:59.7618615Z remote: Compressing objects:  82% (244/297)        
+2022-10-17T21:08:59.7619215Z remote: Compressing objects:  83% (247/297)        
+2022-10-17T21:08:59.7620369Z remote: Compressing objects:  84% (250/297)        
+2022-10-17T21:08:59.7621153Z remote: Compressing objects:  85% (253/297)        
+2022-10-17T21:08:59.7622112Z remote: Compressing objects:  86% (256/297)        
+2022-10-17T21:08:59.7623332Z remote: Compressing objects:  87% (259/297)        
+2022-10-17T21:08:59.7623882Z remote: Compressing objects:  88% (262/297)        
+2022-10-17T21:08:59.7624606Z remote: Compressing objects:  89% (265/297)        
+2022-10-17T21:08:59.7626249Z remote: Compressing objects:  90% (268/297)        
+2022-10-17T21:08:59.7627516Z remote: Compressing objects:  91% (271/297)        
+2022-10-17T21:08:59.7628182Z remote: Compressing objects:  92% (274/297)        
+2022-10-17T21:08:59.7628927Z remote: Compressing objects:  93% (277/297)        
+2022-10-17T21:08:59.7629867Z remote: Compressing objects:  94% (280/297)        
+2022-10-17T21:08:59.7630314Z remote: Compressing objects:  95% (283/297)        
+2022-10-17T21:08:59.7631127Z remote: Compressing objects:  96% (286/297)        
+2022-10-17T21:08:59.7631595Z remote: Compressing objects:  97% (289/297)        
+2022-10-17T21:08:59.7632031Z remote: Compressing objects:  98% (292/297)        
+2022-10-17T21:08:59.7632550Z remote: Compressing objects:  99% (295/297)        
+2022-10-17T21:08:59.7633578Z remote: Compressing objects: 100% (297/297)        
+2022-10-17T21:08:59.7634169Z remote: Compressing objects: 100% (297/297), done.        
+2022-10-17T21:08:59.8263427Z Receiving objects:   0% (1/354)
+2022-10-17T21:08:59.8264822Z Receiving objects:   1% (4/354)
+2022-10-17T21:08:59.8286631Z Receiving objects:   2% (8/354)
+2022-10-17T21:08:59.8290774Z Receiving objects:   3% (11/354)
+2022-10-17T21:08:59.8291218Z Receiving objects:   4% (15/354)
+2022-10-17T21:08:59.8291689Z Receiving objects:   5% (18/354)
+2022-10-17T21:08:59.8291985Z Receiving objects:   6% (22/354)
+2022-10-17T21:08:59.8292332Z Receiving objects:   7% (25/354)
+2022-10-17T21:08:59.8335409Z Receiving objects:   8% (29/354)
+2022-10-17T21:08:59.8985300Z Receiving objects:   9% (32/354)
+2022-10-17T21:09:00.0465614Z Receiving objects:  10% (36/354)
+2022-10-17T21:09:00.0532934Z Receiving objects:  11% (39/354)
+2022-10-17T21:09:00.0537538Z Receiving objects:  12% (43/354)
+2022-10-17T21:09:00.0560047Z Receiving objects:  13% (47/354)
+2022-10-17T21:09:00.0581045Z Receiving objects:  14% (50/354)
+2022-10-17T21:09:00.0593853Z Receiving objects:  15% (54/354)
+2022-10-17T21:09:00.0607072Z Receiving objects:  16% (57/354)
+2022-10-17T21:09:00.0675895Z Receiving objects:  17% (61/354)
+2022-10-17T21:09:00.1274375Z Receiving objects:  18% (64/354)
+2022-10-17T21:09:00.1303851Z Receiving objects:  19% (68/354)
+2022-10-17T21:09:00.1325850Z Receiving objects:  20% (71/354)
+2022-10-17T21:09:00.1353106Z Receiving objects:  21% (75/354)
+2022-10-17T21:09:00.1369153Z Receiving objects:  22% (78/354)
+2022-10-17T21:09:00.1384006Z Receiving objects:  23% (82/354)
+2022-10-17T21:09:00.1404116Z Receiving objects:  24% (85/354)
+2022-10-17T21:09:00.1442810Z Receiving objects:  25% (89/354)
+2022-10-17T21:09:00.1450386Z Receiving objects:  26% (93/354)
+2022-10-17T21:09:00.1999937Z Receiving objects:  27% (96/354)
+2022-10-17T21:09:00.2000927Z Receiving objects:  28% (100/354)
+2022-10-17T21:09:00.2001529Z Receiving objects:  29% (103/354)
+2022-10-17T21:09:00.2045792Z Receiving objects:  30% (107/354)
+2022-10-17T21:09:00.2050573Z Receiving objects:  31% (110/354)
+2022-10-17T21:09:00.2519401Z Receiving objects:  32% (114/354)
+2022-10-17T21:09:00.2520123Z Receiving objects:  33% (117/354)
+2022-10-17T21:09:00.2762275Z Receiving objects:  34% (121/354)
+2022-10-17T21:09:00.2839436Z Receiving objects:  35% (124/354)
+2022-10-17T21:09:00.2860218Z Receiving objects:  36% (128/354)
+2022-10-17T21:09:00.2921101Z Receiving objects:  37% (131/354)
+2022-10-17T21:09:00.2971296Z Receiving objects:  38% (135/354)
+2022-10-17T21:09:00.2972152Z Receiving objects:  39% (139/354)
+2022-10-17T21:09:00.2974351Z Receiving objects:  40% (142/354)
+2022-10-17T21:09:00.2974986Z Receiving objects:  41% (146/354)
+2022-10-17T21:09:00.2979566Z Receiving objects:  42% (149/354)
+2022-10-17T21:09:00.2980187Z Receiving objects:  43% (153/354)
+2022-10-17T21:09:00.2982177Z Receiving objects:  44% (156/354)
+2022-10-17T21:09:00.2982735Z Receiving objects:  45% (160/354)
+2022-10-17T21:09:00.2983644Z Receiving objects:  46% (163/354)
+2022-10-17T21:09:00.2984394Z Receiving objects:  47% (167/354)
+2022-10-17T21:09:00.2986200Z Receiving objects:  48% (170/354)
+2022-10-17T21:09:00.2986993Z Receiving objects:  49% (174/354)
+2022-10-17T21:09:00.2989799Z Receiving objects:  50% (177/354)
+2022-10-17T21:09:00.2990594Z Receiving objects:  51% (181/354)
+2022-10-17T21:09:00.2991579Z Receiving objects:  52% (185/354)
+2022-10-17T21:09:00.2992277Z Receiving objects:  53% (188/354)
+2022-10-17T21:09:00.2995335Z Receiving objects:  54% (192/354)
+2022-10-17T21:09:00.2996039Z Receiving objects:  55% (195/354)
+2022-10-17T21:09:00.3000813Z Receiving objects:  56% (199/354)
+2022-10-17T21:09:00.3001624Z Receiving objects:  57% (202/354)
+2022-10-17T21:09:00.3004186Z Receiving objects:  58% (206/354)
+2022-10-17T21:09:00.3004764Z Receiving objects:  59% (209/354)
+2022-10-17T21:09:00.3005600Z Receiving objects:  60% (213/354)
+2022-10-17T21:09:00.3006248Z Receiving objects:  61% (216/354)
+2022-10-17T21:09:00.3007205Z Receiving objects:  62% (220/354)
+2022-10-17T21:09:00.3007972Z Receiving objects:  63% (224/354)
+2022-10-17T21:09:00.3011544Z Receiving objects:  64% (227/354)
+2022-10-17T21:09:00.3012199Z Receiving objects:  65% (231/354)
+2022-10-17T21:09:00.3012980Z Receiving objects:  66% (234/354)
+2022-10-17T21:09:00.3013743Z Receiving objects:  67% (238/354)
+2022-10-17T21:09:00.3014597Z Receiving objects:  68% (241/354)
+2022-10-17T21:09:00.3015181Z Receiving objects:  69% (245/354)
+2022-10-17T21:09:00.3017028Z Receiving objects:  70% (248/354)
+2022-10-17T21:09:00.3017847Z Receiving objects:  71% (252/354)
+2022-10-17T21:09:00.3018706Z Receiving objects:  72% (255/354)
+2022-10-17T21:09:00.3019218Z Receiving objects:  73% (259/354)
+2022-10-17T21:09:00.3020097Z Receiving objects:  74% (262/354)
+2022-10-17T21:09:00.3020860Z Receiving objects:  75% (266/354)
+2022-10-17T21:09:00.3021911Z Receiving objects:  76% (270/354)
+2022-10-17T21:09:00.3022435Z Receiving objects:  77% (273/354)
+2022-10-17T21:09:00.3023305Z Receiving objects:  78% (277/354)
+2022-10-17T21:09:00.3023918Z Receiving objects:  79% (280/354)
+2022-10-17T21:09:00.3024919Z Receiving objects:  80% (284/354)
+2022-10-17T21:09:00.3026668Z Receiving objects:  81% (287/354)
+2022-10-17T21:09:00.3027718Z Receiving objects:  82% (291/354)
+2022-10-17T21:09:00.3028427Z Receiving objects:  83% (294/354)
+2022-10-17T21:09:00.3030208Z Receiving objects:  84% (298/354)
+2022-10-17T21:09:00.3031703Z Receiving objects:  85% (301/354)
+2022-10-17T21:09:00.3032336Z Receiving objects:  86% (305/354)
+2022-10-17T21:09:00.3034424Z Receiving objects:  87% (308/354)
+2022-10-17T21:09:00.3035106Z Receiving objects:  88% (312/354)
+2022-10-17T21:09:00.3035957Z Receiving objects:  89% (316/354)
+2022-10-17T21:09:00.3036712Z Receiving objects:  90% (319/354)
+2022-10-17T21:09:00.3037786Z remote: Total 354 (delta 48), reused 215 (delta 29), pack-reused 0        
+2022-10-17T21:09:00.3065479Z Receiving objects:  91% (323/354)
+2022-10-17T21:09:00.3066957Z Receiving objects:  92% (326/354)
+2022-10-17T21:09:00.3068872Z Receiving objects:  93% (330/354)
+2022-10-17T21:09:00.3069493Z Receiving objects:  94% (333/354)
+2022-10-17T21:09:00.3071758Z Receiving objects:  95% (337/354)
+2022-10-17T21:09:00.3072335Z Receiving objects:  96% (340/354)
+2022-10-17T21:09:00.3075107Z Receiving objects:  97% (344/354)
+2022-10-17T21:09:00.3075410Z Receiving objects:  98% (347/354)
+2022-10-17T21:09:00.3075715Z Receiving objects:  99% (351/354)
+2022-10-17T21:09:00.3076017Z Receiving objects: 100% (354/354)
+2022-10-17T21:09:00.3076312Z Receiving objects: 100% (354/354), 3.44 MiB | 7.12 MiB/s, done.
+2022-10-17T21:09:00.3078630Z Resolving deltas:   0% (0/48)
+2022-10-17T21:09:00.3078955Z Resolving deltas:   2% (1/48)
+2022-10-17T21:09:00.3092860Z Resolving deltas:   4% (2/48)
+2022-10-17T21:09:00.3093392Z Resolving deltas:   6% (3/48)
+2022-10-17T21:09:00.3105919Z Resolving deltas:   8% (4/48)
+2022-10-17T21:09:00.3106362Z Resolving deltas:  10% (5/48)
+2022-10-17T21:09:00.3106654Z Resolving deltas:  12% (6/48)
+2022-10-17T21:09:00.3106994Z Resolving deltas:  14% (7/48)
+2022-10-17T21:09:00.3107336Z Resolving deltas:  16% (8/48)
+2022-10-17T21:09:00.3107674Z Resolving deltas:  18% (9/48)
+2022-10-17T21:09:00.3108030Z Resolving deltas:  20% (10/48)
+2022-10-17T21:09:00.3108369Z Resolving deltas:  22% (11/48)
+2022-10-17T21:09:00.3108654Z Resolving deltas:  25% (12/48)
+2022-10-17T21:09:00.3108985Z Resolving deltas:  27% (13/48)
+2022-10-17T21:09:00.3109377Z Resolving deltas:  29% (14/48)
+2022-10-17T21:09:00.3109659Z Resolving deltas:  31% (15/48)
+2022-10-17T21:09:00.3112348Z Resolving deltas:  33% (16/48)
+2022-10-17T21:09:00.3113278Z Resolving deltas:  35% (17/48)
+2022-10-17T21:09:00.3113595Z Resolving deltas:  37% (18/48)
+2022-10-17T21:09:00.3114048Z Resolving deltas:  39% (19/48)
+2022-10-17T21:09:00.3114386Z Resolving deltas:  41% (20/48)
+2022-10-17T21:09:00.3114714Z Resolving deltas:  43% (21/48)
+2022-10-17T21:09:00.3115006Z Resolving deltas:  45% (22/48)
+2022-10-17T21:09:00.3125255Z Resolving deltas:  47% (23/48)
+2022-10-17T21:09:00.3125755Z Resolving deltas:  50% (24/48)
+2022-10-17T21:09:00.3158382Z Resolving deltas:  52% (25/48)
+2022-10-17T21:09:00.3158996Z Resolving deltas:  54% (26/48)
+2022-10-17T21:09:00.3159345Z Resolving deltas:  56% (27/48)
+2022-10-17T21:09:00.3159744Z Resolving deltas:  58% (28/48)
+2022-10-17T21:09:00.3160355Z Resolving deltas:  60% (29/48)
+2022-10-17T21:09:00.3160654Z Resolving deltas:  62% (30/48)
+2022-10-17T21:09:00.3160901Z Resolving deltas:  64% (31/48)
+2022-10-17T21:09:00.3161373Z Resolving deltas:  66% (32/48)
+2022-10-17T21:09:00.3161734Z Resolving deltas:  68% (33/48)
+2022-10-17T21:09:00.3162367Z Resolving deltas:  70% (34/48)
+2022-10-17T21:09:00.3162681Z Resolving deltas:  72% (35/48)
+2022-10-17T21:09:00.3162989Z Resolving deltas:  75% (36/48)
+2022-10-17T21:09:00.3163252Z Resolving deltas:  77% (37/48)
+2022-10-17T21:09:00.3163636Z Resolving deltas:  79% (38/48)
+2022-10-17T21:09:00.3164067Z Resolving deltas:  81% (39/48)
+2022-10-17T21:09:00.3171036Z Resolving deltas:  83% (40/48)
+2022-10-17T21:09:00.3171475Z Resolving deltas:  85% (41/48)
+2022-10-17T21:09:00.3171857Z Resolving deltas:  87% (42/48)
+2022-10-17T21:09:00.3172244Z Resolving deltas:  89% (43/48)
+2022-10-17T21:09:00.3173026Z Resolving deltas:  91% (44/48)
+2022-10-17T21:09:00.3173434Z Resolving deltas:  93% (45/48)
+2022-10-17T21:09:00.3173756Z Resolving deltas:  95% (46/48)
+2022-10-17T21:09:00.3174094Z Resolving deltas:  97% (47/48)
+2022-10-17T21:09:00.3174532Z Resolving deltas: 100% (48/48)
+2022-10-17T21:09:00.3174899Z Resolving deltas: 100% (48/48), done.
+2022-10-17T21:09:00.3319532Z From https://github.com/AlphaSteam/julia-vscode-microprint-test
+2022-10-17T21:09:00.3320660Z  * [new ref]         f16773ca1d1bb0602343851d42f7e4f04944619a -> origin/master
+2022-10-17T21:09:00.3343404Z ##[endgroup]
+2022-10-17T21:09:00.3344243Z ##[group]Determining the checkout info
+2022-10-17T21:09:00.3346761Z ##[endgroup]
+2022-10-17T21:09:00.3347791Z ##[group]Checking out the ref
+2022-10-17T21:09:00.3372084Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2022-10-17T21:09:00.4162810Z Reset branch 'master'
+2022-10-17T21:09:00.4169972Z branch 'master' set up to track 'origin/master'.
+2022-10-17T21:09:00.4177830Z ##[endgroup]
+2022-10-17T21:09:00.4179349Z ##[group]Setting up auth for fetching submodules
+2022-10-17T21:09:00.4180721Z [command]/usr/bin/git config --global http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2022-10-17T21:09:00.4218637Z [command]/usr/bin/git config --global --unset-all url.https://github.com/.insteadOf
+2022-10-17T21:09:00.4260168Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf git@github.com:
+2022-10-17T21:09:00.4299488Z [command]/usr/bin/git config --global --add url.https://github.com/.insteadOf org-30818940@github.com:
+2022-10-17T21:09:00.4336496Z ##[endgroup]
+2022-10-17T21:09:00.4337525Z ##[group]Fetching submodules
+2022-10-17T21:09:00.4344932Z [command]/usr/bin/git submodule sync
+2022-10-17T21:09:00.4617798Z [command]/usr/bin/git -c protocol.version=2 submodule update --init --force --depth=1
+2022-10-17T21:09:00.4881650Z Submodule 'libs/jl-profile' (https://github.com/pfitzseb/jl-profile.js.git) registered for path 'libs/jl-profile'
+2022-10-17T21:09:00.4892286Z Submodule 'scripts/packages-old/JuliaInterpreter' (https://github.com/JuliaDebug/JuliaInterpreter.jl.git) registered for path 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T21:09:00.4902245Z Submodule 'scripts/packages/CSTParser' (https://github.com/julia-vscode/CSTParser.jl.git) registered for path 'scripts/packages/CSTParser'
+2022-10-17T21:09:00.4918302Z Submodule 'scripts/packages/CodeTracking' (https://github.com/timholy/CodeTracking.jl.git) registered for path 'scripts/packages/CodeTracking'
+2022-10-17T21:09:00.4934171Z Submodule 'scripts/packages/CommonMark' (https://github.com/MichaelHatherly/CommonMark.jl.git) registered for path 'scripts/packages/CommonMark'
+2022-10-17T21:09:00.4941753Z Submodule 'scripts/packages/Compat' (https://github.com/JuliaLang/Compat.jl.git) registered for path 'scripts/packages/Compat'
+2022-10-17T21:09:00.4949693Z Submodule 'scripts/packages/CoverageTools' (https://github.com/JuliaCI/CoverageTools.jl.git) registered for path 'scripts/packages/CoverageTools'
+2022-10-17T21:09:00.4961420Z Submodule 'scripts/packages/Crayons' (https://github.com/KristofferC/Crayons.jl.git) registered for path 'scripts/packages/Crayons'
+2022-10-17T21:09:00.4967910Z Submodule 'scripts/packages/DataStructures' (https://github.com/JuliaCollections/DataStructures.jl.git) registered for path 'scripts/packages/DataStructures'
+2022-10-17T21:09:00.4977192Z Submodule 'scripts/packages/DebugAdapter' (https://github.com/julia-vscode/DebugAdapter.jl.git) registered for path 'scripts/packages/DebugAdapter'
+2022-10-17T21:09:00.4985805Z Submodule 'scripts/packages/FilePathsBase' (https://github.com/rofinn/FilePathsBase.jl.git) registered for path 'scripts/packages/FilePathsBase'
+2022-10-17T21:09:00.4995581Z Submodule 'scripts/packages/IJuliaCore' (https://github.com/JuliaLang/IJuliaCore.jl.git) registered for path 'scripts/packages/IJuliaCore'
+2022-10-17T21:09:00.5008260Z Submodule 'scripts/packages/JSON' (https://github.com/JuliaIO/JSON.jl.git) registered for path 'scripts/packages/JSON'
+2022-10-17T21:09:00.5017496Z Submodule 'scripts/packages/JSONRPC' (https://github.com/julia-vscode/JSONRPC.jl.git) registered for path 'scripts/packages/JSONRPC'
+2022-10-17T21:09:00.5028275Z Submodule 'scripts/packages/JuliaFormatter' (https://github.com/domluna/JuliaFormatter.jl.git) registered for path 'scripts/packages/JuliaFormatter'
+2022-10-17T21:09:00.5035978Z Submodule 'scripts/packages/JuliaInterpreter' (https://github.com/JuliaDebug/JuliaInterpreter.jl.git) registered for path 'scripts/packages/JuliaInterpreter'
+2022-10-17T21:09:00.5049093Z Submodule 'scripts/packages/LanguageServer' (https://github.com/julia-vscode/LanguageServer.jl.git) registered for path 'scripts/packages/LanguageServer'
+2022-10-17T21:09:00.5060528Z Submodule 'scripts/packages/LoweredCodeUtils' (https://github.com/JuliaDebug/LoweredCodeUtils.jl.git) registered for path 'scripts/packages/LoweredCodeUtils'
+2022-10-17T21:09:00.5071174Z Submodule 'scripts/packages/OrderedCollections' (https://github.com/JuliaCollections/OrderedCollections.jl.git) registered for path 'scripts/packages/OrderedCollections'
+2022-10-17T21:09:00.5080862Z Submodule 'scripts/packages/PackageCompiler' (https://github.com/JuliaLang/PackageCompiler.jl.git) registered for path 'scripts/packages/PackageCompiler'
+2022-10-17T21:09:00.5215342Z Submodule 'scripts/packages/Revise' (https://github.com/timholy/Revise.jl) registered for path 'scripts/packages/Revise'
+2022-10-17T21:09:00.5216521Z Submodule 'scripts/packages/StaticLint' (https://github.com/julia-vscode/StaticLint.jl) registered for path 'scripts/packages/StaticLint'
+2022-10-17T21:09:00.5217474Z Submodule 'scripts/packages/SymbolServer' (https://github.com/julia-vscode/SymbolServer.jl.git) registered for path 'scripts/packages/SymbolServer'
+2022-10-17T21:09:00.5218354Z Submodule 'scripts/packages/TestEnv' (https://github.com/davidanthoff/TestEnv.jl) registered for path 'scripts/packages/TestEnv'
+2022-10-17T21:09:00.5219279Z Submodule 'scripts/packages/TestItemDetection' (https://github.com/julia-vscode/TestItemDetection.jl) registered for path 'scripts/packages/TestItemDetection'
+2022-10-17T21:09:00.5220257Z Submodule 'scripts/packages/Tokenize' (https://github.com/JuliaLang/Tokenize.jl.git) registered for path 'scripts/packages/Tokenize'
+2022-10-17T21:09:00.5224028Z Submodule 'scripts/packages/URIParser' (https://github.com/JuliaWeb/URIParser.jl.git) registered for path 'scripts/packages/URIParser'
+2022-10-17T21:09:00.5237092Z Submodule 'scripts/packages/URIs' (https://github.com/JuliaWeb/URIs.jl.git) registered for path 'scripts/packages/URIs'
+2022-10-17T21:09:00.5276941Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/libs/jl-profile'...
+2022-10-17T21:09:01.7008231Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages-old/JuliaInterpreter'...
+2022-10-17T21:09:03.0118808Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CSTParser'...
+2022-10-17T21:09:04.0434941Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CodeTracking'...
+2022-10-17T21:09:04.9380520Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CommonMark'...
+2022-10-17T21:09:06.0604602Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Compat'...
+2022-10-17T21:09:07.0789207Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CoverageTools'...
+2022-10-17T21:09:08.0848983Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Crayons'...
+2022-10-17T21:09:08.9921122Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/DataStructures'...
+2022-10-17T21:09:10.2045498Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/DebugAdapter'...
+2022-10-17T21:09:11.1773664Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/FilePathsBase'...
+2022-10-17T21:09:12.1192304Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/IJuliaCore'...
+2022-10-17T21:09:13.0178782Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSON'...
+2022-10-17T21:09:13.9530914Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSONRPC'...
+2022-10-17T21:09:14.9629570Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JuliaFormatter'...
+2022-10-17T21:09:16.1785949Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JuliaInterpreter'...
+2022-10-17T21:09:17.3083278Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/LanguageServer'...
+2022-10-17T21:09:18.3361956Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/LoweredCodeUtils'...
+2022-10-17T21:09:19.2911676Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/OrderedCollections'...
+2022-10-17T21:09:20.2225388Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/PackageCompiler'...
+2022-10-17T21:09:21.3835622Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Revise'...
+2022-10-17T21:09:22.5152566Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/StaticLint'...
+2022-10-17T21:09:23.6676862Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/SymbolServer'...
+2022-10-17T21:09:24.6446117Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/TestEnv'...
+2022-10-17T21:09:25.5004057Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/TestItemDetection'...
+2022-10-17T21:09:26.4101084Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Tokenize'...
+2022-10-17T21:09:27.3615670Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/URIParser'...
+2022-10-17T21:09:28.3779671Z Cloning into '/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/URIs'...
+2022-10-17T21:09:31.1757693Z From https://github.com/pfitzseb/jl-profile.js
+2022-10-17T21:09:31.1758683Z  * branch            44fe7c33bc23a8e4cdb3b67674994fe2564245bf -> FETCH_HEAD
+2022-10-17T21:09:31.1828787Z Submodule path 'libs/jl-profile': checked out '44fe7c33bc23a8e4cdb3b67674994fe2564245bf'
+2022-10-17T21:09:33.2362245Z From https://github.com/JuliaDebug/JuliaInterpreter.jl
+2022-10-17T21:09:33.2363240Z  * branch            398721d10be2edf40883a11b98e210ccda5393e3 -> FETCH_HEAD
+2022-10-17T21:09:33.2488192Z Submodule path 'scripts/packages-old/JuliaInterpreter': checked out '398721d10be2edf40883a11b98e210ccda5393e3'
+2022-10-17T21:09:35.3474863Z From https://github.com/julia-vscode/CSTParser.jl
+2022-10-17T21:09:35.3475902Z  * branch            b5cb953e12d8c5c8191e1fcb6aef80ecab7f6a06 -> FETCH_HEAD
+2022-10-17T21:09:35.3577463Z Submodule path 'scripts/packages/CSTParser': checked out 'b5cb953e12d8c5c8191e1fcb6aef80ecab7f6a06'
+2022-10-17T21:09:35.3667777Z Submodule path 'scripts/packages/CodeTracking': checked out '426fc0e5af69ca410f3a1b77458db5fc5d68e864'
+2022-10-17T21:09:37.2099581Z From https://github.com/MichaelHatherly/CommonMark.jl
+2022-10-17T21:09:37.2100799Z  * branch            287e39ae128e80a6647d2d9762bf22040adffea1 -> FETCH_HEAD
+2022-10-17T21:09:37.2292943Z Submodule path 'scripts/packages/CommonMark': checked out '287e39ae128e80a6647d2d9762bf22040adffea1'
+2022-10-17T21:09:39.4704829Z From https://github.com/JuliaLang/Compat.jl
+2022-10-17T21:09:39.4705988Z  * branch            3ae185fa45a3091b387b67b6fd8f58f761854238 -> FETCH_HEAD
+2022-10-17T21:09:39.4786133Z Submodule path 'scripts/packages/Compat': checked out '3ae185fa45a3091b387b67b6fd8f58f761854238'
+2022-10-17T21:09:39.4881816Z Submodule path 'scripts/packages/CoverageTools': checked out '9d8fba371f4c65a7e9ca3bdaae753a52bcb22218'
+2022-10-17T21:09:41.4214313Z From https://github.com/KristofferC/Crayons.jl
+2022-10-17T21:09:41.4215209Z  * branch            4cf50b8e5e1a250a5b3466937fa0421c78bafdf4 -> FETCH_HEAD
+2022-10-17T21:09:41.4295200Z Submodule path 'scripts/packages/Crayons': checked out '4cf50b8e5e1a250a5b3466937fa0421c78bafdf4'
+2022-10-17T21:09:43.4970849Z From https://github.com/JuliaCollections/DataStructures.jl
+2022-10-17T21:09:43.4972261Z  * branch            d0dd2a012ebd07ff31193b21130109baa50cfe2b -> FETCH_HEAD
+2022-10-17T21:09:43.5150009Z Submodule path 'scripts/packages/DataStructures': checked out 'd0dd2a012ebd07ff31193b21130109baa50cfe2b'
+2022-10-17T21:09:45.1657589Z From https://github.com/julia-vscode/DebugAdapter.jl
+2022-10-17T21:09:45.1658459Z  * branch            b0991c1664d948d9bbb1ab2cac56606511981df5 -> FETCH_HEAD
+2022-10-17T21:09:45.1731156Z Submodule path 'scripts/packages/DebugAdapter': checked out 'b0991c1664d948d9bbb1ab2cac56606511981df5'
+2022-10-17T21:09:45.1840800Z Submodule path 'scripts/packages/FilePathsBase': checked out '336666220f9ddd7a15a7f059925a359d51c6cead'
+2022-10-17T21:09:45.1932690Z Submodule path 'scripts/packages/IJuliaCore': checked out 'c3e48ef9ee9a34d9be6abe1fe9033317638950ba'
+2022-10-17T21:09:47.3682931Z From https://github.com/JuliaIO/JSON.jl
+2022-10-17T21:09:47.3684070Z  * branch            4b3913d58f04cc5bb2f8d23c6ef82e0fbed20525 -> FETCH_HEAD
+2022-10-17T21:09:47.3795393Z Submodule path 'scripts/packages/JSON': checked out '4b3913d58f04cc5bb2f8d23c6ef82e0fbed20525'
+2022-10-17T21:09:49.2787664Z From https://github.com/julia-vscode/JSONRPC.jl
+2022-10-17T21:09:49.2788665Z  * branch            982acfdb112b7198a025edcf3930c6a6a27913e1 -> FETCH_HEAD
+2022-10-17T21:09:49.2863306Z Submodule path 'scripts/packages/JSONRPC': checked out '982acfdb112b7198a025edcf3930c6a6a27913e1'
+2022-10-17T21:09:51.5172468Z From https://github.com/domluna/JuliaFormatter.jl
+2022-10-17T21:09:51.5173561Z  * branch            6c0f94468eaef63405fbcbb11943314a164262d6 -> FETCH_HEAD
+2022-10-17T21:09:51.5372279Z Submodule path 'scripts/packages/JuliaFormatter': checked out '6c0f94468eaef63405fbcbb11943314a164262d6'
+2022-10-17T21:09:53.4901775Z From https://github.com/JuliaDebug/JuliaInterpreter.jl
+2022-10-17T21:09:53.4902850Z  * branch            a840f1ad085e7606bb3a7cdc705d863f3c49ab92 -> FETCH_HEAD
+2022-10-17T21:09:53.5013969Z Submodule path 'scripts/packages/JuliaInterpreter': checked out 'a840f1ad085e7606bb3a7cdc705d863f3c49ab92'
+2022-10-17T21:09:55.6105230Z From https://github.com/julia-vscode/LanguageServer.jl
+2022-10-17T21:09:55.6107683Z  * branch            fe1ae60fdf795218b82dba4ba35028adab0bd348 -> FETCH_HEAD
+2022-10-17T21:09:55.6231632Z Submodule path 'scripts/packages/LanguageServer': checked out 'fe1ae60fdf795218b82dba4ba35028adab0bd348'
+2022-10-17T21:09:55.6336657Z Submodule path 'scripts/packages/LoweredCodeUtils': checked out 'b71c05b0d28cb5b3ad0301b816e0a1c4e531ea0d'
+2022-10-17T21:09:57.5925970Z From https://github.com/JuliaCollections/OrderedCollections.jl
+2022-10-17T21:09:57.5927029Z  * branch            adb9415570faeba7e8c6d800cd743de06104e97e -> FETCH_HEAD
+2022-10-17T21:09:57.6010825Z Submodule path 'scripts/packages/OrderedCollections': checked out 'adb9415570faeba7e8c6d800cd743de06104e97e'
+2022-10-17T21:09:59.5588064Z From https://github.com/JuliaLang/PackageCompiler.jl
+2022-10-17T21:09:59.5589295Z  * branch            78f4d52026c4895fa08c8ee0d61905a6914ea8c3 -> FETCH_HEAD
+2022-10-17T21:09:59.5708964Z Submodule path 'scripts/packages/PackageCompiler': checked out '78f4d52026c4895fa08c8ee0d61905a6914ea8c3'
+2022-10-17T21:10:01.3553793Z From https://github.com/timholy/Revise.jl
+2022-10-17T21:10:01.3555046Z  * branch            ca3b5cffd26325e3a3fd69932f5dc827ff156a3b -> FETCH_HEAD
+2022-10-17T21:10:01.3693842Z Submodule path 'scripts/packages/Revise': checked out 'ca3b5cffd26325e3a3fd69932f5dc827ff156a3b'
+2022-10-17T21:10:03.9443351Z From https://github.com/julia-vscode/StaticLint.jl
+2022-10-17T21:10:03.9443914Z  * branch            6235a532ff6b51a33ef56955286b7d0602912fd6 -> FETCH_HEAD
+2022-10-17T21:10:03.9535612Z Submodule path 'scripts/packages/StaticLint': checked out '6235a532ff6b51a33ef56955286b7d0602912fd6'
+2022-10-17T21:10:05.9933590Z From https://github.com/julia-vscode/SymbolServer.jl
+2022-10-17T21:10:05.9934524Z  * branch            99500d621b17cca5a46232808e8ad388370d2ae8 -> FETCH_HEAD
+2022-10-17T21:10:06.0026370Z Submodule path 'scripts/packages/SymbolServer': checked out '99500d621b17cca5a46232808e8ad388370d2ae8'
+2022-10-17T21:10:07.9579355Z From https://github.com/davidanthoff/TestEnv.jl
+2022-10-17T21:10:07.9580797Z  * branch            14dd0d9a3df31dcd29bb6434dd9b287fe4a2803b -> FETCH_HEAD
+2022-10-17T21:10:07.9681516Z Submodule path 'scripts/packages/TestEnv': checked out '14dd0d9a3df31dcd29bb6434dd9b287fe4a2803b'
+2022-10-17T21:10:10.1887523Z From https://github.com/julia-vscode/TestItemDetection.jl
+2022-10-17T21:10:10.1888427Z  * branch            d9db8c5707c5e7a6e167e0e583eb06261ef5408b -> FETCH_HEAD
+2022-10-17T21:10:10.1964100Z Submodule path 'scripts/packages/TestItemDetection': checked out 'd9db8c5707c5e7a6e167e0e583eb06261ef5408b'
+2022-10-17T21:10:11.9831739Z From https://github.com/JuliaLang/Tokenize.jl
+2022-10-17T21:10:11.9832752Z  * branch            49b112248e846040c13f28e223493f90cc717fa5 -> FETCH_HEAD
+2022-10-17T21:10:11.9909855Z Submodule path 'scripts/packages/Tokenize': checked out '49b112248e846040c13f28e223493f90cc717fa5'
+2022-10-17T21:10:13.9041927Z From https://github.com/JuliaWeb/URIParser.jl
+2022-10-17T21:10:13.9043163Z  * branch            1d3532dfe5330f567a8eb64a37a37b1b8c536628 -> FETCH_HEAD
+2022-10-17T21:10:13.9118976Z Submodule path 'scripts/packages/URIParser': checked out '1d3532dfe5330f567a8eb64a37a37b1b8c536628'
+2022-10-17T21:10:15.8389275Z From https://github.com/JuliaWeb/URIs.jl
+2022-10-17T21:10:15.8390419Z  * branch            0ce3d89b81dadaae52b104353843ef67ceecd176 -> FETCH_HEAD
+2022-10-17T21:10:15.8465747Z Submodule path 'scripts/packages/URIs': checked out '0ce3d89b81dadaae52b104353843ef67ceecd176'
+2022-10-17T21:10:15.8480303Z [command]/usr/bin/git submodule foreach git config --local gc.auto 0
+2022-10-17T21:10:15.8759284Z Entering 'libs/jl-profile'
+2022-10-17T21:10:15.8805906Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T21:10:15.8834044Z Entering 'scripts/packages/CSTParser'
+2022-10-17T21:10:15.8864740Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T21:10:15.8896011Z Entering 'scripts/packages/CommonMark'
+2022-10-17T21:10:15.8924082Z Entering 'scripts/packages/Compat'
+2022-10-17T21:10:15.8954848Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T21:10:15.8982883Z Entering 'scripts/packages/Crayons'
+2022-10-17T21:10:15.9010023Z Entering 'scripts/packages/DataStructures'
+2022-10-17T21:10:15.9039453Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T21:10:15.9068448Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T21:10:15.9098010Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T21:10:15.9125653Z Entering 'scripts/packages/JSON'
+2022-10-17T21:10:15.9154998Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T21:10:15.9184540Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T21:10:15.9214474Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T21:10:15.9243277Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T21:10:15.9276165Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T21:10:15.9307798Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T21:10:15.9336021Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T21:10:15.9367339Z Entering 'scripts/packages/Revise'
+2022-10-17T21:10:15.9396571Z Entering 'scripts/packages/StaticLint'
+2022-10-17T21:10:15.9426218Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T21:10:15.9457922Z Entering 'scripts/packages/TestEnv'
+2022-10-17T21:10:15.9490534Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T21:10:15.9519347Z Entering 'scripts/packages/Tokenize'
+2022-10-17T21:10:15.9552141Z Entering 'scripts/packages/URIParser'
+2022-10-17T21:10:15.9584398Z Entering 'scripts/packages/URIs'
+2022-10-17T21:10:15.9621353Z ##[endgroup]
+2022-10-17T21:10:15.9622165Z ##[group]Persisting credentials for submodules
+2022-10-17T21:10:15.9630679Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'url\.https\:\/\/github\.com\/\.insteadOf' && git config --local --unset-all 'url.https://github.com/.insteadOf' || :
+2022-10-17T21:10:15.9910111Z Entering 'libs/jl-profile'
+2022-10-17T21:10:15.9961768Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T21:10:16.0006451Z Entering 'scripts/packages/CSTParser'
+2022-10-17T21:10:16.0051034Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T21:10:16.0098416Z Entering 'scripts/packages/CommonMark'
+2022-10-17T21:10:16.0144331Z Entering 'scripts/packages/Compat'
+2022-10-17T21:10:16.0191148Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T21:10:16.0236175Z Entering 'scripts/packages/Crayons'
+2022-10-17T21:10:16.0280594Z Entering 'scripts/packages/DataStructures'
+2022-10-17T21:10:16.0346112Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T21:10:16.0392703Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T21:10:16.0440090Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T21:10:16.0485112Z Entering 'scripts/packages/JSON'
+2022-10-17T21:10:16.0528941Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T21:10:16.0573276Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T21:10:16.0622619Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T21:10:16.0666678Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T21:10:16.0712863Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T21:10:16.0758137Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T21:10:16.0803792Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T21:10:16.0848902Z Entering 'scripts/packages/Revise'
+2022-10-17T21:10:16.0896820Z Entering 'scripts/packages/StaticLint'
+2022-10-17T21:10:16.0942341Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T21:10:16.0988544Z Entering 'scripts/packages/TestEnv'
+2022-10-17T21:10:16.1034614Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T21:10:16.1082227Z Entering 'scripts/packages/Tokenize'
+2022-10-17T21:10:16.1126565Z Entering 'scripts/packages/URIParser'
+2022-10-17T21:10:16.1171951Z Entering 'scripts/packages/URIs'
+2022-10-17T21:10:16.1245387Z [command]/usr/bin/git submodule foreach git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url
+2022-10-17T21:10:16.1505191Z Entering 'libs/jl-profile'
+2022-10-17T21:10:16.1547462Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/libs/jl-profile/config	remote.origin.url
+2022-10-17T21:10:16.1553069Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T21:10:16.1596076Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages-old/JuliaInterpreter/config	remote.origin.url
+2022-10-17T21:10:16.1599946Z Entering 'scripts/packages/CSTParser'
+2022-10-17T21:10:16.1641810Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/CSTParser/config	remote.origin.url
+2022-10-17T21:10:16.1646748Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T21:10:16.1686870Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/CodeTracking/config	remote.origin.url
+2022-10-17T21:10:16.1691415Z Entering 'scripts/packages/CommonMark'
+2022-10-17T21:10:16.1733777Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/CommonMark/config	remote.origin.url
+2022-10-17T21:10:16.1739004Z Entering 'scripts/packages/Compat'
+2022-10-17T21:10:16.1781041Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/Compat/config	remote.origin.url
+2022-10-17T21:10:16.1785119Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T21:10:16.1827554Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/CoverageTools/config	remote.origin.url
+2022-10-17T21:10:16.1833303Z Entering 'scripts/packages/Crayons'
+2022-10-17T21:10:16.1872694Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/Crayons/config	remote.origin.url
+2022-10-17T21:10:16.1877317Z Entering 'scripts/packages/DataStructures'
+2022-10-17T21:10:16.1927787Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/DataStructures/config	remote.origin.url
+2022-10-17T21:10:16.1931701Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T21:10:16.1973091Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/DebugAdapter/config	remote.origin.url
+2022-10-17T21:10:16.1977129Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T21:10:16.2021659Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/FilePathsBase/config	remote.origin.url
+2022-10-17T21:10:16.2025603Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T21:10:16.2067146Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/IJuliaCore/config	remote.origin.url
+2022-10-17T21:10:16.2071188Z Entering 'scripts/packages/JSON'
+2022-10-17T21:10:16.2118938Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/JSON/config	remote.origin.url
+2022-10-17T21:10:16.2122854Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T21:10:16.2163394Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/JSONRPC/config	remote.origin.url
+2022-10-17T21:10:16.2167505Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T21:10:16.2209068Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/JuliaFormatter/config	remote.origin.url
+2022-10-17T21:10:16.2213206Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T21:10:16.2255097Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/JuliaInterpreter/config	remote.origin.url
+2022-10-17T21:10:16.2258642Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T21:10:16.2302635Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/LanguageServer/config	remote.origin.url
+2022-10-17T21:10:16.2307722Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T21:10:16.2355390Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/LoweredCodeUtils/config	remote.origin.url
+2022-10-17T21:10:16.2361305Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T21:10:16.2403174Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/OrderedCollections/config	remote.origin.url
+2022-10-17T21:10:16.2408305Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T21:10:16.2451435Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/PackageCompiler/config	remote.origin.url
+2022-10-17T21:10:16.2455431Z Entering 'scripts/packages/Revise'
+2022-10-17T21:10:16.2498363Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/Revise/config	remote.origin.url
+2022-10-17T21:10:16.2502292Z Entering 'scripts/packages/StaticLint'
+2022-10-17T21:10:16.2546748Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/StaticLint/config	remote.origin.url
+2022-10-17T21:10:16.2551510Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T21:10:16.2592953Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/SymbolServer/config	remote.origin.url
+2022-10-17T21:10:16.2597607Z Entering 'scripts/packages/TestEnv'
+2022-10-17T21:10:16.2643638Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/TestEnv/config	remote.origin.url
+2022-10-17T21:10:16.2647727Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T21:10:16.2689218Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/TestItemDetection/config	remote.origin.url
+2022-10-17T21:10:16.2693123Z Entering 'scripts/packages/Tokenize'
+2022-10-17T21:10:16.2737108Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/Tokenize/config	remote.origin.url
+2022-10-17T21:10:16.2740918Z Entering 'scripts/packages/URIParser'
+2022-10-17T21:10:16.2782091Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/URIParser/config	remote.origin.url
+2022-10-17T21:10:16.2786604Z Entering 'scripts/packages/URIs'
+2022-10-17T21:10:16.2835750Z file:/home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/URIs/config	remote.origin.url
+2022-10-17T21:10:16.3149176Z [command]/usr/bin/git submodule foreach git config --local --add 'url.https://github.com/.insteadOf' 'git@github.com:'
+2022-10-17T21:10:16.3426854Z Entering 'libs/jl-profile'
+2022-10-17T21:10:16.3453584Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T21:10:16.3480580Z Entering 'scripts/packages/CSTParser'
+2022-10-17T21:10:16.3507321Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T21:10:16.3536486Z Entering 'scripts/packages/CommonMark'
+2022-10-17T21:10:16.3565912Z Entering 'scripts/packages/Compat'
+2022-10-17T21:10:16.3594020Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T21:10:16.3621933Z Entering 'scripts/packages/Crayons'
+2022-10-17T21:10:16.3651278Z Entering 'scripts/packages/DataStructures'
+2022-10-17T21:10:16.3679938Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T21:10:16.3707414Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T21:10:16.3737612Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T21:10:16.3764878Z Entering 'scripts/packages/JSON'
+2022-10-17T21:10:16.3793310Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T21:10:16.3822529Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T21:10:16.3851534Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T21:10:16.3878492Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T21:10:16.3907207Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T21:10:16.3936555Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T21:10:16.3964706Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T21:10:16.3994637Z Entering 'scripts/packages/Revise'
+2022-10-17T21:10:16.4022093Z Entering 'scripts/packages/StaticLint'
+2022-10-17T21:10:16.4051225Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T21:10:16.4081366Z Entering 'scripts/packages/TestEnv'
+2022-10-17T21:10:16.4109194Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T21:10:16.4139131Z Entering 'scripts/packages/Tokenize'
+2022-10-17T21:10:16.4166221Z Entering 'scripts/packages/URIParser'
+2022-10-17T21:10:16.4195752Z Entering 'scripts/packages/URIs'
+2022-10-17T21:10:16.4235556Z [command]/usr/bin/git submodule foreach git config --local --add 'url.https://github.com/.insteadOf' 'org-30818940@github.com:'
+2022-10-17T21:10:16.4495509Z Entering 'libs/jl-profile'
+2022-10-17T21:10:16.4521557Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T21:10:16.4549966Z Entering 'scripts/packages/CSTParser'
+2022-10-17T21:10:16.4577619Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T21:10:16.4604447Z Entering 'scripts/packages/CommonMark'
+2022-10-17T21:10:16.4632024Z Entering 'scripts/packages/Compat'
+2022-10-17T21:10:16.4658592Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T21:10:16.4693389Z Entering 'scripts/packages/Crayons'
+2022-10-17T21:10:16.4720701Z Entering 'scripts/packages/DataStructures'
+2022-10-17T21:10:16.4752263Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T21:10:16.4779999Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T21:10:16.4809146Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T21:10:16.4836802Z Entering 'scripts/packages/JSON'
+2022-10-17T21:10:16.4864562Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T21:10:16.4891954Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T21:10:16.4919811Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T21:10:16.4948887Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T21:10:16.4978662Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T21:10:16.5006291Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T21:10:16.5036236Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T21:10:16.5064022Z Entering 'scripts/packages/Revise'
+2022-10-17T21:10:16.5093195Z Entering 'scripts/packages/StaticLint'
+2022-10-17T21:10:16.5121657Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T21:10:16.5151059Z Entering 'scripts/packages/TestEnv'
+2022-10-17T21:10:16.5178380Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T21:10:16.5205847Z Entering 'scripts/packages/Tokenize'
+2022-10-17T21:10:16.5237034Z Entering 'scripts/packages/URIParser'
+2022-10-17T21:10:16.5266111Z Entering 'scripts/packages/URIs'
+2022-10-17T21:10:16.5317192Z ##[endgroup]
+2022-10-17T21:10:16.5359367Z [command]/usr/bin/git log -1 --format='%H'
+2022-10-17T21:10:16.5395987Z 'f16773ca1d1bb0602343851d42f7e4f04944619a'
+2022-10-17T21:10:16.5757334Z ##[group]Run julia-actions/setup-julia@v1
+2022-10-17T21:10:16.5757626Z with:
+2022-10-17T21:10:16.5757825Z   version: 1.8
+2022-10-17T21:10:16.5758026Z   arch: X64
+2022-10-17T21:10:16.5758250Z   show-versioninfo: false
+2022-10-17T21:10:16.5758468Z env:
+2022-10-17T21:10:16.5758650Z   NODE_VERSION: 16
+2022-10-17T21:10:16.5758865Z ##[endgroup]
+2022-10-17T21:10:18.6421993Z [command]tar xf /home/runner/work/_temp/753335e3-ae88-43a1-a2a6-5964c283e878 --strip-components=1 -C julia-x64-1.8.2-mPIeJF
+2022-10-17T21:10:28.8651382Z [command]julia --version
+2022-10-17T21:10:28.8703071Z (node:3061) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+2022-10-17T21:10:28.8704180Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2022-10-17T21:10:28.8842240Z julia version 1.8.2
+2022-10-17T21:10:28.9119516Z ##[group]Run julia -e 'using InteractiveUtils; versioninfo()'
+2022-10-17T21:10:28.9119999Z [36;1mjulia -e 'using InteractiveUtils; versioninfo()'[0m
+2022-10-17T21:10:28.9120459Z [36;1mjulia --project=./scripts/environments/languageserver/v1.8 -e 'using Pkg; Pkg.resolve()'[0m
+2022-10-17T21:10:28.9121000Z [36;1mjulia --project=./scripts/environments/languageserver/v1.8 -e 'using Pkg; Pkg.test("CSTParser", coverage=true)'[0m
+2022-10-17T21:10:28.9121524Z [36;1mjulia --project=./scripts/environments/languageserver/v1.8 -e 'using Pkg; Pkg.test("JSONRPC", coverage=true)'[0m
+2022-10-17T21:10:28.9122061Z [36;1mjulia --project=./scripts/environments/languageserver/v1.8 -e 'using Pkg; Pkg.test("LanguageServer", coverage=true)'[0m
+2022-10-17T21:10:28.9122608Z [36;1mjulia --project=./scripts/environments/languageserver/v1.8 -e 'using Pkg; Pkg.test("StaticLint", coverage=true)'[0m
+2022-10-17T21:10:28.9123175Z [36;1mjulia --project=./scripts/environments/languageserver/v1.8 -e 'using Pkg; Pkg.test("SymbolServer", coverage=true)'[0m
+2022-10-17T21:10:28.9123710Z [36;1mjulia --project=./scripts/testenvironments/debugadapter/v1.8 -e 'using Pkg; Pkg.test("DebugAdapter", coverage=true)'[0m
+2022-10-17T21:10:28.9124271Z [36;1mjulia --project=./scripts/testenvironments/vscodedebugger/v1.8 -e 'using Pkg; Pkg.test("VSCodeDebugger", coverage=true)'[0m
+2022-10-17T21:10:28.9124830Z [36;1mjulia --project=./scripts/testenvironments/vscodeserver/v1.8 -e 'using Pkg; Pkg.test("VSCodeServer", coverage=true)'[0m
+2022-10-17T21:10:28.9188699Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2022-10-17T21:10:28.9188981Z env:
+2022-10-17T21:10:28.9189181Z   NODE_VERSION: 16
+2022-10-17T21:10:28.9189380Z ##[endgroup]
+2022-10-17T21:10:30.2681370Z Julia Version 1.8.2
+2022-10-17T21:10:30.2682533Z Commit 36034abf260 (2022-09-29 15:21 UTC)
+2022-10-17T21:10:30.2682923Z Platform Info:
+2022-10-17T21:10:30.2752403Z   OS: Linux (x86_64-linux-gnu)
+2022-10-17T21:10:30.2885372Z   CPU: 2 × Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz
+2022-10-17T21:10:30.2885907Z   WORD_SIZE: 64
+2022-10-17T21:10:30.2886232Z   LIBM: libopenlibm
+2022-10-17T21:10:30.3114457Z   LLVM: libLLVM-13.0.1 (ORCJIT, haswell)
+2022-10-17T21:10:30.3115021Z   Threads: 1 on 2 virtual cores
+2022-10-17T21:10:31.7722456Z   No Changes to `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/environments/languageserver/v1.8/Project.toml`
+2022-10-17T21:10:31.8003460Z   No Changes to `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/environments/languageserver/v1.8/Manifest.toml`
+2022-10-17T21:10:32.8755784Z   Installing known registries into `~/.julia`
+2022-10-17T21:10:34.4027280Z      Testing CSTParser
+2022-10-17T21:10:36.1530132Z       Status `/tmp/jl_YvvWWV/Project.toml`
+2022-10-17T21:10:36.1708484Z   [00ebfdb7] CSTParser v3.3.7-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CSTParser`
+2022-10-17T21:10:36.1709951Z   [0796e94c] Tokenize v0.5.24 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Tokenize`
+2022-10-17T21:10:36.1712870Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:10:36.1886389Z       Status `/tmp/jl_YvvWWV/Manifest.toml`
+2022-10-17T21:10:36.1916465Z   [00ebfdb7] CSTParser v3.3.7-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CSTParser`
+2022-10-17T21:10:36.1917837Z   [0796e94c] Tokenize v0.5.24 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Tokenize`
+2022-10-17T21:10:36.1918481Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:10:36.1920861Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:10:36.1972597Z   [56ddb016] Logging `@stdlib/Logging`
+2022-10-17T21:10:36.1972889Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:10:36.1973143Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:10:36.1973401Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:10:36.1973695Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:10:36.1974309Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:10:36.6753111Z Precompiling project...
+2022-10-17T21:10:38.5397170Z [32m  ✓ [39mTokenize
+2022-10-17T21:10:41.9720503Z [32m  ✓ [39mCSTParser
+2022-10-17T21:10:41.9883011Z   2 dependencies successfully precompiled in 6 seconds
+2022-10-17T21:10:41.9883798Z      Testing Running tests...
+2022-10-17T21:11:45.3269893Z [ Info: checking check_err_parse against ../docs/make.jl
+2022-10-17T21:11:45.5470116Z [ Info: checking check_err_parse against ../src/CSTParser.jl
+2022-10-17T21:11:47.0288140Z [ Info: checking check_err_parse against ../src/conversion.jl
+2022-10-17T21:11:48.8513322Z [ Info: checking check_err_parse against ../src/display.jl
+2022-10-17T21:11:48.8893188Z [ Info: checking check_err_parse against ../src/interface.jl
+2022-10-17T21:11:50.3603095Z [ Info: checking check_err_parse against ../src/iterate.jl
+2022-10-17T21:11:56.8563710Z [ Info: checking check_err_parse against ../src/lexer.jl
+2022-10-17T21:11:57.4376059Z [ Info: checking check_err_parse against ../src/precompile.jl
+2022-10-17T21:11:57.9471512Z [ Info: checking check_err_parse against ../src/recovery.jl
+2022-10-17T21:11:57.9857139Z [ Info: checking check_err_parse against ../src/spec.jl
+2022-10-17T21:11:59.8296443Z [ Info: checking check_err_parse against ../src/utils.jl
+2022-10-17T21:12:04.5705826Z [ Info: checking check_err_parse against ../src/components/internals.jl
+2022-10-17T21:12:07.1289316Z [ Info: checking check_err_parse against ../src/components/keywords.jl
+2022-10-17T21:12:09.7462921Z [ Info: checking check_err_parse against ../src/components/lists.jl
+2022-10-17T21:12:11.1011130Z [ Info: checking check_err_parse against ../src/components/operators.jl
+2022-10-17T21:12:23.8542290Z [ Info: checking check_err_parse against ../src/components/strings.jl
+2022-10-17T21:12:25.9560901Z [ Info: checking check_err_parse against ../test/check_base.jl
+2022-10-17T21:12:26.2383737Z [ Info: checking check_err_parse against ../test/display.jl
+2022-10-17T21:12:26.2392311Z [ Info: checking check_err_parse against ../test/errparse.jl
+2022-10-17T21:12:26.5647617Z [ Info: checking check_err_parse against ../test/interface.jl
+2022-10-17T21:12:26.7645193Z [ Info: checking check_err_parse against ../test/iterate.jl
+2022-10-17T21:12:40.8234222Z [ Info: checking check_err_parse against ../test/parser.jl
+2022-10-17T21:13:06.6864199Z [ Info: checking check_err_parse against ../test/runtests.jl
+2022-10-17T21:13:06.6895560Z [ Info: checking check_err_parse against ../test/spec.jl
+2022-10-17T21:13:08.3870054Z [ Info: checking check_reparse against ../docs/make.jl
+2022-10-17T21:13:08.5377106Z [ Info: checking check_reparse against ../src/CSTParser.jl
+2022-10-17T21:13:08.5567471Z [ Info: checking check_reparse against ../src/conversion.jl
+2022-10-17T21:13:08.7133600Z [ Info: checking check_reparse against ../src/display.jl
+2022-10-17T21:13:08.7165704Z [ Info: checking check_reparse against ../src/interface.jl
+2022-10-17T21:13:08.7284033Z [ Info: checking check_reparse against ../src/iterate.jl
+2022-10-17T21:13:08.7475948Z [ Info: checking check_reparse against ../src/lexer.jl
+2022-10-17T21:13:08.7599062Z [ Info: checking check_reparse against ../src/precompile.jl
+2022-10-17T21:13:08.7650431Z [ Info: checking check_reparse against ../src/recovery.jl
+2022-10-17T21:13:08.7667384Z [ Info: checking check_reparse against ../src/spec.jl
+2022-10-17T21:13:08.7955971Z [ Info: checking check_reparse against ../src/utils.jl
+2022-10-17T21:13:08.9257661Z [ Info: checking check_reparse against ../src/components/internals.jl
+2022-10-17T21:13:08.9413136Z [ Info: checking check_reparse against ../src/components/keywords.jl
+2022-10-17T21:13:08.9554871Z [ Info: checking check_reparse against ../src/components/lists.jl
+2022-10-17T21:13:08.9761901Z [ Info: checking check_reparse against ../src/components/operators.jl
+2022-10-17T21:13:09.0197310Z [ Info: checking check_reparse against ../src/components/strings.jl
+2022-10-17T21:13:09.0634579Z [ Info: checking check_reparse against ../test/check_base.jl
+2022-10-17T21:13:09.0685917Z [ Info: checking check_reparse against ../test/display.jl
+2022-10-17T21:13:09.0690179Z [ Info: checking check_reparse against ../test/errparse.jl
+2022-10-17T21:13:09.0842710Z [ Info: checking check_reparse against ../test/interface.jl
+2022-10-17T21:13:09.0887668Z [ Info: checking check_reparse against ../test/iterate.jl
+2022-10-17T21:13:09.1678215Z [ Info: checking check_reparse against ../test/parser.jl
+2022-10-17T21:13:09.2945877Z [ Info: checking check_reparse against ../test/runtests.jl
+2022-10-17T21:13:09.2957783Z [ Info: checking check_reparse against ../test/spec.jl
+2022-10-17T21:13:09.3870426Z Test Summary: |  Pass  Broken  Total     Time
+2022-10-17T21:13:09.4127269Z CSTParser     | 87052       2  87054  2m26.6s
+2022-10-17T21:13:09.4428279Z      Testing CSTParser tests passed 
+2022-10-17T21:13:11.4184703Z      Testing JSONRPC
+2022-10-17T21:13:13.3712627Z       Status `/tmp/jl_trjlZv/Project.toml`
+2022-10-17T21:13:13.3892558Z   [682c06a0] JSON v0.20.1 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSON`
+2022-10-17T21:13:13.3893370Z   [b9b8584e] JSONRPC v1.3.5-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSONRPC`
+2022-10-17T21:13:13.3893813Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:13:13.3894083Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:13:13.3894345Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:13:13.4087555Z       Status `/tmp/jl_trjlZv/Manifest.toml`
+2022-10-17T21:13:13.4137380Z   [682c06a0] JSON v0.20.1 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSON`
+2022-10-17T21:13:13.4138177Z   [b9b8584e] JSONRPC v1.3.5-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSONRPC`
+2022-10-17T21:13:13.4138612Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:13:13.4138881Z   [ade2ca70] Dates `@stdlib/Dates`
+2022-10-17T21:13:13.4139188Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:13:13.4139517Z   [56ddb016] Logging `@stdlib/Logging`
+2022-10-17T21:13:13.4139799Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:13:13.4140057Z   [a63ad114] Mmap `@stdlib/Mmap`
+2022-10-17T21:13:13.4140327Z   [de0858da] Printf `@stdlib/Printf`
+2022-10-17T21:13:13.4140598Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:13:13.4141244Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:13:13.4141546Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:13:13.4141842Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:13:13.4142090Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:13:13.4142347Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:13:13.4142611Z   [4ec0a83e] Unicode `@stdlib/Unicode`
+2022-10-17T21:13:13.9007231Z Precompiling project...
+2022-10-17T21:13:14.6707248Z [32m  ✓ [39mJSON
+2022-10-17T21:13:15.0609403Z [32m  ✓ [39mJSONRPC
+2022-10-17T21:13:15.0763637Z   2 dependencies successfully precompiled in 2 seconds
+2022-10-17T21:13:15.0764500Z      Testing Running tests...
+2022-10-17T21:13:20.3116592Z Test Summary: | Pass  Total  Time
+2022-10-17T21:13:20.3343138Z JSONRPC       |   39     39  4.2s
+2022-10-17T21:13:20.3448310Z      Testing JSONRPC tests passed 
+2022-10-17T21:13:22.2973006Z      Testing LanguageServer
+2022-10-17T21:13:24.7969301Z       Status `/tmp/jl_AcYVaT/Project.toml`
+2022-10-17T21:13:24.8272621Z   [00ebfdb7] CSTParser v3.3.7-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CSTParser`
+2022-10-17T21:13:24.8273992Z   [682c06a0] JSON v0.20.1 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSON`
+2022-10-17T21:13:24.8277400Z   [b9b8584e] JSONRPC v1.3.5-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSONRPC`
+2022-10-17T21:13:24.8280124Z   [98e50ef6] JuliaFormatter v1.0.10 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JuliaFormatter`
+2022-10-17T21:13:24.8281535Z   [2b0e0bc5] LanguageServer v4.3.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/LanguageServer`
+2022-10-17T21:13:24.8405435Z   [b3cc710f] StaticLint v8.1.1-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/StaticLint`
+2022-10-17T21:13:24.8406761Z   [cf896787] SymbolServer v7.2.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/SymbolServer`
+2022-10-17T21:13:24.8408214Z   [76b0de8b] TestItemDetection v0.1.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/TestItemDetection`
+2022-10-17T21:13:24.8412622Z   [f8b46487] TestItemRunner v0.2.1
+2022-10-17T21:13:24.8414418Z   [0796e94c] Tokenize v0.5.24 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Tokenize`
+2022-10-17T21:13:24.8416301Z   [5c2747f8] URIs v1.4.0 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/URIs`
+2022-10-17T21:13:24.8417727Z   [76f85450] LibGit2 `@stdlib/LibGit2`
+2022-10-17T21:13:24.8418986Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:13:24.8420236Z   [44cfe95a] Pkg v1.8.0 `@stdlib/Pkg`
+2022-10-17T21:13:24.8421697Z   [3fa0cd96] REPL `@stdlib/REPL`
+2022-10-17T21:13:24.8422926Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:13:24.8424192Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:13:24.8425553Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:13:24.8426741Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:13:24.8428081Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:13:24.8488382Z       Status `/tmp/jl_AcYVaT/Manifest.toml`
+2022-10-17T21:13:24.8697356Z   [00ebfdb7] CSTParser v3.3.7-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CSTParser`
+2022-10-17T21:13:24.8698184Z   [a80b9123] CommonMark v0.8.6 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CommonMark`
+2022-10-17T21:13:24.8698926Z   [34da2185] Compat v3.43.0 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Compat`
+2022-10-17T21:13:24.8699668Z   [a8cc5b0e] Crayons v4.0.4 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Crayons`
+2022-10-17T21:13:24.8700439Z   [864edb3b] DataStructures v0.18.13 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/DataStructures`
+2022-10-17T21:13:24.8701587Z   [682c06a0] JSON v0.20.1 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSON`
+2022-10-17T21:13:24.8702324Z   [b9b8584e] JSONRPC v1.3.5-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSONRPC`
+2022-10-17T21:13:24.8703107Z   [98e50ef6] JuliaFormatter v1.0.10 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JuliaFormatter`
+2022-10-17T21:13:24.8703901Z   [2b0e0bc5] LanguageServer v4.3.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/LanguageServer`
+2022-10-17T21:13:24.8704737Z   [bac558e1] OrderedCollections v1.4.1 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/OrderedCollections`
+2022-10-17T21:13:24.8705536Z   [b3cc710f] StaticLint v8.1.1-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/StaticLint`
+2022-10-17T21:13:24.8706317Z   [cf896787] SymbolServer v7.2.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/SymbolServer`
+2022-10-17T21:13:24.8707118Z   [76b0de8b] TestItemDetection v0.1.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/TestItemDetection`
+2022-10-17T21:13:24.8707587Z   [f8b46487] TestItemRunner v0.2.1
+2022-10-17T21:13:24.8707853Z   [1c621080] TestItems v0.1.0
+2022-10-17T21:13:24.8708726Z   [0796e94c] Tokenize v0.5.24 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Tokenize`
+2022-10-17T21:13:24.8709357Z   [5c2747f8] URIs v1.4.0 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/URIs`
+2022-10-17T21:13:24.8709858Z   [0dad84c5] ArgTools v1.1.1 `@stdlib/ArgTools`
+2022-10-17T21:13:24.8710135Z   [56f22d72] Artifacts `@stdlib/Artifacts`
+2022-10-17T21:13:24.8710764Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:13:24.8712328Z   [ade2ca70] Dates `@stdlib/Dates`
+2022-10-17T21:13:24.8712653Z   [8bb1440f] DelimitedFiles `@stdlib/DelimitedFiles`
+2022-10-17T21:13:24.8712960Z   [8ba89e20] Distributed `@stdlib/Distributed`
+2022-10-17T21:13:24.8713273Z   [f43a241f] Downloads v1.6.0 `@stdlib/Downloads`
+2022-10-17T21:13:24.8713583Z   [7b1f6079] FileWatching `@stdlib/FileWatching`
+2022-10-17T21:13:24.8713907Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:13:24.8714232Z   [b27032c2] LibCURL v0.6.3 `@stdlib/LibCURL`
+2022-10-17T21:13:24.8714510Z   [76f85450] LibGit2 `@stdlib/LibGit2`
+2022-10-17T21:13:24.8714760Z   [8f399da3] Libdl `@stdlib/Libdl`
+2022-10-17T21:13:24.8715054Z   [37e2e46d] LinearAlgebra `@stdlib/LinearAlgebra`
+2022-10-17T21:13:24.8715351Z   [56ddb016] Logging `@stdlib/Logging`
+2022-10-17T21:13:24.8715633Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:13:24.8715893Z   [a63ad114] Mmap `@stdlib/Mmap`
+2022-10-17T21:13:24.8716208Z   [ca575930] NetworkOptions v1.2.0 `@stdlib/NetworkOptions`
+2022-10-17T21:13:24.8716514Z   [44cfe95a] Pkg v1.8.0 `@stdlib/Pkg`
+2022-10-17T21:13:24.8716775Z   [de0858da] Printf `@stdlib/Printf`
+2022-10-17T21:13:24.8717045Z   [3fa0cd96] REPL `@stdlib/REPL`
+2022-10-17T21:13:24.8717307Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:13:24.8717555Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:13:24.8717851Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:13:24.8718174Z   [1a1011a3] SharedArrays `@stdlib/SharedArrays`
+2022-10-17T21:13:24.8718449Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:13:24.8718748Z   [2f01184e] SparseArrays `@stdlib/SparseArrays`
+2022-10-17T21:13:24.8719051Z   [10745b16] Statistics `@stdlib/Statistics`
+2022-10-17T21:13:24.8719318Z   [fa267f1f] TOML v1.0.0 `@stdlib/TOML`
+2022-10-17T21:13:24.8719585Z   [a4e569a6] Tar v1.10.1 `@stdlib/Tar`
+2022-10-17T21:13:24.8719847Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:13:24.8720089Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:13:24.8720353Z   [4ec0a83e] Unicode `@stdlib/Unicode`
+2022-10-17T21:13:24.8720740Z   [e66e0078] CompilerSupportLibraries_jll v0.5.2+0 `@stdlib/CompilerSupportLibraries_jll`
+2022-10-17T21:13:24.8721353Z   [deac9b47] LibCURL_jll v7.84.0+0 `@stdlib/LibCURL_jll`
+2022-10-17T21:13:24.8721656Z   [29816b5a] LibSSH2_jll v1.10.2+0 `@stdlib/LibSSH2_jll`
+2022-10-17T21:13:24.8721969Z   [c8ffd9c3] MbedTLS_jll v2.28.0+0 `@stdlib/MbedTLS_jll`
+2022-10-17T21:13:24.8722319Z   [14a3606d] MozillaCACerts_jll v2022.2.1 `@stdlib/MozillaCACerts_jll`
+2022-10-17T21:13:24.8722744Z   [4536629a] OpenBLAS_jll v0.3.20+0 `@stdlib/OpenBLAS_jll`
+2022-10-17T21:13:24.8723136Z   [83775a58] Zlib_jll v1.2.12+3 `@stdlib/Zlib_jll`
+2022-10-17T21:13:24.8724196Z   [8e850b90] libblastrampoline_jll v5.1.1+0 `@stdlib/libblastrampoline_jll`
+2022-10-17T21:13:24.8724704Z   [8e850ede] nghttp2_jll v1.48.0+0 `@stdlib/nghttp2_jll`
+2022-10-17T21:13:24.8725112Z   [3f19e933] p7zip_jll v17.4.0+0 `@stdlib/p7zip_jll`
+2022-10-17T21:13:25.4488388Z Precompiling project...
+2022-10-17T21:13:26.3952767Z [32m  ✓ [39m[90mCompat[39m
+2022-10-17T21:13:26.4592742Z [32m  ✓ [39mURIs
+2022-10-17T21:13:26.8374744Z [32m  ✓ [39m[90mCompilerSupportLibraries_jll[39m
+2022-10-17T21:13:27.3625783Z [32m  ✓ [39m[90mCrayons[39m
+2022-10-17T21:13:27.4253327Z [32m  ✓ [39m[90mOrderedCollections[39m
+2022-10-17T21:13:27.7664506Z [32m  ✓ [39m[90mMbedTLS_jll[39m
+2022-10-17T21:13:27.8925661Z [32m  ✓ [39m[90mZlib_jll[39m
+2022-10-17T21:13:28.2772931Z [32m  ✓ [39m[90mTestItems[39m
+2022-10-17T21:13:28.5677667Z [32m  ✓ [39mTestItemDetection
+2022-10-17T21:13:28.6612451Z [32m  ✓ [39m[90mOpenBLAS_jll[39m
+2022-10-17T21:13:31.5352409Z [32m  ✓ [39m[90mCommonMark[39m
+2022-10-17T21:13:31.9874430Z [32m  ✓ [39m[90mLibSSH2_jll[39m
+2022-10-17T21:13:32.1592448Z [32m  ✓ [39m[90mDataStructures[39m
+2022-10-17T21:13:32.5736312Z [32m  ✓ [39m[90mlibblastrampoline_jll[39m
+2022-10-17T21:13:38.9408593Z [32m  ✓ [39mJuliaFormatter
+2022-10-17T21:13:39.4134183Z [32m  ✓ [39mTestItemRunner
+2022-10-17T21:13:40.2304779Z [32m  ✓ [39mSymbolServer
+2022-10-17T21:13:42.1636602Z [32m  ✓ [39mStaticLint
+2022-10-17T21:13:45.8602236Z [32m  ✓ [39mLanguageServer
+2022-10-17T21:13:45.8771829Z   19 dependencies successfully precompiled in 21 seconds. 4 already precompiled.
+2022-10-17T21:13:45.8772564Z      Testing Running tests...
+2022-10-17T21:14:57.6530809Z [ Info: Self-parse test
+2022-10-17T21:14:57.6772709Z [ Info: skipping brute-force tests on CI
+2022-10-17T21:16:18.5002886Z ERROR: InvalidStateException: Channel is closed.
+2022-10-17T21:16:18.5003850Z Stacktrace:
+2022-10-17T21:16:18.5021306Z  [1] try_yieldto(undo::typeof(Base.ensure_rescheduled))
+2022-10-17T21:16:18.5022047Z    @ Base ./task.jl:871
+2022-10-17T21:16:18.5112782Z  [2] wait()
+2022-10-17T21:16:18.5113571Z    @ Base ./task.jl:931
+2022-10-17T21:16:18.5113952Z  [3] wait(c::Base.GenericCondition{ReentrantLock})
+2022-10-17T21:16:18.5114248Z    @ Base ./condition.jl:124
+2022-10-17T21:16:18.5114637Z  [4] take_buffered(c::Channel{Any})
+2022-10-17T21:16:18.5114885Z    @ Base ./channels.jl:416
+2022-10-17T21:16:18.5115128Z  [5] take!
+2022-10-17T21:16:18.5115366Z    @ ./channels.jl:410 [inlined]
+2022-10-17T21:16:18.5115592Z  [6] get_next_message
+2022-10-17T21:16:18.5116555Z    @ ~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSONRPC/src/core.jl:202 [inlined]
+2022-10-17T21:16:18.5116942Z  [7] macro expansion
+2022-10-17T21:16:18.5117529Z    @ ~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/LanguageServer/src/languageserverinstance.jl:288 [inlined]
+2022-10-17T21:16:18.5118177Z  [8] (::LanguageServer.var"#111#114"{LanguageServer.LanguageServerInstance})()
+2022-10-17T21:16:18.5118501Z    @ LanguageServer ./task.jl:484
+2022-10-17T21:16:18.5118740Z [ Info: Processing Pkg...
+2022-10-17T21:16:18.5118965Z [ Info: Shutting down server instance.
+2022-10-17T21:16:19.4188489Z Test Summary: | Pass  Broken  Total     Time
+2022-10-17T21:16:19.4452370Z Package       |  400      10    410  2m24.0s
+2022-10-17T21:16:19.5293883Z      Testing LanguageServer tests passed 
+2022-10-17T21:16:21.6354855Z      Testing StaticLint
+2022-10-17T21:16:23.5843111Z       Status `/tmp/jl_zFPRuV/Project.toml`
+2022-10-17T21:16:23.6053826Z   [00ebfdb7] CSTParser v3.3.7-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CSTParser`
+2022-10-17T21:16:23.6055260Z   [b3cc710f] StaticLint v8.1.1-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/StaticLint`
+2022-10-17T21:16:23.6056446Z   [cf896787] SymbolServer v7.2.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/SymbolServer`
+2022-10-17T21:16:23.6057236Z   [76f85450] LibGit2 `@stdlib/LibGit2`
+2022-10-17T21:16:23.6057976Z   [44cfe95a] Pkg v1.8.0 `@stdlib/Pkg`
+2022-10-17T21:16:23.6058292Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:16:23.6058979Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:16:23.6059264Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:16:23.6254138Z       Status `/tmp/jl_zFPRuV/Manifest.toml`
+2022-10-17T21:16:23.6359574Z   [00ebfdb7] CSTParser v3.3.7-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CSTParser`
+2022-10-17T21:16:23.6360371Z   [b3cc710f] StaticLint v8.1.1-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/StaticLint`
+2022-10-17T21:16:23.6363544Z   [cf896787] SymbolServer v7.2.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/SymbolServer`
+2022-10-17T21:16:23.6367480Z   [0796e94c] Tokenize v0.5.24 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Tokenize`
+2022-10-17T21:16:23.6371341Z   [0dad84c5] ArgTools v1.1.1 `@stdlib/ArgTools`
+2022-10-17T21:16:23.6374769Z   [56f22d72] Artifacts `@stdlib/Artifacts`
+2022-10-17T21:16:23.6378811Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:16:23.6382243Z   [ade2ca70] Dates `@stdlib/Dates`
+2022-10-17T21:16:23.6385437Z   [f43a241f] Downloads v1.6.0 `@stdlib/Downloads`
+2022-10-17T21:16:23.6388609Z   [7b1f6079] FileWatching `@stdlib/FileWatching`
+2022-10-17T21:16:23.6392188Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:16:23.6395563Z   [b27032c2] LibCURL v0.6.3 `@stdlib/LibCURL`
+2022-10-17T21:16:23.6398938Z   [76f85450] LibGit2 `@stdlib/LibGit2`
+2022-10-17T21:16:23.6402271Z   [8f399da3] Libdl `@stdlib/Libdl`
+2022-10-17T21:16:23.6405594Z   [56ddb016] Logging `@stdlib/Logging`
+2022-10-17T21:16:23.6408935Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:16:23.6412268Z   [ca575930] NetworkOptions v1.2.0 `@stdlib/NetworkOptions`
+2022-10-17T21:16:23.6415576Z   [44cfe95a] Pkg v1.8.0 `@stdlib/Pkg`
+2022-10-17T21:16:23.6418845Z   [de0858da] Printf `@stdlib/Printf`
+2022-10-17T21:16:23.6422420Z   [3fa0cd96] REPL `@stdlib/REPL`
+2022-10-17T21:16:23.6425902Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:16:23.6429944Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:16:23.6435747Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:16:23.6440029Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:16:23.6443931Z   [fa267f1f] TOML v1.0.0 `@stdlib/TOML`
+2022-10-17T21:16:23.6448006Z   [a4e569a6] Tar v1.10.1 `@stdlib/Tar`
+2022-10-17T21:16:23.6451967Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:16:23.6455875Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:16:23.6459887Z   [4ec0a83e] Unicode `@stdlib/Unicode`
+2022-10-17T21:16:23.6464115Z   [deac9b47] LibCURL_jll v7.84.0+0 `@stdlib/LibCURL_jll`
+2022-10-17T21:16:23.6468011Z   [29816b5a] LibSSH2_jll v1.10.2+0 `@stdlib/LibSSH2_jll`
+2022-10-17T21:16:23.6472581Z   [c8ffd9c3] MbedTLS_jll v2.28.0+0 `@stdlib/MbedTLS_jll`
+2022-10-17T21:16:23.6477338Z   [14a3606d] MozillaCACerts_jll v2022.2.1 `@stdlib/MozillaCACerts_jll`
+2022-10-17T21:16:23.6483451Z   [83775a58] Zlib_jll v1.2.12+3 `@stdlib/Zlib_jll`
+2022-10-17T21:16:23.6487820Z   [8e850ede] nghttp2_jll v1.48.0+0 `@stdlib/nghttp2_jll`
+2022-10-17T21:16:23.6491805Z   [3f19e933] p7zip_jll v17.4.0+0 `@stdlib/p7zip_jll`
+2022-10-17T21:16:24.2443184Z      Testing Running tests...
+2022-10-17T21:16:49.3595914Z Test Summary: | Pass  Total   Time
+2022-10-17T21:16:49.3841719Z StaticLint    |  342    342  22.3s
+2022-10-17T21:16:49.3893060Z Test Summary:                             | Pass  Total  Time
+2022-10-17T21:16:49.3893622Z add eval method to modules/toplevel scope |    2      2  0.0s
+2022-10-17T21:16:49.5766011Z Test Summary: | Pass  Total  Time
+2022-10-17T21:16:49.5766674Z reparse       |    3      3  0.2s
+2022-10-17T21:16:49.5805891Z Test Summary:               | Pass  Total  Time
+2022-10-17T21:16:49.5806203Z duplicate function argument |    1      1  0.0s
+2022-10-17T21:16:49.5856437Z Test Summary:       | Pass  Total  Time
+2022-10-17T21:16:49.5856863Z type alias bindings |    2      2  0.0s
+2022-10-17T21:16:49.5892588Z Test Summary:                       | Pass  Total  Time
+2022-10-17T21:16:49.5893205Z :call w/ :parameters traverse order |    1      1  0.0s
+2022-10-17T21:16:49.5925026Z Test Summary:                    | Pass  Total  Time
+2022-10-17T21:16:49.5925567Z handle shadow bindings on method |    1      1  0.0s
+2022-10-17T21:16:49.6025160Z Test Summary:               | Pass  Total  Time
+2022-10-17T21:16:49.6025868Z documented symbol resolving |    2      2  0.0s
+2022-10-17T21:16:49.7357787Z Test Summary:   | Pass  Total  Time
+2022-10-17T21:16:49.7358377Z unused bindings |    6      6  0.1s
+2022-10-17T21:16:49.7426388Z Test Summary: | Pass  Total  Time
+2022-10-17T21:16:49.7426815Z unwrap sig    |    4      4  0.0s
+2022-10-17T21:16:49.7475146Z Test Summary:    | Pass  Total  Time
+2022-10-17T21:16:49.7475615Z clear .type refs |    2      2  0.0s
+2022-10-17T21:16:49.7520412Z Test Summary:    | Pass  Total  Time
+2022-10-17T21:16:49.7520828Z clear .type refs |    2      2  0.0s
+2022-10-17T21:16:49.7790328Z Test Summary:         | Pass  Total  Time
+2022-10-17T21:16:49.7791991Z type inference by use |    6      6  0.0s
+2022-10-17T21:16:49.8016225Z Test Summary:           | Pass  Total  Time
+2022-10-17T21:16:49.8016567Z loop iterator inference |    8      8  0.0s
+2022-10-17T21:16:49.8054088Z Test Summary:   | Pass  Total  Time
+2022-10-17T21:16:49.8054375Z Vector{T} infer |    1      1  0.0s
+2022-10-17T21:16:49.8099707Z Test Summary:          | Pass  Total  Time
+2022-10-17T21:16:49.8100023Z where type param infer |    2      2  0.0s
+2022-10-17T21:16:49.8172016Z Test Summary:          | Pass  Total  Time
+2022-10-17T21:16:49.8172346Z where type param infer |    4      4  0.0s
+2022-10-17T21:16:49.8337898Z Test Summary: | Pass  Total  Time
+2022-10-17T21:16:49.8339334Z softscope     |   12     12  0.0s
+2022-10-17T21:16:49.8455384Z Test Summary: | Pass  Total  Time
+2022-10-17T21:16:49.8456029Z #1218         |    4      4  0.0s
+2022-10-17T21:16:49.8630865Z Test Summary: | Pass  Total  Time
+2022-10-17T21:16:49.8631669Z import as ... |    2      2  0.0s
+2022-10-17T21:16:49.8669099Z Test Summary: | Pass  Total  Time
+2022-10-17T21:16:49.8669751Z #1218         |    1      1  0.0s
+2022-10-17T21:16:49.8701104Z Test Summary:             | Pass  Total  Time
+2022-10-17T21:16:49.8701849Z macrocall bindings: #2187 |    1      1  0.0s
+2022-10-17T21:16:49.8816633Z Test Summary:        | Pass  Total  Time
+2022-10-17T21:16:49.8816937Z aliased import: #974 |    2      2  0.0s
+2022-10-17T21:16:50.0954957Z Test Summary: | Pass  Total  Time
+2022-10-17T21:16:50.0955231Z kwarg refs    |   12     12  0.0s
+2022-10-17T21:16:50.2612514Z Test Summary:                | Pass  Total  Time
+2022-10-17T21:16:50.2612855Z iteration over 1:length(...) |   15     15  0.1s
+2022-10-17T21:16:50.2659300Z Test Summary:                    | Pass  Total  Time
+2022-10-17T21:16:50.2659653Z assigned but not used with loops |    2      2  0.0s
+2022-10-17T21:16:50.2891348Z      Testing StaticLint tests passed 
+2022-10-17T21:16:52.2322389Z      Testing SymbolServer
+2022-10-17T21:16:53.9044825Z       Status `/tmp/jl_SnPjQd/Project.toml`
+2022-10-17T21:16:53.9235790Z   [cf896787] SymbolServer v7.2.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/SymbolServer`
+2022-10-17T21:16:53.9236907Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:16:53.9237944Z   [76f85450] LibGit2 `@stdlib/LibGit2`
+2022-10-17T21:16:53.9238266Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:16:53.9238541Z   [44cfe95a] Pkg v1.8.0 `@stdlib/Pkg`
+2022-10-17T21:16:53.9238808Z   [3fa0cd96] REPL `@stdlib/REPL`
+2022-10-17T21:16:53.9239044Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:16:53.9239330Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:16:53.9239615Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:16:53.9242916Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:16:53.9246368Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:16:53.9458502Z       Status `/tmp/jl_SnPjQd/Manifest.toml`
+2022-10-17T21:16:53.9566843Z   [cf896787] SymbolServer v7.2.2-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/SymbolServer`
+2022-10-17T21:16:53.9567337Z   [0dad84c5] ArgTools v1.1.1 `@stdlib/ArgTools`
+2022-10-17T21:16:53.9567748Z   [56f22d72] Artifacts `@stdlib/Artifacts`
+2022-10-17T21:16:53.9568023Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:16:53.9568289Z   [ade2ca70] Dates `@stdlib/Dates`
+2022-10-17T21:16:53.9568683Z   [f43a241f] Downloads v1.6.0 `@stdlib/Downloads`
+2022-10-17T21:16:53.9568985Z   [7b1f6079] FileWatching `@stdlib/FileWatching`
+2022-10-17T21:16:53.9572474Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:16:53.9572815Z   [b27032c2] LibCURL v0.6.3 `@stdlib/LibCURL`
+2022-10-17T21:16:53.9573082Z   [76f85450] LibGit2 `@stdlib/LibGit2`
+2022-10-17T21:16:53.9573446Z   [8f399da3] Libdl `@stdlib/Libdl`
+2022-10-17T21:16:53.9573691Z   [56ddb016] Logging `@stdlib/Logging`
+2022-10-17T21:16:53.9573948Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:16:53.9574235Z   [ca575930] NetworkOptions v1.2.0 `@stdlib/NetworkOptions`
+2022-10-17T21:16:53.9574815Z   [44cfe95a] Pkg v1.8.0 `@stdlib/Pkg`
+2022-10-17T21:16:53.9575092Z   [de0858da] Printf `@stdlib/Printf`
+2022-10-17T21:16:53.9575329Z   [3fa0cd96] REPL `@stdlib/REPL`
+2022-10-17T21:16:53.9575574Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:16:53.9575823Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:16:53.9577325Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:16:53.9577633Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:16:53.9577900Z   [fa267f1f] TOML v1.0.0 `@stdlib/TOML`
+2022-10-17T21:16:53.9578599Z   [a4e569a6] Tar v1.10.1 `@stdlib/Tar`
+2022-10-17T21:16:53.9578854Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:16:53.9579117Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:16:53.9579381Z   [4ec0a83e] Unicode `@stdlib/Unicode`
+2022-10-17T21:16:53.9579666Z   [deac9b47] LibCURL_jll v7.84.0+0 `@stdlib/LibCURL_jll`
+2022-10-17T21:16:53.9579980Z   [29816b5a] LibSSH2_jll v1.10.2+0 `@stdlib/LibSSH2_jll`
+2022-10-17T21:16:53.9580405Z   [c8ffd9c3] MbedTLS_jll v2.28.0+0 `@stdlib/MbedTLS_jll`
+2022-10-17T21:16:53.9582931Z   [14a3606d] MozillaCACerts_jll v2022.2.1 `@stdlib/MozillaCACerts_jll`
+2022-10-17T21:16:53.9583341Z   [83775a58] Zlib_jll v1.2.12+3 `@stdlib/Zlib_jll`
+2022-10-17T21:16:53.9583654Z   [8e850ede] nghttp2_jll v1.48.0+0 `@stdlib/nghttp2_jll`
+2022-10-17T21:16:53.9583978Z   [3f19e933] p7zip_jll v17.4.0+0 `@stdlib/p7zip_jll`
+2022-10-17T21:16:54.6402357Z      Testing Running tests...
+2022-10-17T21:17:06.4037547Z ┌ Warning: The active manifest file is an older format with no julia version entry. Dependencies may have been resolved with a different julia version.
+2022-10-17T21:17:06.4038576Z └ @ /tmp/jl_vN76qZ/Manifest.toml:0
+2022-10-17T21:17:06.9616211Z    Installed IteratorInterfaceExtensions ─ v1.0.0
+2022-10-17T21:17:07.5954483Z Precompiling project...
+2022-10-17T21:17:07.9135003Z [32m  ✓ [39mIteratorInterfaceExtensions
+2022-10-17T21:17:07.9279507Z   1 dependency successfully precompiled in 1 seconds
+2022-10-17T21:17:07.9280790Z   [91m1[39m dependency errored. To see a full report either run `import Pkg; Pkg.precompile()` or load the package
+2022-10-17T21:17:24.0252619Z ┌ Warning: TableTraits not stored on disc
+2022-10-17T21:17:24.0254446Z └ @ SymbolServer ~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/SymbolServer/src/SymbolServer.jl:247
+2022-10-17T21:17:24.1215788Z Test Summary: | Pass  Total   Time
+2022-10-17T21:17:24.1456035Z SymbolServer  | 8054   8054  26.8s
+2022-10-17T21:17:24.7916713Z Test Summary: | Pass  Total  Time
+2022-10-17T21:17:24.7917491Z TypeofVararg  |   30     30  0.5s
+2022-10-17T21:17:24.8975629Z Test Summary: | Pass  Total  Time
+2022-10-17T21:17:24.8976292Z Pipe names    |    3      3  0.1s
+2022-10-17T21:17:24.9009815Z Test Summary: | Pass  Total  Time
+2022-10-17T21:17:24.9010490Z Intrinsics`   |    1      1  0.0s
+2022-10-17T21:17:24.9168383Z      Testing SymbolServer tests passed 
+2022-10-17T21:17:26.8639734Z      Testing DebugAdapter
+2022-10-17T21:17:28.7913651Z       Status `/tmp/jl_mZqHuA/Project.toml`
+2022-10-17T21:17:28.8127090Z   [17994d07] DebugAdapter v1.0.1-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/DebugAdapter`
+2022-10-17T21:17:28.8129116Z   [682c06a0] JSON v0.20.1 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSON`
+2022-10-17T21:17:28.8130520Z   [b9b8584e] JSONRPC v1.3.5-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSONRPC`
+2022-10-17T21:17:28.8133686Z   [aa1ae85d] JuliaInterpreter v0.9.15 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JuliaInterpreter`
+2022-10-17T21:17:28.8183614Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:17:28.8183914Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:17:28.8184174Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:17:28.8184435Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:17:28.8336927Z       Status `/tmp/jl_mZqHuA/Manifest.toml`
+2022-10-17T21:17:28.8400922Z   [da1fd8a2] CodeTracking v1.1.0 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CodeTracking`
+2022-10-17T21:17:28.8401817Z   [17994d07] DebugAdapter v1.0.1-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/DebugAdapter`
+2022-10-17T21:17:28.8402583Z   [682c06a0] JSON v0.20.1 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSON`
+2022-10-17T21:17:28.8403326Z   [b9b8584e] JSONRPC v1.3.5-DEV `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSONRPC`
+2022-10-17T21:17:28.8404111Z   [aa1ae85d] JuliaInterpreter v0.9.15 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JuliaInterpreter`
+2022-10-17T21:17:28.8404575Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:17:28.8404845Z   [ade2ca70] Dates `@stdlib/Dates`
+2022-10-17T21:17:28.8405145Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:17:28.8405454Z   [56ddb016] Logging `@stdlib/Logging`
+2022-10-17T21:17:28.8405740Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:17:28.8405995Z   [a63ad114] Mmap `@stdlib/Mmap`
+2022-10-17T21:17:28.8406259Z   [de0858da] Printf `@stdlib/Printf`
+2022-10-17T21:17:28.8406528Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:17:28.8406780Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:17:28.8407075Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:17:28.8407368Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:17:28.8407630Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:17:28.8407874Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:17:28.8408138Z   [4ec0a83e] Unicode `@stdlib/Unicode`
+2022-10-17T21:17:29.4202019Z Precompiling project...
+2022-10-17T21:17:30.0539493Z [32m  ✓ [39m[90mCodeTracking[39m
+2022-10-17T21:17:36.5122611Z [32m  ✓ [39mJuliaInterpreter
+2022-10-17T21:17:38.0722803Z [32m  ✓ [39mDebugAdapter
+2022-10-17T21:17:38.0881131Z   3 dependencies successfully precompiled in 9 seconds. 2 already precompiled.
+2022-10-17T21:17:38.0881979Z      Testing Running tests...
+2022-10-17T21:17:38.8255326Z Test Summary: |Time
+2022-10-17T21:17:38.8465466Z DebugAdapter  | None  0.0s
+2022-10-17T21:17:38.8556246Z      Testing DebugAdapter tests passed 
+2022-10-17T21:17:40.7263755Z      Testing VSCodeDebugger
+2022-10-17T21:17:42.3281374Z       Status `/tmp/jl_oa7ZzQ/Project.toml`
+2022-10-17T21:17:42.3316666Z   [a80fdaa1] VSCodeDebugger v0.1.0 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/VSCodeDebugger`
+2022-10-17T21:17:42.3317500Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:17:42.3365061Z   [ade2ca70] Dates `@stdlib/Dates`
+2022-10-17T21:17:42.3365368Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:17:42.3365662Z   [a63ad114] Mmap `@stdlib/Mmap`
+2022-10-17T21:17:42.3365908Z   [3fa0cd96] REPL `@stdlib/REPL`
+2022-10-17T21:17:42.3366258Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:17:42.3366522Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:17:42.3366789Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:17:42.3367026Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:17:42.3367312Z   [4ec0a83e] Unicode `@stdlib/Unicode`
+2022-10-17T21:17:42.3504050Z       Status `/tmp/jl_oa7ZzQ/Manifest.toml`
+2022-10-17T21:17:42.3557217Z   [a80fdaa1] VSCodeDebugger v0.1.0 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/VSCodeDebugger`
+2022-10-17T21:17:42.3557840Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:17:42.3558095Z   [ade2ca70] Dates `@stdlib/Dates`
+2022-10-17T21:17:42.3558381Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:17:42.3558674Z   [56ddb016] Logging `@stdlib/Logging`
+2022-10-17T21:17:42.3558938Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:17:42.3559176Z   [a63ad114] Mmap `@stdlib/Mmap`
+2022-10-17T21:17:42.3559425Z   [de0858da] Printf `@stdlib/Printf`
+2022-10-17T21:17:42.3559675Z   [3fa0cd96] REPL `@stdlib/REPL`
+2022-10-17T21:17:42.3559902Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:17:42.3560467Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:17:42.3560767Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:17:42.3561045Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:17:42.3561397Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:17:42.3561649Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:17:42.3561903Z   [4ec0a83e] Unicode `@stdlib/Unicode`
+2022-10-17T21:17:42.9322498Z Precompiling project...
+2022-10-17T21:17:51.1539121Z [32m  ✓ [39mVSCodeDebugger
+2022-10-17T21:17:51.1694487Z   1 dependency successfully precompiled in 9 seconds
+2022-10-17T21:17:51.1695282Z      Testing Running tests...
+2022-10-17T21:17:51.6014286Z Test Summary:  |Time
+2022-10-17T21:17:51.6224395Z VSCodeDebugger | None  0.0s
+2022-10-17T21:17:51.6302595Z      Testing VSCodeDebugger tests passed 
+2022-10-17T21:17:53.5690796Z      Testing VSCodeServer
+2022-10-17T21:17:55.3873245Z       Status `/tmp/jl_7zYQSP/Project.toml`
+2022-10-17T21:17:55.3921249Z   [9f5989ce] VSCodeServer v0.0.0 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/VSCodeServer`
+2022-10-17T21:17:55.3922137Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:17:55.3922808Z   [ade2ca70] Dates `@stdlib/Dates`
+2022-10-17T21:17:55.3923159Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:17:55.3923600Z   [56ddb016] Logging `@stdlib/Logging`
+2022-10-17T21:17:55.3923870Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:17:55.3924122Z   [a63ad114] Mmap `@stdlib/Mmap`
+2022-10-17T21:17:55.3925876Z   [44cfe95a] Pkg v1.8.0 `@stdlib/Pkg`
+2022-10-17T21:17:55.3926151Z   [de0858da] Printf `@stdlib/Printf`
+2022-10-17T21:17:55.3926640Z   [9abbd945] Profile `@stdlib/Profile`
+2022-10-17T21:17:55.3927206Z   [3fa0cd96] REPL `@stdlib/REPL`
+2022-10-17T21:17:55.3927477Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:17:55.3929193Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:17:55.3929673Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:17:55.3930850Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:17:55.3931348Z   [4ec0a83e] Unicode `@stdlib/Unicode`
+2022-10-17T21:17:55.4146774Z       Status `/tmp/jl_7zYQSP/Manifest.toml`
+2022-10-17T21:17:55.4247220Z   [9f5989ce] VSCodeServer v0.0.0 `~/work/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/VSCodeServer`
+2022-10-17T21:17:55.4248875Z   [0dad84c5] ArgTools v1.1.1 `@stdlib/ArgTools`
+2022-10-17T21:17:55.4249704Z   [56f22d72] Artifacts `@stdlib/Artifacts`
+2022-10-17T21:17:55.4250002Z   [2a0f44e3] Base64 `@stdlib/Base64`
+2022-10-17T21:17:55.4250273Z   [ade2ca70] Dates `@stdlib/Dates`
+2022-10-17T21:17:55.4250574Z   [f43a241f] Downloads v1.6.0 `@stdlib/Downloads`
+2022-10-17T21:17:55.4251947Z   [7b1f6079] FileWatching `@stdlib/FileWatching`
+2022-10-17T21:17:55.4252542Z   [b77e0a4c] InteractiveUtils `@stdlib/InteractiveUtils`
+2022-10-17T21:17:55.4255211Z   [b27032c2] LibCURL v0.6.3 `@stdlib/LibCURL`
+2022-10-17T21:17:55.4255685Z   [76f85450] LibGit2 `@stdlib/LibGit2`
+2022-10-17T21:17:55.4258049Z   [8f399da3] Libdl `@stdlib/Libdl`
+2022-10-17T21:17:55.4258602Z   [56ddb016] Logging `@stdlib/Logging`
+2022-10-17T21:17:55.4260105Z   [d6f4376e] Markdown `@stdlib/Markdown`
+2022-10-17T21:17:55.4260493Z   [a63ad114] Mmap `@stdlib/Mmap`
+2022-10-17T21:17:55.4261131Z   [ca575930] NetworkOptions v1.2.0 `@stdlib/NetworkOptions`
+2022-10-17T21:17:55.4263826Z   [44cfe95a] Pkg v1.8.0 `@stdlib/Pkg`
+2022-10-17T21:17:55.4264301Z   [de0858da] Printf `@stdlib/Printf`
+2022-10-17T21:17:55.4266726Z   [9abbd945] Profile `@stdlib/Profile`
+2022-10-17T21:17:55.4267171Z   [3fa0cd96] REPL `@stdlib/REPL`
+2022-10-17T21:17:55.4267619Z   [9a3f8284] Random `@stdlib/Random`
+2022-10-17T21:17:55.4268024Z   [ea8e919c] SHA v0.7.0 `@stdlib/SHA`
+2022-10-17T21:17:55.4268546Z   [9e88b42a] Serialization `@stdlib/Serialization`
+2022-10-17T21:17:55.4269065Z   [6462fe0b] Sockets `@stdlib/Sockets`
+2022-10-17T21:17:55.4269584Z   [fa267f1f] TOML v1.0.0 `@stdlib/TOML`
+2022-10-17T21:17:55.4270187Z   [a4e569a6] Tar v1.10.1 `@stdlib/Tar`
+2022-10-17T21:17:55.4270934Z   [8dfed614] Test `@stdlib/Test`
+2022-10-17T21:17:55.4271933Z   [cf7118a7] UUIDs `@stdlib/UUIDs`
+2022-10-17T21:17:55.4272460Z   [4ec0a83e] Unicode `@stdlib/Unicode`
+2022-10-17T21:17:55.4272936Z   [deac9b47] LibCURL_jll v7.84.0+0 `@stdlib/LibCURL_jll`
+2022-10-17T21:17:55.4273393Z   [29816b5a] LibSSH2_jll v1.10.2+0 `@stdlib/LibSSH2_jll`
+2022-10-17T21:17:55.4324608Z   [c8ffd9c3] MbedTLS_jll v2.28.0+0 `@stdlib/MbedTLS_jll`
+2022-10-17T21:17:55.4324975Z   [14a3606d] MozillaCACerts_jll v2022.2.1 `@stdlib/MozillaCACerts_jll`
+2022-10-17T21:17:55.4325299Z   [83775a58] Zlib_jll v1.2.12+3 `@stdlib/Zlib_jll`
+2022-10-17T21:17:55.4325589Z   [8e850ede] nghttp2_jll v1.48.0+0 `@stdlib/nghttp2_jll`
+2022-10-17T21:17:55.4326018Z   [3f19e933] p7zip_jll v17.4.0+0 `@stdlib/p7zip_jll`
+2022-10-17T21:17:55.9275101Z Precompiling project...
+2022-10-17T21:18:07.0984258Z [32m  ✓ [39mVSCodeServer
+2022-10-17T21:18:07.1211350Z   1 dependency successfully precompiled in 12 seconds. 3 already precompiled.
+2022-10-17T21:18:07.1212465Z      Testing Running tests...
+2022-10-17T21:18:07.5848718Z Test Summary: |Time
+2022-10-17T21:18:07.6078895Z VSCodeServer  | None  0.0s
+2022-10-17T21:18:07.6155000Z      Testing VSCodeServer tests passed 
+2022-10-17T21:18:07.6382742Z Post job cleanup.
+2022-10-17T21:18:07.7982835Z [command]/usr/bin/git version
+2022-10-17T21:18:07.8049188Z git version 2.37.3
+2022-10-17T21:18:07.8118423Z Temporarily overriding HOME='/home/runner/work/_temp/e87799ed-ae31-4f33-a9f5-97fa225db1bf' before making global git config changes
+2022-10-17T21:18:07.8121336Z Adding repository directory to the temporary git global config as a safe directory
+2022-10-17T21:18:07.8161351Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/julia-vscode-microprint-test/julia-vscode-microprint-test
+2022-10-17T21:18:07.8224772Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-10-17T21:18:07.8284790Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-10-17T21:18:07.8587297Z Entering 'libs/jl-profile'
+2022-10-17T21:18:07.8634963Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T21:18:07.8694543Z Entering 'scripts/packages/CSTParser'
+2022-10-17T21:18:07.8739932Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T21:18:07.8835032Z Entering 'scripts/packages/CommonMark'
+2022-10-17T21:18:07.8889846Z Entering 'scripts/packages/Compat'
+2022-10-17T21:18:07.8947544Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T21:18:07.9008292Z Entering 'scripts/packages/Crayons'
+2022-10-17T21:18:07.9095463Z Entering 'scripts/packages/DataStructures'
+2022-10-17T21:18:07.9159109Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T21:18:07.9208598Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T21:18:07.9260058Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T21:18:07.9309627Z Entering 'scripts/packages/JSON'
+2022-10-17T21:18:07.9354567Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T21:18:07.9409972Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T21:18:07.9455252Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T21:18:07.9499882Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T21:18:07.9543086Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T21:18:07.9588564Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T21:18:07.9637711Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T21:18:07.9683199Z Entering 'scripts/packages/Revise'
+2022-10-17T21:18:07.9732177Z Entering 'scripts/packages/StaticLint'
+2022-10-17T21:18:07.9778440Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T21:18:07.9825264Z Entering 'scripts/packages/TestEnv'
+2022-10-17T21:18:07.9867776Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T21:18:07.9915383Z Entering 'scripts/packages/Tokenize'
+2022-10-17T21:18:07.9963365Z Entering 'scripts/packages/URIParser'
+2022-10-17T21:18:08.0023418Z Entering 'scripts/packages/URIs'
+2022-10-17T21:18:08.0083759Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-10-17T21:18:08.0123097Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.0134567Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2022-10-17T21:18:08.0184416Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-10-17T21:18:08.0458464Z Entering 'libs/jl-profile'
+2022-10-17T21:18:08.0481806Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.0521602Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T21:18:08.0543937Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.0587353Z Entering 'scripts/packages/CSTParser'
+2022-10-17T21:18:08.0610217Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.0649511Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T21:18:08.0670403Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.0713423Z Entering 'scripts/packages/CommonMark'
+2022-10-17T21:18:08.0735745Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.0774692Z Entering 'scripts/packages/Compat'
+2022-10-17T21:18:08.0797374Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.0838486Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T21:18:08.0860071Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.0900159Z Entering 'scripts/packages/Crayons'
+2022-10-17T21:18:08.0923666Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.0965092Z Entering 'scripts/packages/DataStructures'
+2022-10-17T21:18:08.0988081Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1029179Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T21:18:08.1053223Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1097561Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T21:18:08.1121625Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1160630Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T21:18:08.1185077Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1224574Z Entering 'scripts/packages/JSON'
+2022-10-17T21:18:08.1248529Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1290975Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T21:18:08.1323176Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1389279Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T21:18:08.1415198Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1462330Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T21:18:08.1485671Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1536637Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T21:18:08.1573065Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1615854Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T21:18:08.1641112Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1683548Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T21:18:08.1709429Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1755675Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T21:18:08.1777224Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1819366Z Entering 'scripts/packages/Revise'
+2022-10-17T21:18:08.1841832Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1882503Z Entering 'scripts/packages/StaticLint'
+2022-10-17T21:18:08.1906200Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.1946186Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T21:18:08.1969526Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.2011143Z Entering 'scripts/packages/TestEnv'
+2022-10-17T21:18:08.2033797Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.2074120Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T21:18:08.2096903Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.2138163Z Entering 'scripts/packages/Tokenize'
+2022-10-17T21:18:08.2162097Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.2205677Z Entering 'scripts/packages/URIParser'
+2022-10-17T21:18:08.2228038Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.2269473Z Entering 'scripts/packages/URIs'
+2022-10-17T21:18:08.2292343Z http.https://github.com/.extraheader
+2022-10-17T21:18:08.2674781Z Cleaning up orphan processes
