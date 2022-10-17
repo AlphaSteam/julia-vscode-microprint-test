@@ -1,0 +1,957 @@
+2022-10-17T18:42:45.8209399Z Requested labels: windows-latest
+2022-10-17T18:42:45.8209464Z Job defined at: AlphaSteam/julia-vscode-microprint-test/.github/workflows/main.yml@refs/heads/master
+2022-10-17T18:42:45.8209481Z Waiting for a runner to pick up this job...
+2022-10-17T18:42:49.6182725Z Job is waiting for a hosted runner to come online.
+2022-10-17T18:42:54.7135684Z Job is about to start running on the hosted runner: GitHub Actions 6 (hosted)
+2022-10-17T18:43:00.2998593Z Current runner version: '2.298.2'
+2022-10-17T18:43:00.3030915Z ##[group]Operating System
+2022-10-17T18:43:00.3031585Z Microsoft Windows Server 2022
+2022-10-17T18:43:00.3032013Z 10.0.20348
+2022-10-17T18:43:00.3032299Z Datacenter
+2022-10-17T18:43:00.3032638Z ##[endgroup]
+2022-10-17T18:43:00.3033020Z ##[group]Runner Image
+2022-10-17T18:43:00.3033370Z Image: windows-2022
+2022-10-17T18:43:00.3033735Z Version: 20221012.4
+2022-10-17T18:43:00.3034355Z Included Software: https://github.com/actions/runner-images/blob/win22/20221012.4/images/win/Windows2022-Readme.md
+2022-10-17T18:43:00.3035064Z Image Release: https://github.com/actions/runner-images/releases/tag/win22%2F20221012.4
+2022-10-17T18:43:00.3035589Z ##[endgroup]
+2022-10-17T18:43:00.3035981Z ##[group]Runner Image Provisioner
+2022-10-17T18:43:00.3036313Z 2.0.78.1
+2022-10-17T18:43:00.3036683Z ##[endgroup]
+2022-10-17T18:43:00.3037880Z ##[group]GITHUB_TOKEN Permissions
+2022-10-17T18:43:00.3038610Z Actions: write
+2022-10-17T18:43:00.3039102Z Checks: write
+2022-10-17T18:43:00.3039546Z Contents: write
+2022-10-17T18:43:00.3039932Z Deployments: write
+2022-10-17T18:43:00.3040267Z Discussions: write
+2022-10-17T18:43:00.3040624Z Issues: write
+2022-10-17T18:43:00.3041003Z Metadata: read
+2022-10-17T18:43:00.3041327Z Packages: write
+2022-10-17T18:43:00.3041699Z Pages: write
+2022-10-17T18:43:00.3042060Z PullRequests: write
+2022-10-17T18:43:00.3042421Z RepositoryProjects: write
+2022-10-17T18:43:00.3042867Z SecurityEvents: write
+2022-10-17T18:43:00.3043256Z Statuses: write
+2022-10-17T18:43:00.3043568Z ##[endgroup]
+2022-10-17T18:43:00.3047824Z Secret source: Actions
+2022-10-17T18:43:00.3048436Z Prepare workflow directory
+2022-10-17T18:43:00.4247411Z Prepare all required actions
+2022-10-17T18:43:00.4472108Z Getting action download info
+2022-10-17T18:43:00.9514118Z Download action repository 'actions/checkout@v2' (SHA:e2f20e631ae6d7dd3b768f56a5d2af784dd54791)
+2022-10-17T18:43:02.5178586Z Download action repository 'julia-actions/setup-julia@v1' (SHA:e802804276a3d8bda6eeb8ec5c3a250216f9687b)
+2022-10-17T18:43:03.7108266Z Download action repository 'GabrielBB/xvfb-action@v1.4' (SHA:f040be23a619e5ec34116f24098ad3626ceab681)
+2022-10-17T18:43:05.2566793Z ##[group]Run actions/checkout@v2
+2022-10-17T18:43:05.2567196Z with:
+2022-10-17T18:43:05.2567412Z   submodules: true
+2022-10-17T18:43:05.2567750Z   repository: AlphaSteam/julia-vscode-microprint-test
+2022-10-17T18:43:05.2568353Z   token: ***
+2022-10-17T18:43:05.2568572Z   ssh-strict: true
+2022-10-17T18:43:05.2568838Z   persist-credentials: true
+2022-10-17T18:43:05.2569091Z   clean: true
+2022-10-17T18:43:05.2569298Z   fetch-depth: 1
+2022-10-17T18:43:05.2569518Z   lfs: false
+2022-10-17T18:43:05.2569764Z   set-safe-directory: true
+2022-10-17T18:43:05.2569990Z env:
+2022-10-17T18:43:05.2570200Z   NODE_VERSION: 16
+2022-10-17T18:43:05.2570424Z ##[endgroup]
+2022-10-17T18:43:11.3004864Z Syncing repository: AlphaSteam/julia-vscode-microprint-test
+2022-10-17T18:43:11.3006879Z ##[group]Getting Git version info
+2022-10-17T18:43:11.3007617Z Working directory is 'D:\a\julia-vscode-microprint-test\julia-vscode-microprint-test'
+2022-10-17T18:43:11.3008420Z [command]"C:\Program Files\Git\bin\git.exe" version
+2022-10-17T18:43:11.3008740Z git version 2.37.3.windows.1
+2022-10-17T18:43:11.3009499Z ##[endgroup]
+2022-10-17T18:43:11.3025164Z Temporarily overriding HOME='D:\a\_temp\bbc35827-21ba-4e94-ad20-13640a65bcda' before making global git config changes
+2022-10-17T18:43:11.3025746Z Adding repository directory to the temporary git global config as a safe directory
+2022-10-17T18:43:11.3026541Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\julia-vscode-microprint-test\julia-vscode-microprint-test
+2022-10-17T18:43:11.3027343Z Deleting the contents of 'D:\a\julia-vscode-microprint-test\julia-vscode-microprint-test'
+2022-10-17T18:43:11.3028130Z ##[group]Initializing the repository
+2022-10-17T18:43:11.3028759Z [command]"C:\Program Files\Git\bin\git.exe" init D:\a\julia-vscode-microprint-test\julia-vscode-microprint-test
+2022-10-17T18:43:11.3031262Z Initialized empty Git repository in D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/
+2022-10-17T18:43:11.3032107Z [command]"C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/AlphaSteam/julia-vscode-microprint-test
+2022-10-17T18:43:11.3032785Z ##[endgroup]
+2022-10-17T18:43:11.3033271Z ##[group]Disabling automatic garbage collection
+2022-10-17T18:43:11.3033776Z [command]"C:\Program Files\Git\bin\git.exe" config --local gc.auto 0
+2022-10-17T18:43:11.3034276Z ##[endgroup]
+2022-10-17T18:43:11.3034704Z ##[group]Setting up auth
+2022-10-17T18:43:11.3035230Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2022-10-17T18:43:11.3036135Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2022-10-17T18:43:12.7407419Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-10-17T18:43:12.7671985Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2022-10-17T18:43:13.4200901Z [command]"C:\Program Files\Git\bin\git.exe" config --local http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2022-10-17T18:43:13.4476033Z ##[endgroup]
+2022-10-17T18:43:13.4476674Z ##[group]Fetching the repository
+2022-10-17T18:43:13.4514463Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +511731a4cba1b56d6527bf266fa6db0f6599270e:refs/remotes/origin/master
+2022-10-17T18:43:14.9502516Z remote: Enumerating objects: 351, done.        
+2022-10-17T18:43:14.9503525Z remote: Counting objects:   0% (1/351)        
+2022-10-17T18:43:14.9505050Z remote: Counting objects:   1% (4/351)        
+2022-10-17T18:43:14.9507949Z remote: Counting objects:   2% (8/351)        
+2022-10-17T18:43:14.9510202Z remote: Counting objects:   3% (11/351)        
+2022-10-17T18:43:14.9510604Z remote: Counting objects:   4% (15/351)        
+2022-10-17T18:43:14.9511003Z remote: Counting objects:   5% (18/351)        
+2022-10-17T18:43:14.9511314Z remote: Counting objects:   6% (22/351)        
+2022-10-17T18:43:14.9511622Z remote: Counting objects:   7% (25/351)        
+2022-10-17T18:43:14.9511909Z remote: Counting objects:   8% (29/351)        
+2022-10-17T18:43:14.9512208Z remote: Counting objects:   9% (32/351)        
+2022-10-17T18:43:14.9512522Z remote: Counting objects:  10% (36/351)        
+2022-10-17T18:43:14.9512804Z remote: Counting objects:  11% (39/351)        
+2022-10-17T18:43:14.9513098Z remote: Counting objects:  12% (43/351)        
+2022-10-17T18:43:14.9513397Z remote: Counting objects:  13% (46/351)        
+2022-10-17T18:43:14.9513689Z remote: Counting objects:  14% (50/351)        
+2022-10-17T18:43:14.9514202Z remote: Counting objects:  15% (53/351)        
+2022-10-17T18:43:14.9514502Z remote: Counting objects:  16% (57/351)        
+2022-10-17T18:43:14.9515279Z remote: Counting objects:  17% (60/351)        
+2022-10-17T18:43:14.9515584Z remote: Counting objects:  18% (64/351)        
+2022-10-17T18:43:14.9515881Z remote: Counting objects:  19% (67/351)        
+2022-10-17T18:43:14.9516174Z remote: Counting objects:  20% (71/351)        
+2022-10-17T18:43:14.9516455Z remote: Counting objects:  21% (74/351)        
+2022-10-17T18:43:14.9516752Z remote: Counting objects:  22% (78/351)        
+2022-10-17T18:43:14.9517053Z remote: Counting objects:  23% (81/351)        
+2022-10-17T18:43:14.9517349Z remote: Counting objects:  24% (85/351)        
+2022-10-17T18:43:14.9517655Z remote: Counting objects:  25% (88/351)        
+2022-10-17T18:43:14.9517950Z remote: Counting objects:  26% (92/351)        
+2022-10-17T18:43:14.9518995Z remote: Counting objects:  27% (95/351)        
+2022-10-17T18:43:14.9519300Z remote: Counting objects:  28% (99/351)        
+2022-10-17T18:43:14.9519605Z remote: Counting objects:  29% (102/351)        
+2022-10-17T18:43:14.9519905Z remote: Counting objects:  30% (106/351)        
+2022-10-17T18:43:14.9520215Z remote: Counting objects:  31% (109/351)        
+2022-10-17T18:43:14.9520511Z remote: Counting objects:  32% (113/351)        
+2022-10-17T18:43:14.9520811Z remote: Counting objects:  33% (116/351)        
+2022-10-17T18:43:14.9521093Z remote: Counting objects:  34% (120/351)        
+2022-10-17T18:43:14.9521389Z remote: Counting objects:  35% (123/351)        
+2022-10-17T18:43:14.9521694Z remote: Counting objects:  36% (127/351)        
+2022-10-17T18:43:14.9521982Z remote: Counting objects:  37% (130/351)        
+2022-10-17T18:43:14.9522544Z remote: Counting objects:  38% (134/351)        
+2022-10-17T18:43:14.9522849Z remote: Counting objects:  39% (137/351)        
+2022-10-17T18:43:14.9523487Z remote: Counting objects:  40% (141/351)        
+2022-10-17T18:43:14.9523787Z remote: Counting objects:  41% (144/351)        
+2022-10-17T18:43:14.9524082Z remote: Counting objects:  42% (148/351)        
+2022-10-17T18:43:14.9524361Z remote: Counting objects:  43% (151/351)        
+2022-10-17T18:43:14.9524662Z remote: Counting objects:  44% (155/351)        
+2022-10-17T18:43:14.9524961Z remote: Counting objects:  45% (158/351)        
+2022-10-17T18:43:14.9525253Z remote: Counting objects:  46% (162/351)        
+2022-10-17T18:43:14.9525537Z remote: Counting objects:  47% (165/351)        
+2022-10-17T18:43:14.9525832Z remote: Counting objects:  48% (169/351)        
+2022-10-17T18:43:14.9526123Z remote: Counting objects:  49% (172/351)        
+2022-10-17T18:43:14.9526399Z remote: Counting objects:  50% (176/351)        
+2022-10-17T18:43:14.9526687Z remote: Counting objects:  51% (180/351)        
+2022-10-17T18:43:14.9526982Z remote: Counting objects:  52% (183/351)        
+2022-10-17T18:43:14.9527264Z remote: Counting objects:  53% (187/351)        
+2022-10-17T18:43:14.9528075Z remote: Counting objects:  54% (190/351)        
+2022-10-17T18:43:14.9528398Z remote: Counting objects:  55% (194/351)        
+2022-10-17T18:43:14.9528686Z remote: Counting objects:  56% (197/351)        
+2022-10-17T18:43:14.9528989Z remote: Counting objects:  57% (201/351)        
+2022-10-17T18:43:14.9529334Z remote: Counting objects:  58% (204/351)        
+2022-10-17T18:43:14.9529634Z remote: Counting objects:  59% (208/351)        
+2022-10-17T18:43:14.9529914Z remote: Counting objects:  60% (211/351)        
+2022-10-17T18:43:14.9530208Z remote: Counting objects:  61% (215/351)        
+2022-10-17T18:43:14.9530507Z remote: Counting objects:  62% (218/351)        
+2022-10-17T18:43:14.9530784Z remote: Counting objects:  63% (222/351)        
+2022-10-17T18:43:14.9531295Z remote: Counting objects:  64% (225/351)        
+2022-10-17T18:43:14.9531725Z remote: Counting objects:  65% (229/351)        
+2022-10-17T18:43:14.9532096Z remote: Counting objects:  66% (232/351)        
+2022-10-17T18:43:14.9532470Z remote: Counting objects:  67% (236/351)        
+2022-10-17T18:43:14.9532813Z remote: Counting objects:  68% (239/351)        
+2022-10-17T18:43:14.9533169Z remote: Counting objects:  69% (243/351)        
+2022-10-17T18:43:14.9533526Z remote: Counting objects:  70% (246/351)        
+2022-10-17T18:43:14.9533866Z remote: Counting objects:  71% (250/351)        
+2022-10-17T18:43:14.9534223Z remote: Counting objects:  72% (253/351)        
+2022-10-17T18:43:14.9534599Z remote: Counting objects:  73% (257/351)        
+2022-10-17T18:43:14.9534953Z remote: Counting objects:  74% (260/351)        
+2022-10-17T18:43:14.9535297Z remote: Counting objects:  75% (264/351)        
+2022-10-17T18:43:14.9535685Z remote: Counting objects:  76% (267/351)        
+2022-10-17T18:43:14.9536052Z remote: Counting objects:  77% (271/351)        
+2022-10-17T18:43:14.9536423Z remote: Counting objects:  78% (274/351)        
+2022-10-17T18:43:14.9536874Z remote: Counting objects:  79% (278/351)        
+2022-10-17T18:43:14.9537252Z remote: Counting objects:  80% (281/351)        
+2022-10-17T18:43:14.9537611Z remote: Counting objects:  81% (285/351)        
+2022-10-17T18:43:14.9537967Z remote: Counting objects:  82% (288/351)        
+2022-10-17T18:43:14.9538312Z remote: Counting objects:  83% (292/351)        
+2022-10-17T18:43:14.9538668Z remote: Counting objects:  84% (295/351)        
+2022-10-17T18:43:14.9539094Z remote: Counting objects:  85% (299/351)        
+2022-10-17T18:43:14.9539439Z remote: Counting objects:  86% (302/351)        
+2022-10-17T18:43:14.9539808Z remote: Counting objects:  87% (306/351)        
+2022-10-17T18:43:14.9540172Z remote: Counting objects:  88% (309/351)        
+2022-10-17T18:43:14.9540526Z remote: Counting objects:  89% (313/351)        
+2022-10-17T18:43:14.9540867Z remote: Counting objects:  90% (316/351)        
+2022-10-17T18:43:14.9541219Z remote: Counting objects:  91% (320/351)        
+2022-10-17T18:43:14.9541577Z remote: Counting objects:  92% (323/351)        
+2022-10-17T18:43:14.9541939Z remote: Counting objects:  93% (327/351)        
+2022-10-17T18:43:14.9542278Z remote: Counting objects:  94% (330/351)        
+2022-10-17T18:43:14.9542634Z remote: Counting objects:  95% (334/351)        
+2022-10-17T18:43:14.9543039Z remote: Counting objects:  96% (337/351)        
+2022-10-17T18:43:14.9543398Z remote: Counting objects:  97% (341/351)        
+2022-10-17T18:43:14.9543761Z remote: Counting objects:  98% (344/351)        
+2022-10-17T18:43:14.9544125Z remote: Counting objects:  99% (348/351)        
+2022-10-17T18:43:14.9544486Z remote: Counting objects: 100% (351/351)        
+2022-10-17T18:43:14.9544811Z remote: Counting objects: 100% (351/351), done.        
+2022-10-17T18:43:14.9545328Z remote: Compressing objects:   0% (1/294)        
+2022-10-17T18:43:14.9545715Z remote: Compressing objects:   1% (3/294)        
+2022-10-17T18:43:14.9546095Z remote: Compressing objects:   2% (6/294)        
+2022-10-17T18:43:15.0101635Z remote: Compressing objects:   3% (9/294)        
+2022-10-17T18:43:15.0107386Z remote: Compressing objects:   4% (12/294)        
+2022-10-17T18:43:15.0107756Z remote: Compressing objects:   5% (15/294)        
+2022-10-17T18:43:15.0108764Z remote: Compressing objects:   6% (18/294)        
+2022-10-17T18:43:15.0109102Z remote: Compressing objects:   7% (21/294)        
+2022-10-17T18:43:15.0109425Z remote: Compressing objects:   8% (24/294)        
+2022-10-17T18:43:15.0109745Z remote: Compressing objects:   9% (27/294)        
+2022-10-17T18:43:15.0112205Z remote: Compressing objects:  10% (30/294)        
+2022-10-17T18:43:15.0112899Z remote: Compressing objects:  11% (33/294)        
+2022-10-17T18:43:15.0113471Z remote: Compressing objects:  12% (36/294)        
+2022-10-17T18:43:15.0114031Z remote: Compressing objects:  13% (39/294)        
+2022-10-17T18:43:15.0114572Z remote: Compressing objects:  14% (42/294)        
+2022-10-17T18:43:15.0115148Z remote: Compressing objects:  15% (45/294)        
+2022-10-17T18:43:15.0115711Z remote: Compressing objects:  16% (48/294)        
+2022-10-17T18:43:15.0116258Z remote: Compressing objects:  17% (50/294)        
+2022-10-17T18:43:15.0116810Z remote: Compressing objects:  18% (53/294)        
+2022-10-17T18:43:15.0117357Z remote: Compressing objects:  19% (56/294)        
+2022-10-17T18:43:15.0118186Z remote: Compressing objects:  20% (59/294)        
+2022-10-17T18:43:15.0118716Z remote: Compressing objects:  21% (62/294)        
+2022-10-17T18:43:15.0119265Z remote: Compressing objects:  22% (65/294)        
+2022-10-17T18:43:15.0958374Z remote: Compressing objects:  23% (68/294)        
+2022-10-17T18:43:15.1567902Z remote: Compressing objects:  24% (71/294)        
+2022-10-17T18:43:15.1568496Z remote: Compressing objects:  25% (74/294)        
+2022-10-17T18:43:15.1585212Z remote: Compressing objects:  26% (77/294)        
+2022-10-17T18:43:15.1585723Z remote: Compressing objects:  27% (80/294)        
+2022-10-17T18:43:15.1586335Z remote: Compressing objects:  28% (83/294)        
+2022-10-17T18:43:15.1586677Z remote: Compressing objects:  29% (86/294)        
+2022-10-17T18:43:15.1587001Z remote: Compressing objects:  30% (89/294)        
+2022-10-17T18:43:15.1592464Z remote: Compressing objects:  31% (92/294)        
+2022-10-17T18:43:15.1592921Z remote: Compressing objects:  32% (95/294)        
+2022-10-17T18:43:15.1593257Z remote: Compressing objects:  33% (98/294)        
+2022-10-17T18:43:15.1600782Z remote: Compressing objects:  34% (100/294)        
+2022-10-17T18:43:15.1601219Z remote: Compressing objects:  35% (103/294)        
+2022-10-17T18:43:15.1601545Z remote: Compressing objects:  36% (106/294)        
+2022-10-17T18:43:15.1606860Z remote: Compressing objects:  37% (109/294)        
+2022-10-17T18:43:15.1607458Z remote: Compressing objects:  38% (112/294)        
+2022-10-17T18:43:15.1608848Z remote: Compressing objects:  39% (115/294)        
+2022-10-17T18:43:15.1609230Z remote: Compressing objects:  40% (118/294)        
+2022-10-17T18:43:15.1629505Z remote: Compressing objects:  41% (121/294)        
+2022-10-17T18:43:15.1630192Z remote: Compressing objects:  42% (124/294)        
+2022-10-17T18:43:15.1631123Z remote: Compressing objects:  43% (127/294)        
+2022-10-17T18:43:15.1632731Z remote: Compressing objects:  44% (130/294)        
+2022-10-17T18:43:15.1640038Z remote: Compressing objects:  45% (133/294)        
+2022-10-17T18:43:15.1649066Z remote: Compressing objects:  46% (136/294)        
+2022-10-17T18:43:15.1652216Z remote: Compressing objects:  47% (139/294)        
+2022-10-17T18:43:15.1675937Z remote: Compressing objects:  48% (142/294)        
+2022-10-17T18:43:15.1676320Z remote: Compressing objects:  49% (145/294)        
+2022-10-17T18:43:15.1676658Z remote: Compressing objects:  50% (147/294)        
+2022-10-17T18:43:15.1707026Z remote: Compressing objects:  51% (150/294)        
+2022-10-17T18:43:15.1707673Z remote: Compressing objects:  52% (153/294)        
+2022-10-17T18:43:15.1708058Z remote: Compressing objects:  53% (156/294)        
+2022-10-17T18:43:15.1708615Z remote: Compressing objects:  54% (159/294)        
+2022-10-17T18:43:15.1708953Z remote: Compressing objects:  55% (162/294)        
+2022-10-17T18:43:15.1709261Z remote: Compressing objects:  56% (165/294)        
+2022-10-17T18:43:15.1709595Z remote: Compressing objects:  57% (168/294)        
+2022-10-17T18:43:15.1709925Z remote: Compressing objects:  58% (171/294)        
+2022-10-17T18:43:15.1710247Z remote: Compressing objects:  59% (174/294)        
+2022-10-17T18:43:15.1710550Z remote: Compressing objects:  60% (177/294)        
+2022-10-17T18:43:15.1710868Z remote: Compressing objects:  61% (180/294)        
+2022-10-17T18:43:15.1711190Z remote: Compressing objects:  62% (183/294)        
+2022-10-17T18:43:15.1719527Z remote: Compressing objects:  63% (186/294)        
+2022-10-17T18:43:15.1724195Z remote: Compressing objects:  64% (189/294)        
+2022-10-17T18:43:15.1726606Z remote: Compressing objects:  65% (192/294)        
+2022-10-17T18:43:15.1736454Z remote: Compressing objects:  66% (195/294)        
+2022-10-17T18:43:15.1736784Z remote: Compressing objects:  67% (197/294)        
+2022-10-17T18:43:15.2352164Z remote: Compressing objects:  68% (200/294)        
+2022-10-17T18:43:15.2353324Z remote: Compressing objects:  69% (203/294)        
+2022-10-17T18:43:15.2354241Z remote: Compressing objects:  70% (206/294)        
+2022-10-17T18:43:15.2355065Z remote: Compressing objects:  71% (209/294)        
+2022-10-17T18:43:15.2355829Z remote: Compressing objects:  72% (212/294)        
+2022-10-17T18:43:15.2356594Z remote: Compressing objects:  73% (215/294)        
+2022-10-17T18:43:15.2357347Z remote: Compressing objects:  74% (218/294)        
+2022-10-17T18:43:15.2358093Z remote: Compressing objects:  75% (221/294)        
+2022-10-17T18:43:15.2358835Z remote: Compressing objects:  76% (224/294)        
+2022-10-17T18:43:15.2361381Z remote: Compressing objects:  77% (227/294)        
+2022-10-17T18:43:15.2363792Z remote: Compressing objects:  78% (230/294)        
+2022-10-17T18:43:15.2364570Z remote: Compressing objects:  79% (233/294)        
+2022-10-17T18:43:15.2365335Z remote: Compressing objects:  80% (236/294)        
+2022-10-17T18:43:15.2366070Z remote: Compressing objects:  81% (239/294)        
+2022-10-17T18:43:15.2366834Z remote: Compressing objects:  82% (242/294)        
+2022-10-17T18:43:15.2369302Z remote: Compressing objects:  83% (245/294)        
+2022-10-17T18:43:15.2370116Z remote: Compressing objects:  84% (247/294)        
+2022-10-17T18:43:15.2370849Z remote: Compressing objects:  85% (250/294)        
+2022-10-17T18:43:15.2371616Z remote: Compressing objects:  86% (253/294)        
+2022-10-17T18:43:15.2372375Z remote: Compressing objects:  87% (256/294)        
+2022-10-17T18:43:15.2373244Z remote: Compressing objects:  88% (259/294)        
+2022-10-17T18:43:15.2373981Z remote: Compressing objects:  89% (262/294)        
+2022-10-17T18:43:15.2374755Z remote: Compressing objects:  90% (265/294)        
+2022-10-17T18:43:15.2375505Z remote: Compressing objects:  91% (268/294)        
+2022-10-17T18:43:15.2376239Z remote: Compressing objects:  92% (271/294)        
+2022-10-17T18:43:15.2378068Z remote: Compressing objects:  93% (274/294)        
+2022-10-17T18:43:15.2378980Z remote: Compressing objects:  94% (277/294)        
+2022-10-17T18:43:15.2379734Z remote: Compressing objects:  95% (280/294)        
+2022-10-17T18:43:15.2380471Z remote: Compressing objects:  96% (283/294)        
+2022-10-17T18:43:15.2381235Z remote: Compressing objects:  97% (286/294)        
+2022-10-17T18:43:15.2381991Z remote: Compressing objects:  98% (289/294)        
+2022-10-17T18:43:15.2382781Z remote: Compressing objects:  99% (292/294)        
+2022-10-17T18:43:15.2383493Z remote: Compressing objects: 100% (294/294)        
+2022-10-17T18:43:15.2384317Z remote: Compressing objects: 100% (294/294), done.        
+2022-10-17T18:43:15.3015005Z Receiving objects:   0% (1/351)
+2022-10-17T18:43:15.3015371Z Receiving objects:   1% (4/351)
+2022-10-17T18:43:15.3023288Z Receiving objects:   2% (8/351)
+2022-10-17T18:43:15.3024534Z Receiving objects:   3% (11/351)
+2022-10-17T18:43:15.3042814Z Receiving objects:   4% (15/351)
+2022-10-17T18:43:15.3043399Z Receiving objects:   5% (18/351)
+2022-10-17T18:43:15.3043807Z Receiving objects:   6% (22/351)
+2022-10-17T18:43:15.3046020Z Receiving objects:   7% (25/351)
+2022-10-17T18:43:15.3047648Z Receiving objects:   8% (29/351)
+2022-10-17T18:43:15.3974877Z Receiving objects:   9% (32/351)
+2022-10-17T18:43:15.4017028Z Receiving objects:  10% (36/351)
+2022-10-17T18:43:15.4023308Z Receiving objects:  11% (39/351)
+2022-10-17T18:43:15.4023700Z Receiving objects:  12% (43/351)
+2022-10-17T18:43:15.4664522Z Receiving objects:  13% (46/351)
+2022-10-17T18:43:15.4689140Z Receiving objects:  14% (50/351)
+2022-10-17T18:43:15.4702203Z Receiving objects:  15% (53/351)
+2022-10-17T18:43:15.4725634Z Receiving objects:  16% (57/351)
+2022-10-17T18:43:15.4740393Z Receiving objects:  17% (60/351)
+2022-10-17T18:43:15.4789982Z Receiving objects:  18% (64/351)
+2022-10-17T18:43:15.5418333Z Receiving objects:  19% (67/351)
+2022-10-17T18:43:15.5443424Z Receiving objects:  20% (71/351)
+2022-10-17T18:43:15.5465051Z Receiving objects:  21% (74/351)
+2022-10-17T18:43:15.5478289Z Receiving objects:  22% (78/351)
+2022-10-17T18:43:15.5489795Z Receiving objects:  23% (81/351)
+2022-10-17T18:43:15.5500887Z Receiving objects:  24% (85/351)
+2022-10-17T18:43:15.5518172Z Receiving objects:  25% (88/351)
+2022-10-17T18:43:15.5521706Z Receiving objects:  26% (92/351)
+2022-10-17T18:43:15.5527539Z Receiving objects:  27% (95/351)
+2022-10-17T18:43:15.5530898Z Receiving objects:  28% (99/351)
+2022-10-17T18:43:15.5534975Z Receiving objects:  29% (102/351)
+2022-10-17T18:43:15.5546719Z Receiving objects:  30% (106/351)
+2022-10-17T18:43:15.5555233Z Receiving objects:  31% (109/351)
+2022-10-17T18:43:15.6520207Z Receiving objects:  32% (113/351)
+2022-10-17T18:43:15.6581560Z Receiving objects:  33% (116/351)
+2022-10-17T18:43:15.6714625Z Receiving objects:  34% (120/351)
+2022-10-17T18:43:15.6747490Z Receiving objects:  35% (123/351)
+2022-10-17T18:43:15.6777380Z Receiving objects:  36% (127/351)
+2022-10-17T18:43:15.6864469Z Receiving objects:  37% (130/351)
+2022-10-17T18:43:15.6872110Z Receiving objects:  38% (134/351)
+2022-10-17T18:43:15.6874225Z Receiving objects:  39% (137/351)
+2022-10-17T18:43:15.6875416Z Receiving objects:  40% (141/351)
+2022-10-17T18:43:15.6878795Z Receiving objects:  41% (144/351)
+2022-10-17T18:43:15.6879849Z Receiving objects:  42% (148/351)
+2022-10-17T18:43:15.6883795Z Receiving objects:  43% (151/351)
+2022-10-17T18:43:15.6884223Z Receiving objects:  44% (155/351)
+2022-10-17T18:43:15.6884544Z Receiving objects:  45% (158/351)
+2022-10-17T18:43:15.6885752Z Receiving objects:  46% (162/351)
+2022-10-17T18:43:15.6886079Z Receiving objects:  47% (165/351)
+2022-10-17T18:43:15.6887237Z Receiving objects:  48% (169/351)
+2022-10-17T18:43:15.6888478Z Receiving objects:  49% (172/351)
+2022-10-17T18:43:15.6888878Z Receiving objects:  50% (176/351)
+2022-10-17T18:43:15.6889203Z Receiving objects:  51% (180/351)
+2022-10-17T18:43:15.6889530Z Receiving objects:  52% (183/351)
+2022-10-17T18:43:15.6889854Z Receiving objects:  53% (187/351)
+2022-10-17T18:43:15.6890175Z Receiving objects:  54% (190/351)
+2022-10-17T18:43:15.6892387Z Receiving objects:  55% (194/351)
+2022-10-17T18:43:15.6892735Z Receiving objects:  56% (197/351)
+2022-10-17T18:43:15.6893059Z Receiving objects:  57% (201/351)
+2022-10-17T18:43:15.6893383Z Receiving objects:  58% (204/351)
+2022-10-17T18:43:15.6893811Z Receiving objects:  59% (208/351)
+2022-10-17T18:43:15.6894190Z Receiving objects:  60% (211/351)
+2022-10-17T18:43:15.6896089Z Receiving objects:  61% (215/351)
+2022-10-17T18:43:15.6897334Z Receiving objects:  62% (218/351)
+2022-10-17T18:43:15.6897756Z Receiving objects:  63% (222/351)
+2022-10-17T18:43:15.6902128Z Receiving objects:  64% (225/351)
+2022-10-17T18:43:15.6902550Z Receiving objects:  65% (229/351)
+2022-10-17T18:43:15.6904280Z Receiving objects:  66% (232/351)
+2022-10-17T18:43:15.6904687Z Receiving objects:  67% (236/351)
+2022-10-17T18:43:15.6914120Z Receiving objects:  68% (239/351)
+2022-10-17T18:43:15.6914610Z Receiving objects:  69% (243/351)
+2022-10-17T18:43:15.6914930Z Receiving objects:  70% (246/351)
+2022-10-17T18:43:15.6915255Z Receiving objects:  71% (250/351)
+2022-10-17T18:43:15.6915591Z Receiving objects:  72% (253/351)
+2022-10-17T18:43:15.6915900Z Receiving objects:  73% (257/351)
+2022-10-17T18:43:15.6917970Z Receiving objects:  74% (260/351)
+2022-10-17T18:43:15.6918306Z Receiving objects:  75% (264/351)
+2022-10-17T18:43:15.6918692Z Receiving objects:  76% (267/351)
+2022-10-17T18:43:15.6919009Z Receiving objects:  77% (271/351)
+2022-10-17T18:43:15.6919328Z Receiving objects:  78% (274/351)
+2022-10-17T18:43:15.6919650Z Receiving objects:  79% (278/351)
+2022-10-17T18:43:15.6919961Z Receiving objects:  80% (281/351)
+2022-10-17T18:43:15.6922119Z Receiving objects:  81% (285/351)
+2022-10-17T18:43:15.6922574Z Receiving objects:  82% (288/351)
+2022-10-17T18:43:15.6922900Z Receiving objects:  83% (292/351)
+2022-10-17T18:43:15.6923279Z Receiving objects:  84% (295/351)
+2022-10-17T18:43:15.6923608Z Receiving objects:  85% (299/351)
+2022-10-17T18:43:15.6924910Z Receiving objects:  86% (302/351)
+2022-10-17T18:43:15.6929862Z Receiving objects:  87% (306/351)
+2022-10-17T18:43:15.6941506Z Receiving objects:  88% (309/351)
+2022-10-17T18:43:15.6946602Z Receiving objects:  89% (313/351)
+2022-10-17T18:43:15.6976719Z Receiving objects:  90% (316/351)
+2022-10-17T18:43:15.6977023Z Receiving objects:  91% (320/351)
+2022-10-17T18:43:15.6977301Z Receiving objects:  92% (323/351)
+2022-10-17T18:43:15.6977573Z Receiving objects:  93% (327/351)
+2022-10-17T18:43:15.6977876Z Receiving objects:  94% (330/351)
+2022-10-17T18:43:15.6978148Z Receiving objects:  95% (334/351)
+2022-10-17T18:43:15.6978415Z Receiving objects:  96% (337/351)
+2022-10-17T18:43:15.6978883Z Receiving objects:  97% (341/351)
+2022-10-17T18:43:15.6979134Z Receiving objects:  98% (344/351)
+2022-10-17T18:43:15.6979844Z remote: Total 351 (delta 47), reused 227 (delta 29), pack-reused 0        
+2022-10-17T18:43:15.6980188Z Receiving objects:  99% (348/351)
+2022-10-17T18:43:15.6980440Z Receiving objects: 100% (351/351)
+2022-10-17T18:43:15.6980756Z Receiving objects: 100% (351/351), 3.44 MiB | 8.29 MiB/s, done.
+2022-10-17T18:43:15.6991270Z Resolving deltas:   0% (0/47)
+2022-10-17T18:43:15.6993769Z Resolving deltas:   2% (1/47)
+2022-10-17T18:43:15.7024318Z Resolving deltas:   4% (2/47)
+2022-10-17T18:43:15.7024926Z Resolving deltas:   6% (3/47)
+2022-10-17T18:43:15.7028625Z Resolving deltas:   8% (4/47)
+2022-10-17T18:43:15.7028977Z Resolving deltas:  10% (5/47)
+2022-10-17T18:43:15.7029308Z Resolving deltas:  12% (6/47)
+2022-10-17T18:43:15.7029631Z Resolving deltas:  14% (7/47)
+2022-10-17T18:43:15.7029936Z Resolving deltas:  17% (8/47)
+2022-10-17T18:43:15.7030260Z Resolving deltas:  19% (9/47)
+2022-10-17T18:43:15.7030597Z Resolving deltas:  21% (10/47)
+2022-10-17T18:43:15.7030918Z Resolving deltas:  23% (11/47)
+2022-10-17T18:43:15.7031233Z Resolving deltas:  25% (12/47)
+2022-10-17T18:43:15.7031554Z Resolving deltas:  27% (13/47)
+2022-10-17T18:43:15.7031871Z Resolving deltas:  29% (14/47)
+2022-10-17T18:43:15.7032197Z Resolving deltas:  31% (15/47)
+2022-10-17T18:43:15.7032518Z Resolving deltas:  34% (16/47)
+2022-10-17T18:43:15.7032837Z Resolving deltas:  36% (17/47)
+2022-10-17T18:43:15.7033153Z Resolving deltas:  38% (18/47)
+2022-10-17T18:43:15.7033458Z Resolving deltas:  40% (19/47)
+2022-10-17T18:43:15.7033772Z Resolving deltas:  42% (20/47)
+2022-10-17T18:43:15.7034088Z Resolving deltas:  44% (21/47)
+2022-10-17T18:43:15.7034404Z Resolving deltas:  46% (22/47)
+2022-10-17T18:43:15.7034707Z Resolving deltas:  48% (23/47)
+2022-10-17T18:43:15.7035019Z Resolving deltas:  51% (24/47)
+2022-10-17T18:43:15.7035333Z Resolving deltas:  53% (25/47)
+2022-10-17T18:43:15.7035634Z Resolving deltas:  55% (26/47)
+2022-10-17T18:43:15.7035952Z Resolving deltas:  57% (27/47)
+2022-10-17T18:43:15.7036264Z Resolving deltas:  59% (28/47)
+2022-10-17T18:43:15.7036785Z Resolving deltas:  61% (29/47)
+2022-10-17T18:43:15.7037103Z Resolving deltas:  63% (30/47)
+2022-10-17T18:43:15.7037416Z Resolving deltas:  65% (31/47)
+2022-10-17T18:43:15.7037728Z Resolving deltas:  68% (32/47)
+2022-10-17T18:43:15.7038029Z Resolving deltas:  70% (33/47)
+2022-10-17T18:43:15.7038343Z Resolving deltas:  72% (34/47)
+2022-10-17T18:43:15.7038655Z Resolving deltas:  74% (35/47)
+2022-10-17T18:43:15.7038965Z Resolving deltas:  76% (36/47)
+2022-10-17T18:43:15.7039267Z Resolving deltas:  78% (37/47)
+2022-10-17T18:43:15.7039578Z Resolving deltas:  80% (38/47)
+2022-10-17T18:43:15.7039889Z Resolving deltas:  82% (39/47)
+2022-10-17T18:43:15.7040188Z Resolving deltas:  85% (40/47)
+2022-10-17T18:43:15.7040503Z Resolving deltas:  87% (41/47)
+2022-10-17T18:43:15.7040896Z Resolving deltas:  89% (42/47)
+2022-10-17T18:43:15.7041219Z Resolving deltas:  91% (43/47)
+2022-10-17T18:43:15.7041518Z Resolving deltas:  93% (44/47)
+2022-10-17T18:43:15.7041834Z Resolving deltas:  95% (45/47)
+2022-10-17T18:43:15.7042151Z Resolving deltas:  97% (46/47)
+2022-10-17T18:43:15.7042450Z Resolving deltas: 100% (47/47)
+2022-10-17T18:43:15.7042732Z Resolving deltas: 100% (47/47), done.
+2022-10-17T18:43:15.7706901Z From https://github.com/AlphaSteam/julia-vscode-microprint-test
+2022-10-17T18:43:15.7708241Z  * [new ref]         511731a4cba1b56d6527bf266fa6db0f6599270e -> origin/master
+2022-10-17T18:43:15.7983050Z ##[endgroup]
+2022-10-17T18:43:15.7983632Z ##[group]Determining the checkout info
+2022-10-17T18:43:15.7984631Z ##[endgroup]
+2022-10-17T18:43:15.7985167Z ##[group]Checking out the ref
+2022-10-17T18:43:15.7995550Z [command]"C:\Program Files\Git\bin\git.exe" checkout --progress --force -B master refs/remotes/origin/master
+2022-10-17T18:43:16.0005672Z branch 'master' set up to track 'origin/master'.
+2022-10-17T18:43:16.0007754Z Reset branch 'master'
+2022-10-17T18:43:16.0046550Z ##[endgroup]
+2022-10-17T18:43:16.0047493Z ##[group]Setting up auth for fetching submodules
+2022-10-17T18:43:16.0058637Z [command]"C:\Program Files\Git\bin\git.exe" config --global http.https://github.com/.extraheader "AUTHORIZATION: basic ***"
+2022-10-17T18:43:16.0362010Z [command]"C:\Program Files\Git\bin\git.exe" config --global --unset-all url.https://github.com/.insteadOf
+2022-10-17T18:43:16.0619161Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add url.https://github.com/.insteadOf git@github.com:
+2022-10-17T18:43:16.0891160Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add url.https://github.com/.insteadOf org-30818940@github.com:
+2022-10-17T18:43:16.1151728Z ##[endgroup]
+2022-10-17T18:43:16.1152638Z ##[group]Fetching submodules
+2022-10-17T18:43:16.1161572Z [command]"C:\Program Files\Git\bin\git.exe" submodule sync
+2022-10-17T18:43:16.8691832Z [command]"C:\Program Files\Git\bin\git.exe" -c protocol.version=2 submodule update --init --force --depth=1
+2022-10-17T18:43:17.6781181Z Submodule 'libs/jl-profile' (https://github.com/pfitzseb/jl-profile.js.git) registered for path 'libs/jl-profile'
+2022-10-17T18:43:17.6782400Z Submodule 'scripts/packages-old/JuliaInterpreter' (https://github.com/JuliaDebug/JuliaInterpreter.jl.git) registered for path 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T18:43:17.6783446Z Submodule 'scripts/packages/CSTParser' (https://github.com/julia-vscode/CSTParser.jl.git) registered for path 'scripts/packages/CSTParser'
+2022-10-17T18:43:17.6784384Z Submodule 'scripts/packages/CodeTracking' (https://github.com/timholy/CodeTracking.jl.git) registered for path 'scripts/packages/CodeTracking'
+2022-10-17T18:43:17.6785625Z Submodule 'scripts/packages/CommonMark' (https://github.com/MichaelHatherly/CommonMark.jl.git) registered for path 'scripts/packages/CommonMark'
+2022-10-17T18:43:17.6786586Z Submodule 'scripts/packages/Compat' (https://github.com/JuliaLang/Compat.jl.git) registered for path 'scripts/packages/Compat'
+2022-10-17T18:43:17.6787819Z Submodule 'scripts/packages/CoverageTools' (https://github.com/JuliaCI/CoverageTools.jl.git) registered for path 'scripts/packages/CoverageTools'
+2022-10-17T18:43:17.6788716Z Submodule 'scripts/packages/Crayons' (https://github.com/KristofferC/Crayons.jl.git) registered for path 'scripts/packages/Crayons'
+2022-10-17T18:43:17.6789664Z Submodule 'scripts/packages/DataStructures' (https://github.com/JuliaCollections/DataStructures.jl.git) registered for path 'scripts/packages/DataStructures'
+2022-10-17T18:43:17.6790602Z Submodule 'scripts/packages/DebugAdapter' (https://github.com/julia-vscode/DebugAdapter.jl.git) registered for path 'scripts/packages/DebugAdapter'
+2022-10-17T18:43:17.6791504Z Submodule 'scripts/packages/FilePathsBase' (https://github.com/rofinn/FilePathsBase.jl.git) registered for path 'scripts/packages/FilePathsBase'
+2022-10-17T18:43:17.6792398Z Submodule 'scripts/packages/IJuliaCore' (https://github.com/JuliaLang/IJuliaCore.jl.git) registered for path 'scripts/packages/IJuliaCore'
+2022-10-17T18:43:17.6793229Z Submodule 'scripts/packages/JSON' (https://github.com/JuliaIO/JSON.jl.git) registered for path 'scripts/packages/JSON'
+2022-10-17T18:43:17.6795364Z Submodule 'scripts/packages/JSONRPC' (https://github.com/julia-vscode/JSONRPC.jl.git) registered for path 'scripts/packages/JSONRPC'
+2022-10-17T18:43:17.6796464Z Submodule 'scripts/packages/JuliaFormatter' (https://github.com/domluna/JuliaFormatter.jl.git) registered for path 'scripts/packages/JuliaFormatter'
+2022-10-17T18:43:17.6797430Z Submodule 'scripts/packages/JuliaInterpreter' (https://github.com/JuliaDebug/JuliaInterpreter.jl.git) registered for path 'scripts/packages/JuliaInterpreter'
+2022-10-17T18:43:17.6798408Z Submodule 'scripts/packages/LanguageServer' (https://github.com/julia-vscode/LanguageServer.jl.git) registered for path 'scripts/packages/LanguageServer'
+2022-10-17T18:43:17.6799414Z Submodule 'scripts/packages/LoweredCodeUtils' (https://github.com/JuliaDebug/LoweredCodeUtils.jl.git) registered for path 'scripts/packages/LoweredCodeUtils'
+2022-10-17T18:43:17.6801160Z Submodule 'scripts/packages/OrderedCollections' (https://github.com/JuliaCollections/OrderedCollections.jl.git) registered for path 'scripts/packages/OrderedCollections'
+2022-10-17T18:43:17.6802163Z Submodule 'scripts/packages/PackageCompiler' (https://github.com/JuliaLang/PackageCompiler.jl.git) registered for path 'scripts/packages/PackageCompiler'
+2022-10-17T18:43:17.6803027Z Submodule 'scripts/packages/Revise' (https://github.com/timholy/Revise.jl) registered for path 'scripts/packages/Revise'
+2022-10-17T18:43:17.6803876Z Submodule 'scripts/packages/StaticLint' (https://github.com/julia-vscode/StaticLint.jl) registered for path 'scripts/packages/StaticLint'
+2022-10-17T18:43:17.6804781Z Submodule 'scripts/packages/SymbolServer' (https://github.com/julia-vscode/SymbolServer.jl.git) registered for path 'scripts/packages/SymbolServer'
+2022-10-17T18:43:17.6805657Z Submodule 'scripts/packages/TestEnv' (https://github.com/davidanthoff/TestEnv.jl) registered for path 'scripts/packages/TestEnv'
+2022-10-17T18:43:17.6806588Z Submodule 'scripts/packages/TestItemDetection' (https://github.com/julia-vscode/TestItemDetection.jl) registered for path 'scripts/packages/TestItemDetection'
+2022-10-17T18:43:17.6807480Z Submodule 'scripts/packages/Tokenize' (https://github.com/JuliaLang/Tokenize.jl.git) registered for path 'scripts/packages/Tokenize'
+2022-10-17T18:43:17.6808613Z Submodule 'scripts/packages/URIParser' (https://github.com/JuliaWeb/URIParser.jl.git) registered for path 'scripts/packages/URIParser'
+2022-10-17T18:43:17.6809781Z Submodule 'scripts/packages/URIs' (https://github.com/JuliaWeb/URIs.jl.git) registered for path 'scripts/packages/URIs'
+2022-10-17T18:43:18.8981071Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/libs/jl-profile'...
+2022-10-17T18:43:20.1944055Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages-old/JuliaInterpreter'...
+2022-10-17T18:43:21.3347765Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CSTParser'...
+2022-10-17T18:43:22.3519228Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CodeTracking'...
+2022-10-17T18:43:23.5721689Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CommonMark'...
+2022-10-17T18:43:24.6349774Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Compat'...
+2022-10-17T18:43:25.6990707Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/CoverageTools'...
+2022-10-17T18:43:26.8870532Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Crayons'...
+2022-10-17T18:43:27.9351552Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/DataStructures'...
+2022-10-17T18:43:28.9989867Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/DebugAdapter'...
+2022-10-17T18:43:30.0781153Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/FilePathsBase'...
+2022-10-17T18:43:31.0957496Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/IJuliaCore'...
+2022-10-17T18:43:32.2052128Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSON'...
+2022-10-17T18:43:33.2686091Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JSONRPC'...
+2022-10-17T18:43:34.5829781Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JuliaFormatter'...
+2022-10-17T18:43:35.7405514Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/JuliaInterpreter'...
+2022-10-17T18:43:36.8683680Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/LanguageServer'...
+2022-10-17T18:43:37.9164950Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/LoweredCodeUtils'...
+2022-10-17T18:43:38.9799229Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/OrderedCollections'...
+2022-10-17T18:43:40.4650521Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/PackageCompiler'...
+2022-10-17T18:43:41.4816069Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Revise'...
+2022-10-17T18:43:42.4983557Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/StaticLint'...
+2022-10-17T18:43:43.4992773Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/SymbolServer'...
+2022-10-17T18:43:45.0004586Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/TestEnv'...
+2022-10-17T18:43:45.2820563Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/TestItemDetection'...
+2022-10-17T18:43:46.3453884Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/Tokenize'...
+2022-10-17T18:43:47.3303957Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/URIParser'...
+2022-10-17T18:43:48.5985825Z Cloning into 'D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/scripts/packages/URIs'...
+2022-10-17T18:43:50.6245448Z From https://github.com/pfitzseb/jl-profile.js
+2022-10-17T18:43:50.6246283Z  * branch            44fe7c33bc23a8e4cdb3b67674994fe2564245bf -> FETCH_HEAD
+2022-10-17T18:43:50.6864565Z Submodule path 'libs/jl-profile': checked out '44fe7c33bc23a8e4cdb3b67674994fe2564245bf'
+2022-10-17T18:43:52.9038632Z From https://github.com/JuliaDebug/JuliaInterpreter.jl
+2022-10-17T18:43:52.9040100Z  * branch            398721d10be2edf40883a11b98e210ccda5393e3 -> FETCH_HEAD
+2022-10-17T18:43:52.9652361Z Submodule path 'scripts/packages-old/JuliaInterpreter': checked out '398721d10be2edf40883a11b98e210ccda5393e3'
+2022-10-17T18:43:55.0818706Z From https://github.com/julia-vscode/CSTParser.jl
+2022-10-17T18:43:55.0819429Z  * branch            b5cb953e12d8c5c8191e1fcb6aef80ecab7f6a06 -> FETCH_HEAD
+2022-10-17T18:43:55.1416247Z Submodule path 'scripts/packages/CSTParser': checked out 'b5cb953e12d8c5c8191e1fcb6aef80ecab7f6a06'
+2022-10-17T18:43:55.2332033Z Submodule path 'scripts/packages/CodeTracking': checked out '426fc0e5af69ca410f3a1b77458db5fc5d68e864'
+2022-10-17T18:43:57.2124099Z From https://github.com/MichaelHatherly/CommonMark.jl
+2022-10-17T18:43:57.2125132Z  * branch            287e39ae128e80a6647d2d9762bf22040adffea1 -> FETCH_HEAD
+2022-10-17T18:43:57.3027058Z Submodule path 'scripts/packages/CommonMark': checked out '287e39ae128e80a6647d2d9762bf22040adffea1'
+2022-10-17T18:43:59.6449470Z From https://github.com/JuliaLang/Compat.jl
+2022-10-17T18:43:59.6450385Z  * branch            3ae185fa45a3091b387b67b6fd8f58f761854238 -> FETCH_HEAD
+2022-10-17T18:43:59.6958347Z Submodule path 'scripts/packages/Compat': checked out '3ae185fa45a3091b387b67b6fd8f58f761854238'
+2022-10-17T18:43:59.7623931Z Submodule path 'scripts/packages/CoverageTools': checked out '9d8fba371f4c65a7e9ca3bdaae753a52bcb22218'
+2022-10-17T18:44:01.9454350Z From https://github.com/KristofferC/Crayons.jl
+2022-10-17T18:44:01.9455529Z  * branch            4cf50b8e5e1a250a5b3466937fa0421c78bafdf4 -> FETCH_HEAD
+2022-10-17T18:44:01.9963172Z Submodule path 'scripts/packages/Crayons': checked out '4cf50b8e5e1a250a5b3466937fa0421c78bafdf4'
+2022-10-17T18:44:04.3697005Z From https://github.com/JuliaCollections/DataStructures.jl
+2022-10-17T18:44:04.3698189Z  * branch            d0dd2a012ebd07ff31193b21130109baa50cfe2b -> FETCH_HEAD
+2022-10-17T18:44:04.4553028Z Submodule path 'scripts/packages/DataStructures': checked out 'd0dd2a012ebd07ff31193b21130109baa50cfe2b'
+2022-10-17T18:44:06.3320400Z From https://github.com/julia-vscode/DebugAdapter.jl
+2022-10-17T18:44:06.3321334Z  * branch            b0991c1664d948d9bbb1ab2cac56606511981df5 -> FETCH_HEAD
+2022-10-17T18:44:06.3838068Z Submodule path 'scripts/packages/DebugAdapter': checked out 'b0991c1664d948d9bbb1ab2cac56606511981df5'
+2022-10-17T18:44:06.4550916Z Submodule path 'scripts/packages/FilePathsBase': checked out '336666220f9ddd7a15a7f059925a359d51c6cead'
+2022-10-17T18:44:06.5303614Z Submodule path 'scripts/packages/IJuliaCore': checked out 'c3e48ef9ee9a34d9be6abe1fe9033317638950ba'
+2022-10-17T18:44:08.7233982Z From https://github.com/JuliaIO/JSON.jl
+2022-10-17T18:44:08.7235178Z  * branch            4b3913d58f04cc5bb2f8d23c6ef82e0fbed20525 -> FETCH_HEAD
+2022-10-17T18:44:08.7927246Z Submodule path 'scripts/packages/JSON': checked out '4b3913d58f04cc5bb2f8d23c6ef82e0fbed20525'
+2022-10-17T18:44:10.9426510Z From https://github.com/julia-vscode/JSONRPC.jl
+2022-10-17T18:44:10.9427305Z  * branch            982acfdb112b7198a025edcf3930c6a6a27913e1 -> FETCH_HEAD
+2022-10-17T18:44:10.9930458Z Submodule path 'scripts/packages/JSONRPC': checked out '982acfdb112b7198a025edcf3930c6a6a27913e1'
+2022-10-17T18:44:13.2890322Z From https://github.com/domluna/JuliaFormatter.jl
+2022-10-17T18:44:13.2891291Z  * branch            6c0f94468eaef63405fbcbb11943314a164262d6 -> FETCH_HEAD
+2022-10-17T18:44:13.3851111Z Submodule path 'scripts/packages/JuliaFormatter': checked out '6c0f94468eaef63405fbcbb11943314a164262d6'
+2022-10-17T18:44:15.8682074Z From https://github.com/JuliaDebug/JuliaInterpreter.jl
+2022-10-17T18:44:16.8700870Z  * branch            a840f1ad085e7606bb3a7cdc705d863f3c49ab92 -> FETCH_HEAD
+2022-10-17T18:44:16.8702829Z Submodule path 'scripts/packages/JuliaInterpreter': checked out 'a840f1ad085e7606bb3a7cdc705d863f3c49ab92'
+2022-10-17T18:44:17.7920235Z From https://github.com/julia-vscode/LanguageServer.jl
+2022-10-17T18:44:17.7921047Z  * branch            fe1ae60fdf795218b82dba4ba35028adab0bd348 -> FETCH_HEAD
+2022-10-17T18:44:17.8588898Z Submodule path 'scripts/packages/LanguageServer': checked out 'fe1ae60fdf795218b82dba4ba35028adab0bd348'
+2022-10-17T18:44:17.9277241Z Submodule path 'scripts/packages/LoweredCodeUtils': checked out 'b71c05b0d28cb5b3ad0301b816e0a1c4e531ea0d'
+2022-10-17T18:44:20.0414125Z From https://github.com/JuliaCollections/OrderedCollections.jl
+2022-10-17T18:44:20.0415167Z  * branch            adb9415570faeba7e8c6d800cd743de06104e97e -> FETCH_HEAD
+2022-10-17T18:44:20.0950689Z Submodule path 'scripts/packages/OrderedCollections': checked out 'adb9415570faeba7e8c6d800cd743de06104e97e'
+2022-10-17T18:44:22.2704443Z From https://github.com/JuliaLang/PackageCompiler.jl
+2022-10-17T18:44:22.2705307Z  * branch            78f4d52026c4895fa08c8ee0d61905a6914ea8c3 -> FETCH_HEAD
+2022-10-17T18:44:22.3338175Z Submodule path 'scripts/packages/PackageCompiler': checked out '78f4d52026c4895fa08c8ee0d61905a6914ea8c3'
+2022-10-17T18:44:24.3717510Z From https://github.com/timholy/Revise.jl
+2022-10-17T18:44:24.3718303Z  * branch            ca3b5cffd26325e3a3fd69932f5dc827ff156a3b -> FETCH_HEAD
+2022-10-17T18:44:24.4440199Z Submodule path 'scripts/packages/Revise': checked out 'ca3b5cffd26325e3a3fd69932f5dc827ff156a3b'
+2022-10-17T18:44:26.3998140Z From https://github.com/julia-vscode/StaticLint.jl
+2022-10-17T18:44:26.3998951Z  * branch            6235a532ff6b51a33ef56955286b7d0602912fd6 -> FETCH_HEAD
+2022-10-17T18:44:26.4536681Z Submodule path 'scripts/packages/StaticLint': checked out '6235a532ff6b51a33ef56955286b7d0602912fd6'
+2022-10-17T18:44:28.7449701Z From https://github.com/julia-vscode/SymbolServer.jl
+2022-10-17T18:44:28.7450546Z  * branch            99500d621b17cca5a46232808e8ad388370d2ae8 -> FETCH_HEAD
+2022-10-17T18:44:28.8004164Z Submodule path 'scripts/packages/SymbolServer': checked out '99500d621b17cca5a46232808e8ad388370d2ae8'
+2022-10-17T18:44:30.6737134Z From https://github.com/davidanthoff/TestEnv.jl
+2022-10-17T18:44:30.6738441Z  * branch            14dd0d9a3df31dcd29bb6434dd9b287fe4a2803b -> FETCH_HEAD
+2022-10-17T18:44:30.7314666Z Submodule path 'scripts/packages/TestEnv': checked out '14dd0d9a3df31dcd29bb6434dd9b287fe4a2803b'
+2022-10-17T18:44:32.8641840Z From https://github.com/julia-vscode/TestItemDetection.jl
+2022-10-17T18:44:32.8643031Z  * branch            d9db8c5707c5e7a6e167e0e583eb06261ef5408b -> FETCH_HEAD
+2022-10-17T18:44:32.9198664Z Submodule path 'scripts/packages/TestItemDetection': checked out 'd9db8c5707c5e7a6e167e0e583eb06261ef5408b'
+2022-10-17T18:44:34.8658296Z From https://github.com/JuliaLang/Tokenize.jl
+2022-10-17T18:44:34.8659350Z  * branch            49b112248e846040c13f28e223493f90cc717fa5 -> FETCH_HEAD
+2022-10-17T18:44:34.9180742Z Submodule path 'scripts/packages/Tokenize': checked out '49b112248e846040c13f28e223493f90cc717fa5'
+2022-10-17T18:44:36.9434834Z From https://github.com/JuliaWeb/URIParser.jl
+2022-10-17T18:44:36.9435837Z  * branch            1d3532dfe5330f567a8eb64a37a37b1b8c536628 -> FETCH_HEAD
+2022-10-17T18:44:36.9911233Z Submodule path 'scripts/packages/URIParser': checked out '1d3532dfe5330f567a8eb64a37a37b1b8c536628'
+2022-10-17T18:44:39.0525344Z From https://github.com/JuliaWeb/URIs.jl
+2022-10-17T18:44:39.0526563Z  * branch            0ce3d89b81dadaae52b104353843ef67ceecd176 -> FETCH_HEAD
+2022-10-17T18:44:39.1011889Z Submodule path 'scripts/packages/URIs': checked out '0ce3d89b81dadaae52b104353843ef67ceecd176'
+2022-10-17T18:44:39.6362076Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local gc.auto 0"
+2022-10-17T18:44:40.1499249Z Entering 'libs/jl-profile'
+2022-10-17T18:44:40.1499821Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T18:44:40.1500361Z Entering 'scripts/packages/CSTParser'
+2022-10-17T18:44:40.1500865Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T18:44:40.1501342Z Entering 'scripts/packages/CommonMark'
+2022-10-17T18:44:40.1501821Z Entering 'scripts/packages/Compat'
+2022-10-17T18:44:40.1502312Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T18:44:40.1870208Z Entering 'scripts/packages/Crayons'
+2022-10-17T18:44:40.2299258Z Entering 'scripts/packages/DataStructures'
+2022-10-17T18:44:40.2731209Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T18:44:40.3154284Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T18:44:40.3580384Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T18:44:40.4009777Z Entering 'scripts/packages/JSON'
+2022-10-17T18:44:40.4441127Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T18:44:40.4877165Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T18:44:40.5309153Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T18:44:40.5736183Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T18:44:40.6155862Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T18:44:40.6592321Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T18:44:40.7011223Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T18:44:40.7432743Z Entering 'scripts/packages/Revise'
+2022-10-17T18:44:40.7860251Z Entering 'scripts/packages/StaticLint'
+2022-10-17T18:44:40.8285015Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T18:44:40.8707213Z Entering 'scripts/packages/TestEnv'
+2022-10-17T18:44:40.9130917Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T18:44:40.9553174Z Entering 'scripts/packages/Tokenize'
+2022-10-17T18:44:40.9982264Z Entering 'scripts/packages/URIParser'
+2022-10-17T18:44:41.0413000Z Entering 'scripts/packages/URIs'
+2022-10-17T18:44:41.0911299Z ##[endgroup]
+2022-10-17T18:44:41.0912221Z ##[group]Persisting credentials for submodules
+2022-10-17T18:44:41.0949009Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --name-only --get-regexp 'url\.https\:\/\/github\.com\/\.insteadOf' && git config --local --unset-all 'url.https://github.com/.insteadOf' || :"
+2022-10-17T18:44:41.7123097Z Entering 'libs/jl-profile'
+2022-10-17T18:44:41.7801262Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T18:44:41.8486616Z Entering 'scripts/packages/CSTParser'
+2022-10-17T18:44:41.9170471Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T18:44:41.9866165Z Entering 'scripts/packages/CommonMark'
+2022-10-17T18:44:42.0548033Z Entering 'scripts/packages/Compat'
+2022-10-17T18:44:42.1230091Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T18:44:42.1912022Z Entering 'scripts/packages/Crayons'
+2022-10-17T18:44:42.2596050Z Entering 'scripts/packages/DataStructures'
+2022-10-17T18:44:42.3270725Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T18:44:42.3933241Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T18:44:42.4613817Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T18:44:42.5296714Z Entering 'scripts/packages/JSON'
+2022-10-17T18:44:42.5969735Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T18:44:42.6636426Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T18:44:42.7305008Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T18:44:42.7968778Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T18:44:42.8638471Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T18:44:42.9335822Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T18:44:43.0013526Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T18:44:43.0701411Z Entering 'scripts/packages/Revise'
+2022-10-17T18:44:43.1381342Z Entering 'scripts/packages/StaticLint'
+2022-10-17T18:44:43.2043855Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T18:44:43.2710696Z Entering 'scripts/packages/TestEnv'
+2022-10-17T18:44:43.3383248Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T18:44:43.4080841Z Entering 'scripts/packages/Tokenize'
+2022-10-17T18:44:43.4771154Z Entering 'scripts/packages/URIParser'
+2022-10-17T18:44:43.5446760Z Entering 'scripts/packages/URIs'
+2022-10-17T18:44:43.6198363Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local 'http.https://github.com/.extraheader' 'AUTHORIZATION: basic ***' && git config --local --show-origin --name-only --get-regexp remote.origin.url"
+2022-10-17T18:44:44.1318046Z Entering 'libs/jl-profile'
+2022-10-17T18:44:44.2061808Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/libs/jl-profile/config	remote.origin.url
+2022-10-17T18:44:44.2104574Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T18:44:44.2849978Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages-old/JuliaInterpreter/config	remote.origin.url
+2022-10-17T18:44:44.2891770Z Entering 'scripts/packages/CSTParser'
+2022-10-17T18:44:44.3630167Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/CSTParser/config	remote.origin.url
+2022-10-17T18:44:44.3672603Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T18:44:44.4400884Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/CodeTracking/config	remote.origin.url
+2022-10-17T18:44:44.4440717Z Entering 'scripts/packages/CommonMark'
+2022-10-17T18:44:44.5169835Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/CommonMark/config	remote.origin.url
+2022-10-17T18:44:44.5212855Z Entering 'scripts/packages/Compat'
+2022-10-17T18:44:44.5945479Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/Compat/config	remote.origin.url
+2022-10-17T18:44:44.5988420Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T18:44:44.6716819Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/CoverageTools/config	remote.origin.url
+2022-10-17T18:44:44.6759649Z Entering 'scripts/packages/Crayons'
+2022-10-17T18:44:44.7504650Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/Crayons/config	remote.origin.url
+2022-10-17T18:44:44.7548398Z Entering 'scripts/packages/DataStructures'
+2022-10-17T18:44:44.8294628Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/DataStructures/config	remote.origin.url
+2022-10-17T18:44:44.8340069Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T18:44:44.9092134Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/DebugAdapter/config	remote.origin.url
+2022-10-17T18:44:44.9136973Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T18:44:44.9883998Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/FilePathsBase/config	remote.origin.url
+2022-10-17T18:44:44.9927051Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T18:44:45.0702933Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/IJuliaCore/config	remote.origin.url
+2022-10-17T18:44:45.0748137Z Entering 'scripts/packages/JSON'
+2022-10-17T18:44:45.1570022Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/JSON/config	remote.origin.url
+2022-10-17T18:44:45.1615098Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T18:44:45.2365493Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/JSONRPC/config	remote.origin.url
+2022-10-17T18:44:45.2408597Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T18:44:45.3137821Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/JuliaFormatter/config	remote.origin.url
+2022-10-17T18:44:45.3181511Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T18:44:45.3933994Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/JuliaInterpreter/config	remote.origin.url
+2022-10-17T18:44:45.3977269Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T18:44:45.4725608Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/LanguageServer/config	remote.origin.url
+2022-10-17T18:44:45.4769258Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T18:44:45.5525662Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/LoweredCodeUtils/config	remote.origin.url
+2022-10-17T18:44:45.5571207Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T18:44:45.6320070Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/OrderedCollections/config	remote.origin.url
+2022-10-17T18:44:45.6363252Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T18:44:45.7092303Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/PackageCompiler/config	remote.origin.url
+2022-10-17T18:44:45.7135158Z Entering 'scripts/packages/Revise'
+2022-10-17T18:44:45.7877811Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/Revise/config	remote.origin.url
+2022-10-17T18:44:45.7922540Z Entering 'scripts/packages/StaticLint'
+2022-10-17T18:44:45.8673413Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/StaticLint/config	remote.origin.url
+2022-10-17T18:44:45.8717609Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T18:44:45.9483628Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/SymbolServer/config	remote.origin.url
+2022-10-17T18:44:45.9528758Z Entering 'scripts/packages/TestEnv'
+2022-10-17T18:44:46.0270748Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/TestEnv/config	remote.origin.url
+2022-10-17T18:44:46.0315819Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T18:44:46.1065057Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/TestItemDetection/config	remote.origin.url
+2022-10-17T18:44:46.1120194Z Entering 'scripts/packages/Tokenize'
+2022-10-17T18:44:46.1867673Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/Tokenize/config	remote.origin.url
+2022-10-17T18:44:46.1920696Z Entering 'scripts/packages/URIParser'
+2022-10-17T18:44:46.2679969Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/URIParser/config	remote.origin.url
+2022-10-17T18:44:46.2724272Z Entering 'scripts/packages/URIs'
+2022-10-17T18:44:46.3479009Z file:D:/a/julia-vscode-microprint-test/julia-vscode-microprint-test/.git/modules/scripts/packages/URIs/config	remote.origin.url
+2022-10-17T18:44:46.3788845Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local --add 'url.https://github.com/.insteadOf' 'git@github.com:'"
+2022-10-17T18:44:47.7150201Z Entering 'libs/jl-profile'
+2022-10-17T18:44:47.7150794Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T18:44:47.7151301Z Entering 'scripts/packages/CSTParser'
+2022-10-17T18:44:47.7151796Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T18:44:47.7152310Z Entering 'scripts/packages/CommonMark'
+2022-10-17T18:44:47.7152767Z Entering 'scripts/packages/Compat'
+2022-10-17T18:44:47.7153254Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T18:44:47.7153680Z Entering 'scripts/packages/Crayons'
+2022-10-17T18:44:47.7154192Z Entering 'scripts/packages/DataStructures'
+2022-10-17T18:44:47.7154664Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T18:44:47.7155088Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T18:44:47.7155590Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T18:44:47.7156073Z Entering 'scripts/packages/JSON'
+2022-10-17T18:44:47.7156477Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T18:44:47.7156973Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T18:44:47.7157482Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T18:44:47.7232732Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T18:44:47.7658821Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T18:44:47.8082897Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T18:44:47.8512090Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T18:44:47.8934311Z Entering 'scripts/packages/Revise'
+2022-10-17T18:44:47.9372410Z Entering 'scripts/packages/StaticLint'
+2022-10-17T18:44:47.9808557Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T18:44:48.0246735Z Entering 'scripts/packages/TestEnv'
+2022-10-17T18:44:48.0683151Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T18:44:48.1118666Z Entering 'scripts/packages/Tokenize'
+2022-10-17T18:44:48.1546926Z Entering 'scripts/packages/URIParser'
+2022-10-17T18:44:48.1974991Z Entering 'scripts/packages/URIs'
+2022-10-17T18:44:48.2491787Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach "git config --local --add 'url.https://github.com/.insteadOf' 'org-30818940@github.com:'"
+2022-10-17T18:44:48.8850045Z Entering 'libs/jl-profile'
+2022-10-17T18:44:48.9306474Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T18:44:48.9755249Z Entering 'scripts/packages/CSTParser'
+2022-10-17T18:44:49.0208109Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T18:44:49.0656300Z Entering 'scripts/packages/CommonMark'
+2022-10-17T18:44:49.1109508Z Entering 'scripts/packages/Compat'
+2022-10-17T18:44:49.1553972Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T18:44:49.1998819Z Entering 'scripts/packages/Crayons'
+2022-10-17T18:44:49.2441452Z Entering 'scripts/packages/DataStructures'
+2022-10-17T18:44:49.2900654Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T18:44:49.3336086Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T18:44:49.3770888Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T18:44:49.4201332Z Entering 'scripts/packages/JSON'
+2022-10-17T18:44:49.4622943Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T18:44:49.5054195Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T18:44:49.5485516Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T18:44:49.5918760Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T18:44:49.6353202Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T18:44:49.6796260Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T18:44:49.7235562Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T18:44:49.7679539Z Entering 'scripts/packages/Revise'
+2022-10-17T18:44:49.8126152Z Entering 'scripts/packages/StaticLint'
+2022-10-17T18:44:49.8568887Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T18:44:49.8996302Z Entering 'scripts/packages/TestEnv'
+2022-10-17T18:44:49.9439975Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T18:44:49.9886952Z Entering 'scripts/packages/Tokenize'
+2022-10-17T18:44:50.0326280Z Entering 'scripts/packages/URIParser'
+2022-10-17T18:44:50.0774205Z Entering 'scripts/packages/URIs'
+2022-10-17T18:44:50.1288217Z ##[endgroup]
+2022-10-17T18:44:50.1592457Z [command]"C:\Program Files\Git\bin\git.exe" log -1 --format='%H'
+2022-10-17T18:44:50.1828765Z '511731a4cba1b56d6527bf266fa6db0f6599270e'
+2022-10-17T18:44:50.2418093Z ##[group]Run julia-actions/setup-julia@v1
+2022-10-17T18:44:50.2418591Z with:
+2022-10-17T18:44:50.2418919Z   version: 1.6
+2022-10-17T18:44:50.2419200Z   arch: X64
+2022-10-17T18:44:50.2419583Z   show-versioninfo: false
+2022-10-17T18:44:50.2419923Z env:
+2022-10-17T18:44:50.2420178Z   NODE_VERSION: 16
+2022-10-17T18:44:50.2420499Z ##[endgroup]
+2022-10-17T18:44:54.2279503Z [command]powershell -Command "Start-Process -FilePath D:\a\_temp\3363c9d2-5b9f-4035-8501-33b9553c86ce -ArgumentList \"/SILENT /dir=D:\a\julia-vscode-microprint-test\julia-vscode-microprint-test\julia-x64-1.6.7-0XlPx4\" -NoNewWindow -Wait"
+2022-10-17T18:45:19.2851098Z [command]julia --version
+2022-10-17T18:45:19.2950750Z (node:5988) [DEP0147] DeprecationWarning: In future versions of Node.js, fs.rmdir(path, { recursive: true }) will be removed. Use fs.rm(path, { recursive: true }) instead
+2022-10-17T18:45:19.2957263Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2022-10-17T18:45:19.3338303Z julia version 1.6.7
+2022-10-17T18:45:19.3752973Z ##[group]Run npm ci
+2022-10-17T18:45:19.3753474Z [36;1mnpm ci[0m
+2022-10-17T18:45:19.3774063Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2022-10-17T18:45:19.3774474Z env:
+2022-10-17T18:45:19.3774736Z   NODE_VERSION: 16
+2022-10-17T18:45:19.3775008Z ##[endgroup]
+2022-10-17T18:45:35.8073173Z npm WARN deprecated vscode-test@1.6.1: This package has been renamed to @vscode/test-electron, please update to the new name
+2022-10-17T18:45:40.5382655Z 
+2022-10-17T18:45:40.5383357Z added 543 packages, and audited 544 packages in 13s
+2022-10-17T18:45:40.5385254Z 
+2022-10-17T18:45:40.5385685Z 81 packages are looking for funding
+2022-10-17T18:45:40.5386177Z   run `npm fund` for details
+2022-10-17T18:45:40.5475252Z 
+2022-10-17T18:45:40.5477335Z 2 moderate severity vulnerabilities
+2022-10-17T18:45:40.5477780Z 
+2022-10-17T18:45:40.5478182Z To address all issues (including breaking changes), run:
+2022-10-17T18:45:40.5479182Z   npm audit fix --force
+2022-10-17T18:45:40.5479476Z 
+2022-10-17T18:45:40.5479720Z Run `npm audit` for details.
+2022-10-17T18:45:40.6124791Z ##[group]Run npm run compile
+2022-10-17T18:45:40.6125168Z [36;1mnpm run compile[0m
+2022-10-17T18:45:40.6138274Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2022-10-17T18:45:40.6138658Z env:
+2022-10-17T18:45:40.6138900Z   NODE_VERSION: 16
+2022-10-17T18:45:40.6139175Z ##[endgroup]
+2022-10-17T18:45:42.5172869Z 
+2022-10-17T18:45:42.5174291Z > language-julia@1.7.12 compile
+2022-10-17T18:45:42.5175010Z > tsc -p ./
+2022-10-17T18:45:42.5175538Z 
+2022-10-17T18:45:52.2463455Z ##[group]Run npm run test
+2022-10-17T18:45:52.2463917Z [36;1mnpm run test[0m
+2022-10-17T18:45:52.2476542Z shell: C:\Program Files\Git\bin\bash.EXE --noprofile --norc -e -o pipefail {0}
+2022-10-17T18:45:52.2476951Z env:
+2022-10-17T18:45:52.2477182Z   NODE_VERSION: 16
+2022-10-17T18:45:52.2477471Z ##[endgroup]
+2022-10-17T18:45:53.8224693Z 
+2022-10-17T18:45:53.8225625Z > language-julia@1.7.12 test
+2022-10-17T18:45:53.8226267Z > node ./out/test/runTest.js
+2022-10-17T18:45:53.8226616Z 
+2022-10-17T18:45:59.6939385Z Downloading VS Code 1.72.2 from https://update.code.visualstudio.com/1.72.2/win32-archive/stableDownloaded VS Code 1.72.2 into D:\a\julia-vscode-microprint-test\julia-vscode-microprint-test\.vscode-test\vscode-win32-archive-1.72.2
+2022-10-17T18:46:00.4141649Z 
+2022-10-17T18:46:00.4141870Z 
+2022-10-17T18:46:05.2382811Z [main 2022-10-17T18:46:05.235Z] update#setState idle
+2022-10-17T18:46:05.2383565Z 
+2022-10-17T18:46:06.6683099Z workbench#open()
+2022-10-17T18:46:06.6683791Z 
+2022-10-17T18:46:10.9272646Z [main 2022-10-17T18:46:09.521Z] Calling fork to start extension host...
+2022-10-17T18:46:11.2011698Z [main 2022-10-17T18:46:09.536Z] Starting extension host with pid 6152 (fork() took 14 ms).
+2022-10-17T18:46:11.2888470Z IExtensionHostStarter.start() took 19 ms.
+2022-10-17T18:46:11.3045665Z 
+2022-10-17T18:46:12.9090778Z Loading development extension at d:\a\julia-vscode-microprint-test\julia-vscode-microprint-test
+2022-10-17T18:46:12.9182643Z 
+2022-10-17T18:46:15.9594371Z 
+2022-10-17T18:46:15.9595824Z   Indentation
+2022-10-17T18:46:15.9596283Z 
+2022-10-17T18:46:16.0121173Z     ✔ functions
+2022-10-17T18:46:16.0121587Z 
+2022-10-17T18:46:16.0122202Z     ✔ for loops
+2022-10-17T18:46:16.0122381Z 
+2022-10-17T18:46:16.0122539Z     ✔ end
+2022-10-17T18:46:16.0122701Z 
+2022-10-17T18:46:16.0122850Z   Test JULIA_NUM_THREADS config
+2022-10-17T18:46:16.0123052Z 
+2022-10-17T18:46:16.0123268Z     ✔ null config and defined environment var
+2022-10-17T18:46:16.0123513Z 
+2022-10-17T18:46:16.0123757Z     ✔ null config and defined environment var
+2022-10-17T18:46:16.0123981Z 
+2022-10-17T18:46:16.0124350Z     ✔ not null config and defined environment var
+2022-10-17T18:46:16.0124579Z 
+2022-10-17T18:46:16.0124835Z     ✔ not null config and undefined environment var
+2022-10-17T18:46:16.0125070Z 
+2022-10-17T18:46:16.0125155Z   7 passing (78ms)
+2022-10-17T18:46:16.0125337Z 
+2022-10-17T18:46:16.0125684Z [main 2022-10-17T18:46:16.000Z] Waiting for extension host with pid 6152 to exit.
+2022-10-17T18:46:16.0125950Z 
+2022-10-17T18:46:16.3004895Z [main 2022-10-17T18:46:16.296Z] Extension host with pid 6152 exited with code: 0, signal: null.
+2022-10-17T18:46:16.3005670Z 
+2022-10-17T18:46:23.7390378Z Exit code:   0
+2022-10-17T18:46:23.7390982Z Done
+2022-10-17T18:46:23.7391361Z 
+2022-10-17T18:46:23.7887573Z Post job cleanup.
+2022-10-17T18:46:28.2269627Z [command]"C:\Program Files\Git\bin\git.exe" version
+2022-10-17T18:46:28.2511512Z git version 2.37.3.windows.1
+2022-10-17T18:46:28.2590160Z Temporarily overriding HOME='D:\a\_temp\2f0a9065-2c03-4f8c-83ab-4d3b28aa65fc' before making global git config changes
+2022-10-17T18:46:28.2591052Z Adding repository directory to the temporary git global config as a safe directory
+2022-10-17T18:46:28.2600758Z [command]"C:\Program Files\Git\bin\git.exe" config --global --add safe.directory D:\a\julia-vscode-microprint-test\julia-vscode-microprint-test
+2022-10-17T18:46:28.3012603Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp core\.sshCommand
+2022-10-17T18:46:28.3320761Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2022-10-17T18:46:29.0606725Z Entering 'libs/jl-profile'
+2022-10-17T18:46:29.1345835Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T18:46:29.2077796Z Entering 'scripts/packages/CSTParser'
+2022-10-17T18:46:29.2990702Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T18:46:29.3713084Z Entering 'scripts/packages/CommonMark'
+2022-10-17T18:46:29.4416412Z Entering 'scripts/packages/Compat'
+2022-10-17T18:46:29.5146578Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T18:46:29.5850310Z Entering 'scripts/packages/Crayons'
+2022-10-17T18:46:29.6656645Z Entering 'scripts/packages/DataStructures'
+2022-10-17T18:46:29.7477609Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T18:46:29.8181386Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T18:46:29.8899393Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T18:46:29.9606710Z Entering 'scripts/packages/JSON'
+2022-10-17T18:46:30.0467600Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T18:46:30.1199224Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T18:46:30.1915299Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T18:46:30.2625712Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T18:46:30.3335980Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T18:46:30.4046673Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T18:46:30.4762144Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T18:46:30.5466718Z Entering 'scripts/packages/Revise'
+2022-10-17T18:46:30.6170041Z Entering 'scripts/packages/StaticLint'
+2022-10-17T18:46:30.6886132Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T18:46:30.7590165Z Entering 'scripts/packages/TestEnv'
+2022-10-17T18:46:30.8297808Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T18:46:30.9010649Z Entering 'scripts/packages/Tokenize'
+2022-10-17T18:46:30.9731661Z Entering 'scripts/packages/URIParser'
+2022-10-17T18:46:31.0475472Z Entering 'scripts/packages/URIs'
+2022-10-17T18:46:31.1340249Z [command]"C:\Program Files\Git\bin\git.exe" config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-10-17T18:46:31.1581032Z http.https://github.com/.extraheader
+2022-10-17T18:46:31.1622613Z [command]"C:\Program Files\Git\bin\git.exe" config --local --unset-all http.https://github.com/.extraheader
+2022-10-17T18:46:31.1913186Z [command]"C:\Program Files\Git\bin\git.exe" submodule foreach --recursive "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2022-10-17T18:46:31.8197069Z Entering 'libs/jl-profile'
+2022-10-17T18:46:31.8719922Z http.https://github.com/.extraheader
+2022-10-17T18:46:31.9173759Z Entering 'scripts/packages-old/JuliaInterpreter'
+2022-10-17T18:46:31.9691348Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.0171334Z Entering 'scripts/packages/CSTParser'
+2022-10-17T18:46:32.0693134Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.1165271Z Entering 'scripts/packages/CodeTracking'
+2022-10-17T18:46:32.1750800Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.2296861Z Entering 'scripts/packages/CommonMark'
+2022-10-17T18:46:32.2820390Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.3272244Z Entering 'scripts/packages/Compat'
+2022-10-17T18:46:32.3785401Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.4234325Z Entering 'scripts/packages/CoverageTools'
+2022-10-17T18:46:32.4749044Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.5201645Z Entering 'scripts/packages/Crayons'
+2022-10-17T18:46:32.5710633Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.6166278Z Entering 'scripts/packages/DataStructures'
+2022-10-17T18:46:32.6681711Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.7136277Z Entering 'scripts/packages/DebugAdapter'
+2022-10-17T18:46:32.7642539Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.8101222Z Entering 'scripts/packages/FilePathsBase'
+2022-10-17T18:46:32.8627850Z http.https://github.com/.extraheader
+2022-10-17T18:46:32.9083926Z Entering 'scripts/packages/IJuliaCore'
+2022-10-17T18:46:32.9602146Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.0070080Z Entering 'scripts/packages/JSON'
+2022-10-17T18:46:33.0601883Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.1223270Z Entering 'scripts/packages/JSONRPC'
+2022-10-17T18:46:33.1758459Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.2216774Z Entering 'scripts/packages/JuliaFormatter'
+2022-10-17T18:46:33.2721708Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.3160971Z Entering 'scripts/packages/JuliaInterpreter'
+2022-10-17T18:46:33.3757040Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.4264385Z Entering 'scripts/packages/LanguageServer'
+2022-10-17T18:46:33.4779387Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.5248593Z Entering 'scripts/packages/LoweredCodeUtils'
+2022-10-17T18:46:33.5760832Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.6202859Z Entering 'scripts/packages/OrderedCollections'
+2022-10-17T18:46:33.6712506Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.7168450Z Entering 'scripts/packages/PackageCompiler'
+2022-10-17T18:46:33.7795804Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.8314004Z Entering 'scripts/packages/Revise'
+2022-10-17T18:46:33.8836793Z http.https://github.com/.extraheader
+2022-10-17T18:46:33.9313381Z Entering 'scripts/packages/StaticLint'
+2022-10-17T18:46:33.9829505Z http.https://github.com/.extraheader
+2022-10-17T18:46:34.0322414Z Entering 'scripts/packages/SymbolServer'
+2022-10-17T18:46:34.0904008Z http.https://github.com/.extraheader
+2022-10-17T18:46:34.1539188Z Entering 'scripts/packages/TestEnv'
+2022-10-17T18:46:34.2058729Z http.https://github.com/.extraheader
+2022-10-17T18:46:34.2514171Z Entering 'scripts/packages/TestItemDetection'
+2022-10-17T18:46:34.3027644Z http.https://github.com/.extraheader
+2022-10-17T18:46:34.3501845Z Entering 'scripts/packages/Tokenize'
+2022-10-17T18:46:34.4025352Z http.https://github.com/.extraheader
+2022-10-17T18:46:34.4632481Z Entering 'scripts/packages/URIParser'
+2022-10-17T18:46:34.5304905Z http.https://github.com/.extraheader
+2022-10-17T18:46:34.5759450Z Entering 'scripts/packages/URIs'
+2022-10-17T18:46:34.6270777Z http.https://github.com/.extraheader
+2022-10-17T18:46:34.7180452Z Cleaning up orphan processes
