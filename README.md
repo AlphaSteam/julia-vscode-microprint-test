@@ -26,6 +26,9 @@ build-microprint:
             - name: Checkout code
               uses: actions/checkout@v3
 
+            - name: Pull changes
+              run: git pull
+
             - name: Get microprint of check-examples job logs
               uses: AlphaSteam/microprint-generator@v4
               with:
