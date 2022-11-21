@@ -17,9 +17,13 @@
         },
         "(?:^|\\W)Test Summary(?:$|\\W)": {
             "text_color": "black",
-            "background_color": "white"
+            "background_color": "#d0e6c9"
         },
-        "\\[[0-9]+\\]": {
+        "(?:^|\\W)passed(?:$|\\W)": {
+            "text_color": "black",
+            "background_color": "rgb(38, 162, 105)"
+        },
+        "(?:^|\\W)Stacktrace(?:$|\\W)": {
             "text_color": "white",
             "background_color": "red"
         }

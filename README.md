@@ -1,76 +1,72 @@
-# Julia
-[![Build and Test](https://github.com/julia-vscode/julia-vscode/actions/workflows/main.yml/badge.svg)](https://github.com/julia-vscode/julia-vscode/actions/workflows/main.yml)
-[![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](https://www.julia-vscode.org/docs/latest/)
-<!-- [![Docs](https://img.shields.io/badge/docs-dev-blue.svg)](https://www.julia-vscode.org/docs/dev/) -->
+# Julia repository Microprint example
 
-This [VS Code](https://code.visualstudio.com) extension provides support for the [Julia programming language](http://julialang.org/).
+In this repository. There's an example of how to use the microprint generator and visualization tools to automatically create a representation of the logs of a GitHub workflow.
 
-## Getting started
+For that, we use the GitHub action [Generate a microprint of the logs of a workflow job
+](https://github.com/marketplace/actions/generate-a-microprint-of-the-logs-of-a-workflow-job)
 
-### Installing Julia/VS Code/VS Code Julia extension
-1. Install Julia for your platform: https://julialang.org/downloads/
-2. Install VS Code for your platform: https://code.visualstudio.com/download
-    At the end of this step you should be able to start VS Code.
-3. Choose `Install` in the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=julialang.language-julia); or paste in browser's address bar to open this direct VS Code link `vscode:extension/julialang.language-julia` or manually install with:
-    1. Start VS Code.
-    2. Inside VS Code, go to the extensions view either by
-        executing the ``View: Show Extensions`` command (click View->Command Palette...)
-        or by clicking on the extension icon on the left side of the VS Code
-        window.
-    3. In the extensions view, simply search for the term ``julia`` in the marketplace
-        search box, then select the extension named ``Julia`` and click the install button.
-        You might have to restart VS Code after this step.
+# Usage
 
-### Configure the Julia extension
+## Worflow
+First, the action must be added to the workflow. In this example, we want to get microprints for the logs of the "testJuliaPackages" workflow job. So we add the following job to the main workflow file [main.yml](.github/workflows/main.yml)
 
-If you have installed Julia into a standard location on Mac or Windows, or
-if the Julia binary is on your ``PATH``, the Julia VS Code extension should
-automatically find your Julia installation and you should not need to
-configure anything.
+```
+build-microprint:
+          runs-on: ubuntu-latest
 
-If the extension does not find your Julia installation automatically, or
-if you want to use a different Julia installation than the default one,
-you can set the ``julia.executablePath`` to point to the Julia executable
-that the extension should use. In that case the
-extension will always use that version of Julia. To edit your configuration
-settings, execute the ``Preferences: Open User Settings`` command (you can
-also access it via the menu ``File->Preferences->Settings``), and
-then make sure your user settings include the ``julia.executablePath``
-setting. The format of the string should follow your platform specific
-conventions, and be aware that the backlash ``\`` is the escape character
-in JSON, so you need to use ``\\`` as the path separator character on Windows.
+          needs: testJuliaPackages
 
-## Features
+          strategy:
+            fail-fast: false
+            matrix:
+              os: [ubuntu-latest, windows-latest]
+              julia_version: [1.8]
 
-The extension currently provides:
+          steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
 
-* syntax highlighting
-* [snippets: latex and user-shared snippets](https://github.com/julia-vscode/julia-vscode/wiki/Snippets)
-* [Julia specific commands](https://github.com/julia-vscode/julia-vscode/wiki/Commands)
-* [integrated Julia REPL](https://github.com/julia-vscode/julia-vscode/wiki/REPL)
-* [code completion](https://github.com/julia-vscode/julia-vscode/wiki/IntelliSense)
-* [hover help](https://github.com/julia-vscode/julia-vscode/wiki/Information#hover-help)
-* [a linter](https://github.com/julia-vscode/julia-vscode/wiki/Information#linter)
-* [code navigation](https://github.com/julia-vscode/julia-vscode/wiki/Navigation)
-* tasks for running tests, builds, benchmarks and build documentation
-* a debugger
-* a plot gallery
-* a grid viewer for tabular data
-* integrated support for Weave.jl
+            - name: Get microprint of check-examples job logs
+              uses: AlphaSteam/microprint-generator@v4
+              with:
+                  job_name: Test Julia Packages
+                  microprint_filename: microprint
+                  microprint_path: ./microprints/
+                  microprint_config_path: ./
+                  microprint_config_filename: microprint-config
+                  microprint_visualizer_link_filename: microprint-visualizer
+                  microprint_visualizer_link_path: ./microprints/visualizers/
+                  log_path: ./microprints/logs/
 
-## Documentation
+            - name: Commit microprint
+              uses: EndBug/add-and-commit@v9
+              with:
+                message: Updated microprint
+                pull: '--rebase --autostash -s ort -X theirs'
 
-The [documentation](https://www.julia-vscode.org/docs/stable/)
-has sections that describe the features of this extension (including
-e.g. keyboard shortcuts). This repo also has legacy docs in the
-[wiki](https://github.com/julia-vscode/julia-vscode/wiki).
+            - name: Get Actions user id
+              id: get_uid
+              run: |
+                actions_user_id=`id -u $USER`
+                echo $actions_user_id
+                echo ::set-output name=uid::$actions_user_id
 
-## Questions, Feature requests and contributions
+            - name: Correct Ownership in GITHUB_WORKSPACE directory
+              uses: peter-murray/reset-workspace-ownership-action@v1
+              with:
+                user_id: ${{ steps.get_uid.outputs.uid }}
+```
 
-1. If you face any issues, please open an issue [here](https://github.com/julia-vscode/julia-vscode/issues).
-2. For some known issues and their solutions, please visit the [known issues and workarounds](https://github.com/julia-vscode/julia-vscode/wiki/Known-issues-and-workarounds).
-3. If there is already an issue opened related to yours, please leave an upvote/downvote on the issue.
-4. Contributions are always welcome! Please see our [contributing guide](https://github.com/julia-vscode/julia-vscode/blob/master/CONTRIBUTING.md) for more details.
-## Data/Telemetry
+## Microprint rules
 
-The Julia extension for Visual Studio Code collects usage data and sends it to the development team to help improve the extension. Read our [privacy policy](https://github.com/julia-vscode/julia-vscode/wiki/Privacy-Policy) to learn more and how to disable any telemetry.
+We need to set the rules for the microprint. These define what lines are highlighted inside it and with what text and background color. For this we need to create a config file.
+
+In this example the config file is [microprint-config.json](microprint-config.json).
+
+## Visualization
+
+The files generated from the microprint generation action in the workflow, are saved in the folder specified in the inputs of the action. When it's defined in the workflow file. In this example, the files are inside the folder [microprints](microprints).
+
+Inside that folder there are the svg files of the generated microprints, a folder for the log files (optional) and a folder for the visualizers (optional).
+
+The visualizers correspond to markdown files with a link to the visualizer page with the microprint loaded. [Microprint visualizer](https://github.com/AlphaSteam/microprint-visualizer)
