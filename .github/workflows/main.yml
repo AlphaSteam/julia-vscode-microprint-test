@@ -142,7 +142,7 @@ jobs:
               run: git pull
 
             - name: Get microprint of check-examples job logs
-              uses: AlphaSteam/microprint-generator@v4
+              uses: AlphaSteam/GHuPrintGen@v5
               with:
                   job_name: Test Julia Packages
                   microprint_filename: microprint
