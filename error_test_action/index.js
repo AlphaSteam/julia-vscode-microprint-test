@@ -33,3 +33,5 @@ error[E0080]: evaluation of constant value failed
 
 For more information about this error, try "rustc --explain E0080".
 `)
+
+throw new Error();
