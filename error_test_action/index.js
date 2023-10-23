@@ -1,3 +1,6 @@
+
+console.log("=====================================")
+console.log("INDIVIDUAL CONSOLE.LOG LINES:")
 console.log("error[E0080]: evaluation of constant value failed")
 console.log(" --> library/alloc/src/collections/btree/node.rs:1679:38")
 console.log("|")
@@ -8,7 +11,8 @@ console.log(" = note: this error originates in the macro `$crate::panic::panic_2
 console.log()
 console.log("For more information about this error, try `rustc --explain E0080`.")
 
-
+console.log("=====================================")
+console.log("ONE BIG CONSOLE.LOG:")
 console.log(`
 error[E0080]: evaluation of constant value failed
 --> library/alloc/src/collections/btree/node.rs:1679:38
@@ -21,7 +25,8 @@ error[E0080]: evaluation of constant value failed
 For more information about this error, try "rustc --explain E0080".
 `)
 
-
+console.log("=====================================")
+console.log("ONE BIG CONSOLE.ERROR:")
 console.error(`
 error[E0080]: evaluation of constant value failed
 --> library/alloc/src/collections/btree/node.rs:1679:38
@@ -33,5 +38,23 @@ error[E0080]: evaluation of constant value failed
 
 For more information about this error, try "rustc --explain E0080".
 `)
+
+
+try{
+    throw new Error();
+}
+catch(e){
+
+console.log("Error catched, console.log")
+}
+
+try {
+    throw new Error();
+}
+catch (e) {
+    console.error("Error catched, console.error")
+}
+
+console.log("Error thrown, not cached: ")
 
 throw new Error();
