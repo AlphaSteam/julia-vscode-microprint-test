@@ -1,0 +1,7 @@
+name: 'Tests errors'
+description: 'Errors test'
+
+
+runs:
+  using: 'node20'
+  main: 'index.js'

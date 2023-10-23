@@ -1,0 +1,19 @@
+name: Error test
+
+on:
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: '16'
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+
+  errorTest:
+    name: errorTestJob
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./error_test_action
