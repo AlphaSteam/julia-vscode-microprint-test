@@ -22,8 +22,8 @@ jobs:
      - uses: ./error_test_action
 
      - name: error log
-        run: |
-          text="This is error1\nThis is error2"
-          text="${text//'\n'/'%0A'}" #replace '\n' with '%0A'
-          echo $text
-          echo "::error file=app.js,line=10,col=15::$text"
+       run: |
+            text="This is error1\nThis is error2"
+            text="${text//'\n'/'%0A'}" #replace '\n' with '%0A'
+            echo $text
+            echo "::error file=app.js,line=10,col=15::$text"
